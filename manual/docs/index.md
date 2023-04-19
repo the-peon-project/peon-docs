@@ -79,7 +79,6 @@ The logo is a derrivative of the art by [André Kent - Artstation](https://www.a
 
 ## Scoreboard
 
-
 | Builds | Description | Scores |
 | - | - | - |
 | [Orchestrator](./development/01_orchestrator.md) | This module manages all game servers and is interfaced with using REST. | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc) |
