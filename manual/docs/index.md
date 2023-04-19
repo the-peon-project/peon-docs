@@ -79,22 +79,11 @@ The logo is a derrivative of the art by [André Kent - Artstation](https://www.a
 
 ## Scoreboard
 
-### PEON Orchestrator
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc)
-[![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc)
-
-### PEON Web UI
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.ui.svg)](https://hub.docker.com/r/umlatt/peon.ui)
-[![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.ui.svg)](https://hub.docker.com/r/umlatt/peon.ui)
-
-### PEON Bot for Discord
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.bot.discord.svg)](https://hub.docker.com/r/umlatt/peon.bot.discord)
-[![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.bot.discord.svg)](https://hub.docker.com/r/umlatt/peon.bot.discord)
-
-### SteamCMD with Wine
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/steamcmd-winehq.svg)](https://hub.docker.com/r/umlatt/steamcmd-winehq)
-[![Docker Stars](https://img.shields.io/docker/stars/umlatt/steamcmd-winehq.svg)](https://hub.docker.com/r/umlatt/steamcmd-winehq)
+| Builds | Description | Scores |
+| - | - | - |
+| [Orchestrator](./development/01_orchestrator.md) | This module manages all game servers and is interfaced with using REST. | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.orc.svg)](https://hub.docker.com/r/umlatt/peon.orc) |
+| [Web UI](./development/04_webui.md) | This is the user friendlyness project. A website to mange variouse orchestrators. | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.ui.svg)](https://hub.docker.com/r/umlatt/peon.ui) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.ui.svg)](https://hub.docker.com/r/umlatt/peon.ui) |
+| [Contained Steam](./development/02_wartable.md#projects) | Based on cm2networks steamcmd container, with basic PEON integration (can run stand-alone) | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/steamcmd.svg)](https://hub.docker.com/r/umlatt/steamcmd) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/steamcmd.svg)](https://hub.docker.com/r/umlatt/steamcmd) |
+| [Steamed WINE](./development/02_wartable.md#projects) | The same as `Contained Steam` but with WINE to support windows only servers. | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/steamcmd-winehq.svg)](https://hub.docker.com/r/umlatt/steamcmd-winehq) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/steamcmd-winehq.svg)](https://hub.docker.com/r/umlatt/steamcmd-winehq) |
+| [Bot.Discord](./development/50_bot_discord.md) | A Discord bot to allow friends and groups of friends to manage the servers. | [![Docker Pulls](https://img.shields.io/docker/pulls/umlatt/peon.bot.discord.svg)](https://hub.docker.com/r/umlatt/peon.bot.discord) [![Docker Stars](https://img.shields.io/docker/stars/umlatt/peon.bot.discord.svg)](https://hub.docker.com/r/umlatt/peon.bot.discord) |
