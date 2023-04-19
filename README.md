@@ -1,6 +1,6 @@
 # PEON Documentation
 
-Welcome to the PEON documentaion repo.
+Welcome to the PEON documentation repo.
 
 ![PEON Project](./manual/docs/images/logo/PEON_small_square.png)
 
