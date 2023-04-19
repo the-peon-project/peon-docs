@@ -2,7 +2,7 @@
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![CS:GO](../../logos/csgo.png)
+![CS:GO](../../images/game-logos/csgo.png)
 
 ## Official Documentation
 

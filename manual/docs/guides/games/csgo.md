@@ -1,6 +1,6 @@
 # Counter Strike : Global Offensive
 
-![CSGO logo](../../logos/csgo.png)
+![CS:GO](../../images/game-logos/csgo.png)
 
 ## Before you start
 
