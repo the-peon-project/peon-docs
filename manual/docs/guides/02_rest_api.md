@@ -1,6 +1,4 @@
-# Usage
-
-## REST API
+# REST API
 
 All orchestrators are managed/controlled directly with the REST API.
 
