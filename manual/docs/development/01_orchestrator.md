@@ -9,7 +9,7 @@ It is what manages the process of game server deployment for users.
 ## Design Objectives
 
 - Extremely lightweight.
-- REST API managed
+- [REST API managed](../guides/02_rest_api.md)
 - Deploys/controls the game containers.
 - Abstracted from the game server/container platform to allow stack evolution.
 
