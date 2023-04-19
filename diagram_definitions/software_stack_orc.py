@@ -11,7 +11,7 @@ comms_http = "orange"
 comms_container_service = "red"
 comms_container = "darkgray"
 
-with Diagram("Peon Orchestrator Software Stack", filename="../documentation/manual/docs/development/diagram_orc", show=False):
+with Diagram("Peon Orchestrator Software Stack", filename="../manual/docs/images/diagrams/diagram_orc", show=False):
     with Cluster("Docker Host"):
         runtime = OKE("Container Runtime")
         with Cluster("Container"):

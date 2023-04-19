@@ -12,7 +12,7 @@ comms_container = "darkgray"
 current_path = os.getcwd()
 
 
-with Diagram("Peon War Table Software Stack", filename="../documentation/manual/docs/development/diagram_wartable", show=False):
+with Diagram("Peon War Table Software Stack", filename="../manual/docs/images/diagrams/diagram_wartable", show=False):
     with Cluster("Container"):
         with Cluster("Application"):
             wine = Custom("WINE",f"{current_path}/diagram_definitions/logos/wine.png")

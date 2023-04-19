@@ -12,7 +12,7 @@ comms_container = "darkgray"
 current_path = os.getcwd()
 
 
-with Diagram("Peon War Plan Software Stack", filename="../documentation/manual/docs/development/diagram_warplans", show=False):
+with Diagram("Peon War Plan Software Stack", filename="../manual/docs/images/diagrams/diagram_warplans", show=False):
     with Cluster("Container"):
         with Cluster("Gamer Server"):
             scripts = Bash("Scripts")

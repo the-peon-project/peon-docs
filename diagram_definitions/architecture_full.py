@@ -11,7 +11,7 @@ comms_http = "orange"
 comms_container_service = "red"
 comms_container = "darkgray"
 
-with Diagram("Peon Orchestrator Flow", filename="../documentation/manual/docs/development/architecture_master", show=False):
+with Diagram("Peon Orchestrator Flow", filename="../manual/docs/images/diagrams/architecture_master", show=False):
     # Nodes
     user = User("User")
     client_rest = Client("REST Client")
