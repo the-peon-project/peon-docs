@@ -3,7 +3,7 @@
 # TODO: Check if `graphviz` installed else run yum install -y graphviz
 # TODO: Check if `diagrams` installed else run pip install diagrams
 
-diagram_path="./diagram_definitions/"
+diagram_path="./"
 
 printf "Regenerating PEON Diagrams...\n"
 total=$(find $diagram_path -type f -name "*.py" | grep -c ".py$")
