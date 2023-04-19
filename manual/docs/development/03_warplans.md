@@ -30,7 +30,7 @@ For the list of supported games please go [here](../games.md)
 
 *\*This may change as technologies & skills evolve.*
 
-![Software Stack](./diagram_warplans.png)
+![Software Stack](../images/diagrams/diagram_warplans.png)
 
 ---
 

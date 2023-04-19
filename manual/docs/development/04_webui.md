@@ -18,7 +18,7 @@ This is a user frontend (website) for managing PEON War Camps.
 
 *\*This may change as technologies & skills evolve.*
 
-![Software Stack](./diagram_webui.png)
+![Software Stack](../images/diagrams/diagram_webui.png)
 
 ---
 

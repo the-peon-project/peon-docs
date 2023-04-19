@@ -24,7 +24,7 @@ This project handles the tools that are shared between game containers.
 
 *\*This may change as technologies & skills evolve.*
 
-![Software Stack](./diagram_wartable.png)
+![Software Stack](../images/diagrams/diagram_wartable.png)
 
 ---
 

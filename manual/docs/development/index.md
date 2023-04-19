@@ -11,7 +11,7 @@ This diagram shows off the basic architecture of the PEON project.
 
 *At it's core, everything revolves around the Orcs.*
 
-![diagram_comms](./architecture_master.png)
+![diagram_comms](../images/diagrams/architecture_master.png)
 
 - <font color="orange">REST API</font> - The orchestrator can be managed by a REST API, with is represented with orange connection/s.
 - <font color="red">DOCKER SOCKET</font> - The orchestrator manages the underlying docker host using docer sockets (at the moment), which is represented with red connection/s.
