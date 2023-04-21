@@ -95,7 +95,7 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
-#### 1.0.1
+#### 1.1.0
 
 - [ ] ADDED :new: Add init scripts to mirror changes to PEON
 
