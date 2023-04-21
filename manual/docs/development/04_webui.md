@@ -67,27 +67,27 @@ Links to various project-related resources.
 
 ## Release Notes
 
-### 0.1.6-dev
+### 0.1.6
 
 - [x] Favicon
 
-### 0.1.5-dev
+### 0.1.5
 
 - [x] Logging - Added devMode switch
 
-### 0.1.4-dev
+### 0.1.4
 
 - [x] Dev Tools - Added dev tools to container
 - [x] MOTD - Added motd on login
 
-### 0.1.3-dev
+### 0.1.3
 
 - [x] Base Image Update - Base images were repulled to get latest versions & app rebuilt on those
 
-### 0.1.2-dev
+### 0.1.2
 
 - [x] Cleaned up theme
 
-### 0.1.1-dev
+### 0.1.1
 
 - [x] Initial implementation of flask-python framework
