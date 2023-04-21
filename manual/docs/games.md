@@ -1,8 +1,8 @@
 # Supported Games
 
-These are the games and thier support states.
+These are the games and their support states.
 
-This list will grow over time (as requests come in, or other people contribute recipies to the project).
+This list will grow over time (as requests come in or other people contribute recipes to the project).
 
 - [x] [CSGO](./guides/games/csgo.md)
 - [ ] [Starbound](https://github.com/the-peon-project/peon-warplans/tree/main/starbound)

@@ -1,6 +1,6 @@
 # Bot.Discord
 
-The Web UI module is a supplimental service to the PEON project.
+The Web UI module is a supplemental service to the PEON project.
 
 This is a Discord bot to manage orchestrators.
 
@@ -51,7 +51,7 @@ Links to various project-related resources.
 
 ### *0.1.x*
 
-- [x] peon.orc servers can be managed by bot
+- [x] peon.orc servers can be managed by the bot
 
 ---
 
@@ -76,8 +76,8 @@ Links to various project-related resources.
 
 ### 0.2.2
 
-- Text - Reformatted info in message feed
-- Server_Config - Allowed for json formated content
+- Text - Reformatted info in the message feed
+- Server_Config - Allowed for json formatted content
 
 ### 0.2.1
 
@@ -93,9 +93,9 @@ Links to various project-related resources.
 
 ### 0.1.0
 
-- First version of bot
-- Basic get all/get functionality
-- Harcoded bot key
+- First version of the bot
+- Basic get-all/get the functionality
+- Hardcoded bot key
 
 ### 0.0.0
 

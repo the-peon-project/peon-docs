@@ -1,4 +1,4 @@
-# Counter Strike : Global Offensive
+# Counter Strike: Global Offensive
 
 ![CS:GO](../../images/game-logos/csgo.png)
 
@@ -34,7 +34,7 @@ How to deploy a server without the PEON project.
 mkdir status server_files
 chown -R 1000:1000 .
 ```
-5. Make sure that the `server_start` file has exceute permissions
+5. Make sure that the `server_start` file has execute permissions
 ```bash
 chmod u+x server_start
 ```

@@ -16,7 +16,7 @@ Create a working directory for the project
 mkdir /root/peon
 ```
 
-### 2. Download latest release
+### 2. Download the latest release
 
 Pull the latest release from the peon repo
 
@@ -32,7 +32,7 @@ Extract the project files into the ``peon`` directory.
 tar -xvf warcamp.tar.gz --strip-components=1 --directory peon -C /root/peon/.
 ```
 
-### 4. Deploy Peon to server
+### 4. Deploy Peon to the server
 
 Run download/deploy containers and configure services.
 
@@ -42,8 +42,8 @@ Run download/deploy containers and configure services.
 
 ### 5. Run ``peon-cli`` to confirm health (optional)
 
-A management tui which runs on the docker host and is used to streamline peon support.
+Management tui which runs on the docker host and is used to streamline peon support.
 
 ```bash
-peon-cli
+peon
 ```

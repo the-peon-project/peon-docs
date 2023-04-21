@@ -2,7 +2,7 @@
 
 The **War Plan** module works in conjunction with the Orchestrator to deploy specific game servers upon request.
 
-This project handles the unique game recipes.
+This project handles unique game recipes.
 
 ## Projects
 
@@ -20,9 +20,9 @@ For the list of supported games please go [here](../games.md)
 *\*Official container images are usually bespoke, so it may take some additional modification to the wider PEON app stack, which is not desirable.*
 
 1. Use pre-existing generic PEON container image/s *if exists*
-2. Log a request for enhancement to improve the exisiting builds (if possible)
+2. Log a request for enhancement to improve the existing builds (if possible)
 3. Use an official game server container image *if exists*, but add the PEON tweaks to the build \*
-4. Alternatively Create a PEON compliant container
+4. Alternatively Create a PEON-compliant container
 
 ---
 
@@ -65,5 +65,5 @@ Here you can see what the future holds.
 
 #### 1.0.0
 
-- [x] CHANGED :tools: Reworked with `steamcmd` release to confirm to better deployment standard.
+- [x] CHANGED :tools: Reworked with `steamcmd` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit

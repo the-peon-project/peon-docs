@@ -6,8 +6,8 @@
 
 ### World Saves
 
-Your world saves will be stored to the path `./user` if you use the provided `docker-compose.yml`.
-This will allow you to download/backup/move files around at your leasure.
+Your world saves will be stored in the path `./user` if you use the provided `docker-compose.yml`.
+This will allow you to download/backup/move files around at your leisure.
 
 ## Manually Configuring Settings
 
@@ -33,7 +33,7 @@ How to deploy a server without the PEON project.
 mkdir status server_files
 chown -R 1000:1000 .
 ```
-5. Make sure that the `server_start` file has exceute permissions
+5. Make sure that the `server_start` file has execute permissions
 ```bash
 chmod u+x server_start
 ```

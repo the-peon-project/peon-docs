@@ -1,6 +1,6 @@
 # Web UI
 
-The Web UI module is a supplimental service to the PEON project.
+The Web UI module is a supplemental service to the PEON project.
 
 This is a user frontend (website) for managing PEON War Camps.
 
@@ -29,7 +29,7 @@ This is a user frontend (website) for managing PEON War Camps.
 
 > THIS IS PROBABLY GOING TO BE DEPRECATED FOR A PROPER WEB STACK
 
-WebUI (PeonUI) built into docker image using flask as a base.
+WebUI (PeonUI) is built into a docker image using Flask as a base.
 
 - Flask provided by [tiangolo/uvicorn-gunicorn-fastapi-docker](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker)
 - Bootstrap provided by [bootswatch/darkly](https://bootswatch.com/darkly/)
@@ -54,7 +54,7 @@ Links to various project-related resources.
 
 ### *0.2.x*
 
-- [ ] Recipes - Autodetect newly added recipies.
+- [ ] Recipes - Autodetect newly added recipes.
 - [ ] Persistent server data - Keep server data for updates & future releases.
 
 ### *0.1.x*
@@ -77,16 +77,16 @@ Links to various project-related resources.
 
 ### 0.1.4
 
-- [x] Dev Tools - Added dev tools to container
+- [x] Dev Tools - Added dev tools to the container
 - [x] MOTD - Added motd on login
 
 ### 0.1.3
 
-- [x] Base Image Update - Base images were repulled to get latest versions & app rebuilt on those
+- [x] Base Image Update - Base images were pulled to get the latest versions & app was rebuilt on those
 
 ### 0.1.2
 
-- [x] Cleaned up theme
+- [x] Cleaned up the theme
 
 ### 0.1.1
 

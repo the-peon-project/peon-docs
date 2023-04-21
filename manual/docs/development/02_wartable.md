@@ -8,7 +8,7 @@ This project handles the tools that are shared between game containers.
 
 [*Contained Steam*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd) (steamcmd) are scripts to automate/update `steamcmd` and the game server files (within a steamcmd based docker container), as part of the PEON automation services.
 
-[*Steamed Wine*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd-wine) (steamcmd+winhq) is a custom container to facilitate game servers that are only built for windows OS, within the PEON toolsuite.
+[*Steamed Wine*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd-wine) (steamcmd+winhq) is a custom container to facilitate game servers that are only built for Windows OS, within the PEON tool suite.
 
 ### Modes
 
@@ -23,9 +23,9 @@ Modes are just unique names that help the recipe inform the server which mechani
 
 ## Design Objectives
 
-1. Only scripts/code to be store here. Large file pulls should be done from other sources.
-2. Attempt to keep the code pool as generic as possible to maximize code re-use/supportability.
-3. If something already exists and is open source don't rewrite needlessly.
+1. Only scripts/code are to be stored here. Large file pulls should be done from other sources.
+2. Attempt to keep the code pool as generic as possible to maximize code reuse/supportability.
+3. If something already exists and is open source, do not rewrite it needlessly.
 
 ---
 
@@ -64,7 +64,7 @@ A PEON implementation of vanilla `SteamCMD`.
 **:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: reworked the entire deployment flow for better permissions and deeper PEON integration
-- [x] CHANGED :tools: PEON specific files now live in `/home/steam/peon` and do not need multiple volume mounts.
+- [x] CHANGED :tools: PEON-specific files now live in `/home/steam/peon` and do not need multiple volume mounts.
 - [x] ADDED :new: A container env var that links (if exists) the relevant save data to the `/home/steam/peon/download` directory.
 
 #### 1.0.6
@@ -74,7 +74,7 @@ A PEON implementation of vanilla `SteamCMD`.
 
 #### 1.0.5
 
-- [x] CHANGED :tools: Set default server save path to `/home/steam/data` to match most recipies.
+- [x] CHANGED :tools: Set default server save path to `/home/steam/data` to match most recipes.
 
 #### 1.0.3
 
@@ -83,7 +83,7 @@ A PEON implementation of vanilla `SteamCMD`.
 
 #### 1.0.2
 
-- [x] ADDED :new: Init scripts to ensure the server is updated to latest build on boot.
+- [x] ADDED :new: Init scripts to ensure the server is updated to the latest build on boot.
 
 #### 1.0.0
 
@@ -93,7 +93,7 @@ A PEON implementation of vanilla `SteamCMD`.
 
 ### Steamed Wine
 
-A PEON implementaion of vanilla `SteamCMD` with a `WINEHQ` implementation to support windows native servers.
+A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
 #### 1.0.1
 

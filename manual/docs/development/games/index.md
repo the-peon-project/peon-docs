@@ -2,21 +2,21 @@
 
 Here are the notes on the game server development.
 
-## Basic guidlines
+## Basic guidelines
 
 ### Standardization
 
-1. Default Builds: If possible, default to the  `umlatt/steamcmd`/`umlatt/steamcmd-wine` based container image/s that have been built with PEON in mind. This should reduce the need for custom work to the rest of the platform. *Even if that means opening up a ticket against the relevant project so that we can improve it accordingly.
+1. Default Builds: If possible, default to the  `umlatt/steamcmd`/`umlatt/steamcmd-wine` based container image/s that have been built with PEON in mind. This should reduce the need for custom work for the rest of the platform. *Even if that means opening up a ticket against the relevant project so that we can improve it accordingly.
 
 ### Directory Structure
 
 ```bash
 ./data/             # DIR: This is where the game server binaries/files are stored
 ./peon/             # DIR: This is for PEON status information files
-./upload/           # DIR: *This is a folder where custom settings files can be uploaded, so that they can be implemented.
+./upload/           # DIR: *This is a folder where custom settings files can be uploaded so that they can be implemented.
 ./user/             # DIR: *This should be mapped to any user data that needs to be retained (such as a 'world save')
 .env                # FILE: This is the main configuration mechanism. All customizations should be implemented here.
-docker-compose.yml  # FILE: This defines the game server build. No hard coding of settings to be done here (unless they are unchangeable)
+docker-compose.yml  # FILE: This defines the game server build. No hard coding of settings is to be done here (unless they are unchangeable)
 settings.json       # FILE: *This file will be the main mechanism the orchestrator will use to understand the mapping of the server to the host. (Such as custom/changeable files and so on) 
 sever_start         # FILE: This file defines which command and how to run it, in order for the unique server instance to start.
 ```
@@ -25,17 +25,17 @@ sever_start         # FILE: This file defines which command and how to run it, i
 
 ### Settings File
 
-:warning: The `settings.json` file is required for all recipies (when being used by PEON) as it provides the relevant directive to PEON, in order to handle the container appropriately.
+:warning: The `settings.json` file is required for all recipes (when being used by PEON) as it provides the relevant directive to PEON, to handle the container appropriately.
 
 #### metadata
 
-The information about the plan as well as indicating to PEON which deployment paradym must be followed
+The information about the plan as well as indicating to PEON which deployment paradigm must be followed
 
 | Key | Example | Description |
 | - | - | - |
 | `gid` | `csgo` | the **PEON** game id (this value is what PEON uses to manage the appropriate game resources) |
 | `version` | `1.0.1` | The current PEON build based on the release notes |
-| `mode` | `steamcmd` | Informs the Orchestrator which container and therefore paradym must be used to handle the resource. The only mode possiblities are defined by what is supported by PEON currently. [WarTable/Modes](http://docs.warcamp.org/development/02_wartable/#modes)|
+| `mode` | `steamcmd` | Informs the Orchestrator which container and therefore paradigm must be used to handle the resource. The only mode possibilities are defined by what is supported by PEON currently. [WarTable/Modes](http://docs.warcamp.org/development/02_wartable/#modes)|
 
 #### env_vars
 
@@ -55,7 +55,7 @@ Each environment variable is made up of three component settings.
 
 #### files
 
-These are for locating the game server's specific config files. This should allow fine grained controll over the server's functioning for more advanced users.
+These are for locating the game server's specific config files. This should allow fine-grained control over the server's functioning for more advanced users.
 
 The key, in files, is the filename, with the values containing file metadata.
 
@@ -63,7 +63,7 @@ The key, in files, is the filename, with the values containing file metadata.
 | - | - |
 | `path` |  This indicates the path, within the container, where the file should/does reside. |
 | `sample` |  This indicates that there is a default file in that location (which can then be retrieved for the user to configure) |
-| `default` | This indicates to PEON whether the server is running a user modified file or the default file. |
+| `default` | This indicates to PEON whether the server is running a user-modified file or the default file. |
 
 *If there are no special `config_files` to provide, you may leave this section out.*
 

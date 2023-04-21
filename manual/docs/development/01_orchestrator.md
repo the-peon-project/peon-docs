@@ -40,7 +40,7 @@ This API expects a JSON payload in most cases.
 url: {{peon_orchestrator_url}}:{{api_port}}/api/1.0/
     servers:
         - [GET] List all servers registered to Orchestrator
-        - [POST] Create a new game server on orchestrator
+        - [POST] Create a new game server on Orchestrator
         
     server/get/GAME_UID.SERVERNAME:
         - [GET] Get details of a game server
@@ -55,7 +55,7 @@ url: {{peon_orchestrator_url}}:{{api_port}}/api/1.0/
     server/description/GAME_UID.SERVERNAME:
         - [PUT] Update the description of a specific game server from the Orchestrator
     server/destroy/GAME_UID.SERVERNAME:
-        - [DEL] Removes a game container leaving server and config files intact (optional flag to delete all files as well)
+        - [DEL] Removes a game container leaving the server and config files intact (optional flag to delete all files as well)
         body: { "eradicate" : "True" } *Optional (destructive data removal)
     server/eradicate/GAME_UID.SERVERNAME:
         - [DEL] Deletes all game data & config files
@@ -157,16 +157,16 @@ Here are some planned features
 
 ### 0.3.2
 
-- [x] ADDED :new: Added `/app/bin` to path and added `peon` cli module into orc.
+- [x] ADDED :new: Added `/app/bin` to the path and added `peon` cli module into orc.
 - [x] CHANGE :tools: Make API key configurable
 
 ### 0.3.1
 
-- [x] CHANGE :tools: Rework Orcestrator app to leverage the `docker.sock`
+- [x] CHANGE :tools: Rework Orchestrator app to leverage the `docker.sock`
 - [x] CHANGE :tools: Moving to init script `init/peon.orc`, for pre-flight checks.
 - [x] REMOVED :scissors: Removed SSH check on boot from `python3 main.py`
 - [x] ADDED :new: Configurable docker socket path.
-- [x] ADDED :new: Added `VERSION` environment variable into container.
+- [x] ADDED :new: Added `VERSION` environment variable into the container.
 
 ### 0.3.0
 
@@ -179,7 +179,7 @@ Here are some planned features
 
 ### 0.2.16
 
-- [x] BUGFIX :beetle: Server create returned false error due to change error dict hanlder
+- [x] BUGFIX :beetle: Server create returned false error due to change error dict handler
 
 ### 0.2.15
 
@@ -211,7 +211,7 @@ Here are some planned features
 
 ### 0.2.8
 
-- [x] CHANGE :tools:  Base images were repulled to get latest versions & app rebuilt on those
+- [x] CHANGE :tools:  Base images were pulled to get the latest versions & app was rebuilt on those
 - [x] BUGFIX :beetle: Incorrect parameter reference in server create
 
 ### 0.2.7
@@ -225,7 +225,7 @@ Here are some planned features
 
 ### 0.2.5
 
-- [x] ADDED :new: API - Server - Reworked to include actions into path
+- [x] ADDED :new: API - Server - Reworked to include actions into the path
 - [x] ADDED :new: API - Server - Added get with metrics
 
 ### 0.2.4
@@ -234,7 +234,7 @@ Here are some planned features
 
 ### 0.2.3
 
-- [x] ADDED :new: API - Auto download latest plan version when server is deployed
+- [x] ADDED :new: API - Auto download latest plan version when the server is deployed
 
 ### 0.2.2
 
@@ -247,15 +247,15 @@ Here are some planned features
 ### 0.2.0
 
 - [x] ADDED :new: Added custom config handler
-- [x] CHANGE :tools: Allows configuration of environment variables in container (via API)
+- [x] CHANGE :tools: Allows configuration of environment variables in the container (via API)
 - [x] ADDED :new: Can supply json/txt files via API
 - [x] ADDED :new: Added persistent description
 
 ### 0.1.6
 
 - [x] ADDED :new: Added handler for `config` folder
-- [x] ADDED :new: Moved game server logs into game server directory
+- [x] ADDED :new: Moved game server logs into the game server directory
 
 ### 0.1.5
 
-- [x] INITIALISED :airplane:  First iteration of server create (API)
+- [x] INITIALISED :airplane: The first iteration of server create (API)
