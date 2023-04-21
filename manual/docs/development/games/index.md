@@ -31,9 +31,11 @@ sever_start         # FILE: This file defines which command and how to run it, i
 
 The information about the plan as well as indicating to PEON which deployment paradym must be followed
 
-- **gid** - the PEON game id
-- **version** - the current release based on the flag in release notes
-- **mode** - defines which deployment paradym to use for the container
+| Key | Example | Description |
+| - | - | - |
+| `gid` | `csgo` | the **PEON** game id (this value is what PEON uses to manage the appropriate game resources) |
+| `version` | `1.0.1` | The current PEON build based on the release notes |
+| `mode` | `steamcmd` | Informs the Orchestrator which container and therefore paradym must be used to handle the resource. The only mode possiblities are defined by what is supported by PEON currently. [WarTable/Modes](http://docs.warcamp.org/development/02_wartable/#modes)|
 
 #### env_vars
 
@@ -43,9 +45,11 @@ The environment variable name is provided as a key, with its value being a colle
 
 Each environment variable is made up of three component settings.
 
-- **default** - This is the default setting, as defined by the plan (and will not be changed)
-- **value** - This is the new setting (it will override what is in default within the container)
-- **optional** - This indicates whether or not this value must be provided.
+| Key |  Description |
+| - | - |
+| `default` |  This is the default setting, as defined by the plan (and will not be changed) |
+| `value` |  This is the new setting (it will override what is in default within the container)s |
+| `optional` | This indicates whether or not this value is required by the plan. |
 
 *If there are no special `env_vars` to provide, you may leave this section out.*
 
@@ -55,9 +59,11 @@ These are for locating the game server's specific config files. This should allo
 
 The key, in files, is the filename, with the values containing file metadata.
 
-- **path** - this indicates the path, within the container, where the file should/does reside.
-- **sample** - this indicates that there is a default file in that location (which can then be retrieved for the user to configure)
-- **default** - this indicates to PEON whether the server is running a user modified file.
+| Key |  Description |
+| - | - |
+| `path` |  This indicates the path, within the container, where the file should/does reside. |
+| `sample` |  This indicates that there is a default file in that location (which can then be retrieved for the user to configure) |
+| `default` | This indicates to PEON whether the server is running a user modified file or the default file. |
 
 *If there are no special `config_files` to provide, you may leave this section out.*
 

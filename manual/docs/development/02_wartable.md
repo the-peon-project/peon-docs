@@ -10,6 +10,15 @@ This project handles the tools that are shared between game containers.
 
 [*Steamed Wine*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd-wine) (steamcmd+winhq) is a custom container to facilitate game servers that are only built for windows OS, within the PEON toolsuite.
 
+### Modes
+
+Modes are just unique names that help the recipe inform the server which mechanism must be followed with the automation of services. *Hopefully this will stay a short list*
+
+| Mode | Release Notes | Container Tag |
+| - | - | - |
+| `steamcmd` | [Contained Steam](http://docs.warcamp.org/development/02_wartable/#contained-steam) | [umlatt/steamcmd](https://hub.docker.com/r/umlatt/steamcmd) |
+| `steamwine` | [Steamed Wine](http://docs.warcamp.org/development/02_wartable/#steamed-wine) | [umlatt/steamcmd-winehq](https://hub.docker.com/r/umlatt/steamcmd-winehq) |
+
 ---
 
 ## Design Objectives
@@ -48,7 +57,7 @@ Here you can see what the future holds.
 
 ### Contained Steam
 
-**SteamCMD**
+A PEON implementation of vanilla `SteamCMD`.
 
 #### 1.1.0
 
@@ -84,7 +93,7 @@ Here you can see what the future holds.
 
 ### Steamed Wine
 
-**SteamCMD+WINEHQ**
+A PEON implementaion of vanilla `SteamCMD` with a `WINEHQ` implementation to support windows native servers.
 
 #### 1.0.1
 
