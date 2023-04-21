@@ -11,14 +11,14 @@ Here are the notes on the game server development.
 ### Directory Structure
 
 ```bash
-./server_files/     # DIR: This is where the downloaded game server files are stored
-./status/           # DIR: This is for PEON status information files
+./data/             # DIR: This is where the game server binaries/files are stored
+./peon/             # DIR: This is for PEON status information files
 ./upload/           # DIR: *This is a folder where custom settings files can be uploaded, so that they can be implemented.
-./download/         # DIR: *This should be mapped to any user data that needs to be retained (such as a 'world save')
+./user/             # DIR: *This should be mapped to any user data that needs to be retained (such as a 'world save')
 .env                # FILE: This is the main configuration mechanism. All customizations should be implemented here.
-docker-compose.yml  # FILE: This defines the game server build. No hard coding of settings to be done here
-settings.json       # FILE: *This is file for helping to map files from './upload/ to thier correct places. (Essentially, this is how we facilitate the uploading of config files.) 
-sever_start         # FILE: This file defines what command and how to run it, in order for the unique server instance to start.
+docker-compose.yml  # FILE: This defines the game server build. No hard coding of settings to be done here (unless they are unchangeable)
+settings.json       # FILE: *This file will be the main mechanism the orchestrator will use to understand the mapping of the server to the host. (Such as custom/changeable files and so on) 
+sever_start         # FILE: This file defines which command and how to run it, in order for the unique server instance to start.
 ```
 
 *\*These are not always used.*
