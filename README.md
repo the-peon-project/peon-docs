@@ -1,9 +1,15 @@
-# PEON Documentation
+# The *PEON* project (FOSS)
 
-Welcome to the PEON documentation repo.
+[![PEON](https://github.com/the-peon-project/.github/blob/main/media/images/peon-logo.png)](http://www.warcamp.org)
 
-![PEON Project](./manual/docs/images/logo/PEON_small_square.png)
+Welcome to the PEON project.
 
-You are welcome to view the docs in Github, but the are written to work with `mkdocs-material`
+The easy to use GSaaS (Game Server as a Service) platform.
 
-The docs can be self hosted, or you can come to the [official](http://peon.noxnoctua.com) site to view them.
+*Whether self hosted or in the cloud, PEON aims to be efficient in resource consumption with modern tools for management of **ANY** self-hostable game server.*
+
+> Click the PEON for all of our docs & development details.
+
+## PEON - Docs
+
+This is where we document the development, usage and pretty much everything else about the PEON project. For details on this projects development, please click [here](http://docs.warcamp.org)
