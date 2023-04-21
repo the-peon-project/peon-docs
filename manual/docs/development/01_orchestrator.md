@@ -23,17 +23,6 @@ It is what manages the process of game server deployment for users.
 
 ---
 
-## Navigation
-
-Links to various project-related resources.
-
-[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-orc)
-[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-orc/issues/new/choose)
-[![github](../../images/buttons/button_changelog.svg)](../release_notes/01_orchestrator.md)
-[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.orc/general)
-
----
-
 ### API
 
 RESTful API
@@ -71,17 +60,13 @@ url: {{peon_orchestrator_url}}:{{api_port}}/api/1.0/
     server/eradicate/GAME_UID.SERVERNAME:
         - [DEL] Deletes all game data & config files
         body: { "eradicate" : "True" } *Required
-
-    plans:
-        - [GET] List all plans on orchestrator
-        - [PUT] Get latest plans list from PEON project
 ```
 
-#### API Examples
+#### Examples
 
 ##### Create server
 
-###### Example [Valhiem Server]
+###### e.g. Valhiem Server
 
 URL [REST] - ``POST``
 
@@ -153,3 +138,14 @@ Here are some planned features
 
 - [x] RESTapi (v1)
 - [x] Server deployment (v1)
+
+---
+
+## Navigation
+
+Links to various project-related resources.
+
+[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-orc)
+[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-orc/issues/new/choose)
+[![github](../../images/buttons/button_changelog.svg)](../release_notes/01_orchestrator.md)
+[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.orc/general)
