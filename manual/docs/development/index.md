@@ -54,4 +54,4 @@ If you need find find a logo/symbol that exists in the `mkdocs-material` platfor
 
 [Project Link](https://diagrams.mingrammer.com/docs/getting-started/examples)
 
-We are using the *diagrams* module for python. It offers the ability to dynamically generate dyagrams programmatically. *There is a built in (Material for MkDocs) programmatic diagram software, however initial investigations did not appear to provide as aesthetic a design as Python Diagrams*
+We are using the *diagrams* module for python. It offers the ability to dynamically generate diagrams programmatically. *There is a built in (Material for MkDocs) programmatic diagram software, however initial investigations did not appear to provide as aesthetic a design as Python Diagrams*
