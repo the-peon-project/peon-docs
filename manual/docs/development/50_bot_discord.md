@@ -30,6 +30,19 @@ This is a Discord bot to manage orchestrators.
 
 [interactions.py](https://discord-interactions.readthedocs.io/en/latest/quickstart.html)
 
+---
+
+## Navigation
+
+Links to various project-related resources.
+
+[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-bot-discord)
+[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-bot-discord/issues/new/choose)
+[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/50_bot_discord.md)
+[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.bot.discord/general)
+
+---
+
 ## Roadmap
 
 ### *0.2.x*
@@ -42,11 +55,48 @@ This is a Discord bot to manage orchestrators.
 
 ---
 
-## Navigation
+## Release Notes
 
-Links to various project-related resources.
+### 0.2.8
 
-[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-bot-discord)
-[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-bot-discord/issues/new/choose)
-[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/50_bot_discord.md)
-[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.bot.discord/general)
+- Messaging - Reworked error messages
+- Bot - BugFix: Scheduling past event times.
+
+### 0.2.7
+
+- Bot - Added shutdown scheduler
+
+### 0.2.6
+
+- Bot - Better natural language support
+
+### 0.2.5
+
+- Bot - Added aliases for commands
+
+### 0.2.2
+
+- Text - Reformatted info in message feed
+- Server_Config - Allowed for json formated content
+
+### 0.2.1
+
+- Discord - Added message cleaner ``clear [int]``
+
+### 0.2.0
+
+- Orc - control start/stop/restart
+
+### 0.1.1
+
+- Logging - Added devMode switch
+
+### 0.1.0
+
+- First version of bot
+- Basic get all/get functionality
+- Harcoded bot key
+
+### 0.0.0
+
+- Initial commit

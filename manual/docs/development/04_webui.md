@@ -39,6 +39,17 @@ WebUI (PeonUI) built into docker image using flask as a base.
 
 ---
 
+## Navigation
+
+Links to various project-related resources.
+
+[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-webui)
+[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-webui/issues/new/choose)
+[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/04_webui.md)
+[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.webui/general)
+
+---
+
 ## Roadmap
 
 ### *0.2.x*
@@ -54,11 +65,29 @@ WebUI (PeonUI) built into docker image using flask as a base.
 
 ---
 
-## Navigation
+## Release Notes
 
-Links to various project-related resources.
+### 0.1.6-dev
 
-[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-webui)
-[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-webui/issues/new/choose)
-[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/04_webui.md)
-[![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.webui/general)
+- [x] Favicon
+
+### 0.1.5-dev
+
+- [x] Logging - Added devMode switch
+
+### 0.1.4-dev
+
+- [x] Dev Tools - Added dev tools to container
+- [x] MOTD - Added motd on login
+
+### 0.1.3-dev
+
+- [x] Base Image Update - Base images were repulled to get latest versions & app rebuilt on those
+
+### 0.1.2-dev
+
+- [x] Cleaned up theme
+
+### 0.1.1-dev
+
+- [x] Initial implementation of flask-python framework

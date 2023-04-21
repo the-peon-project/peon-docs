@@ -5,6 +5,8 @@ Welcome to the **DEVELOPMENT** documentation.
 Here you can get an overview of how the PEON project is architected, where to go and how to use all of the various tools and code that has been built thus far.
 *Please note that documentation may lag behind the development status, but the general rules/intent should still be valid.*
 
+---
+
 ## Architecture
 
 This diagram shows off the basic architecture of the PEON project.
@@ -17,7 +19,11 @@ This diagram shows off the basic architecture of the PEON project.
 - <font color="red">DOCKER SOCKET</font> - The orchestrator manages the underlying docker host using docer sockets (at the moment), which is represented with red connection/s.
 - \*Optional Feature - These are not *required* in order to leverage the automation services of the PEON project.
 
-## Terms & Symbols
+---
+
+## Reference
+
+Below tries to define/exaplain the use of terms and symbols throughout the project.
 
 ### Terms & Acronyms
 
@@ -29,6 +35,25 @@ This diagram shows off the basic architecture of the PEON project.
 | WebUI | A website client built for the sole purpose of managing instances of *Orc*s |
 | War Camp | A name for a container host that is running an *Orc* |
 | War Chief | A name for a module that manages multiple *War Camps* |
+
+### Symbols
+
+Below are the symbols that are typically found throughout the various changelogs/release notes and thier meanings.
+
+| Key | Symbol | Description |
+|-|-|-|
+| RELEASE | :zap: `:zap:` | When a release contains changes that impact multiple codebases in the project. :zap: **IMPACT RELEASE** :zap:|
+| INITIALISED | :airplane: `:airplane:` | When the project is initialised/added to the repoisotory |
+| ADDED | :new: `:new:` | When a feature/new tool/ service has been added to the codebase |
+| CHANGED | :tools: `:tools:` | When a modification to the exisiting codebase/architecture has been carried out |
+| OPTIMISED | :alarm_clock: `:alarm_clock:` | When a portion of the codebase has been improved visually or with regards to performance |
+| REMOVED | :scissors: `:scissors:` | When something is removed/cut from the codebase |
+| BUGFIX | :beetle: `:beetle:` | When a bug has been identified and resolved |
+| LOGGING| :speech_balloon: `:speech_balloon:` | When logging is added/enhanced/improved |
+| TESTED | :pencil: `:pencil:` | When a test task is planned & executed |
+| SECURITY | :unlock: `:unlock:` | When some security modifications have been added |
+
+---
 
 ## Tools & Technologies
 
