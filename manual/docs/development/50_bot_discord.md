@@ -48,5 +48,5 @@ Links to various project-related resources.
 
 [![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-bot-discord)
 [![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-bot-discord/issues/new/choose)
-[![github](../../images/buttons/button_changelog.svg)](../release_notes/50_bot_discord.md)
+[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/50_bot_discord.md)
 [![github](../../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.bot.discord/general)
