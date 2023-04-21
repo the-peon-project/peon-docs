@@ -100,7 +100,6 @@ Payload [BODY] - ``JSON``
 }
 ```
 
-
 ## Dev Notes
 
 [HTML Response Codes](https://www.restapitutorial.com/httpstatuscodes.html)
