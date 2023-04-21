@@ -28,9 +28,9 @@ How to deploy a server without the PEON project.
 1. Go to the [gihub project](https://github.com/the-peon-project/peon-warplans/tree/main/valhiem)
 2. Download the files `docker-compose.yml`, `.env.example` & `server_start` from the project repo.
 3. Put the files into a folder together.
-4. Make the folders `status` and `server_files` and set all file permissions to that of your container user id (1000)
+4. Make the folders `data`,`peon` and `user` and set all file permissions to that of your container user id (1000)
 ```bash
-mkdir status server_files
+mkdir data peon user
 chown -R 1000:1000 .
 ```
 5. Make sure that the `server_start` file has execute permissions

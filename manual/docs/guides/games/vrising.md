@@ -1,20 +1,19 @@
-# Counter Strike: Global Offensive
+# V Rising
 
-![CS:GO](../../images/game-logos/csgo.png)
+![V Rising](../../images/game-logos/vrising.png)
 
 ## Before you start
 
-### Game Server Login Token
+### World Saves
 
-If you wish to run this server outside of your private network (required by Steam for any servers running outside of your home LAN), you will need to get a game server login token.
-
-[Registering Game Server Login Token](./index.md#login-tokenappidgslt)
+Your world saves will be stored in the path `./user` if you use the provided `docker-compose.yml`.
+This will allow you to download/backup/move files around at your leisure.
 
 ## Manually Configuring Settings
 
 You can go to the official docs to see what you can change. Just replace the config files with what you want and restart the server.
 
-[Offical Guide](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive/Dedicated_Servers#Advanced_Configuration)
+[Offical Guide](https://github.com/StunlockStudios/vrising-dedicated-server-instructions)
 
 All of these files can be found and edited in the server's local storage path.
 
@@ -26,7 +25,7 @@ How to deploy a server without the PEON project.
 
 *This is built around container tech, so you will need something like Docker installed.*
 
-1. Go to the [gihub project](https://github.com/the-peon-project/peon-warplans/tree/main/csgo)
+1. Go to the [gihub project](https://github.com/the-peon-project/peon-warplans/tree/main/vrising)
 2. Download the files `docker-compose.yml`, `.env.example` & `server_start` from the project repo.
 3. Put the files into a folder together.
 4. Make the folders `data`,`peon` and `user` and set all file permissions to that of your container user id (1000)
@@ -53,5 +52,5 @@ docker-compose up -d
 
 If you want to dig a bit deeper, here are the links
 
-- [Development Docs](../../development/games/csgo.md)
-- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/csgo)
+- [Development Docs](../../development/games/vrising.md)
+- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/vrising)
