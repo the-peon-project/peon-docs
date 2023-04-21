@@ -1,4 +1,4 @@
-# Games
+# Supported Games
 
 These are the games and thier support states.
 
