@@ -39,6 +39,7 @@ This is a Discord bot to manage orchestrators.
 ### *0.1.x*
 
 - [x] peon.orc servers can be managed by bot
+
 ---
 
 ## Navigation
