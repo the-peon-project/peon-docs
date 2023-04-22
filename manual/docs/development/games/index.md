@@ -2,11 +2,29 @@
 
 Here are the notes on the game server development.
 
-## Basic guidelines
+## Resources
+
+### Dedicated Server Possibilities
+
+#### Steam
+
+An active development list can be found [here](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List)
+
+## Development Guidelines
 
 ### Standardization
 
-1. Default Builds: If possible, default to the  `umlatt/steamcmd`/`umlatt/steamcmd-wine` based container image/s that have been built with PEON in mind. This should reduce the need for custom work for the rest of the platform. *Even if that means opening up a ticket against the relevant project so that we can improve it accordingly.
+The aim is to figure out how to standardize the deployment of servers such that creating and deploying new servers is as simple as possible.
+
+#### Hierarchy of importance
+
+When a technical decision needs to be made, the below list indicates how the outcome should be decided best. *For example_, if a particular architecture is easy_ to implement, but at the cost of user functionality, then try to identify a better solution.*
+
+- User simplicity: The overriding deciding factor will always be, what would make the experience better for the user.
+- Developer Simplicity: The second highest priority is making extending the platform's functionality should be paramount to the design decision.
+- Default Builds: If possible, default to the `umlatt/steamcmd`/`umlatt/steamcmd-wine`-based container image/s that have been built with PEON in mind. This should reduce the need for custom work for the rest of the platform. *Even if that means opening up a ticket against the relevant project so that we can improve it accordingly.
+
+> *Don't be afraid to discard excellent code, just because its excellent. Good code can always find another home. A poor use of good code is a poor use of time.*
 
 ### Directory Structure
 
