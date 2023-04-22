@@ -74,7 +74,6 @@ Here you can see what the future holds.
 - [x] CHANGED :tools: Reworked with `steamcmd` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit
 
-
 ### V Rising
 
 #### 1.0.0
