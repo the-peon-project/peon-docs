@@ -22,7 +22,7 @@ For the list of supported games please go [here](../games.md)
 1. Use pre-existing generic PEON container image/s *if exists*
 2. Log a request for enhancement to improve the existing builds (if possible)
 3. Use an official game server container image *if exists*, but add the PEON tweaks to the build \*
-4. Alternatively Create a PEON-compliant container
+4. Alternatively, create a PEON-compliant container
 
 ---
 
@@ -48,11 +48,17 @@ Links to various project-related resources.
 
 Here you can see what the future holds.
 
+### Starbound
+
+[Steam Store](https://store.steampowered.com/app/211820/Starbound/)
+
+[How to](https://starbounder.org/Guide:Setting_Up_Multiplayer) stand up a dedicated server guide.
+
 ---
 
 ## Release Notes
 
-### Counter Strike :  Global Offensive
+### Counter Strike:  Global Offensive
 
 - [ ] ADDED :new: Advanced server customization enabled (get/put config files in place)
 
