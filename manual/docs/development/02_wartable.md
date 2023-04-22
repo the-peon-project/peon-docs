@@ -6,13 +6,13 @@ This project handles the tools that are shared between game containers.
 
 ## Projects
 
-[*Contained Steam*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd) (steamcmd) are scripts to automate/update `steamcmd` and the game server files (within a steamcmd based docker container), as part of the PEON automation services.
+[*Contained Steam*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd) (steamcmd) are scripts to automate/update `steamcmd` and the game server files (within a `steamcmd`-based docker container), as part of the PEON automation services.
 
 [*Steamed Wine*](https://github.com/the-peon-project/peon-wartable/tree/master/containers/steamcmd-wine) (steamcmd+winhq) is a custom container to facilitate game servers that are only built for Windows OS, within the PEON tool suite.
 
 ### Modes
 
-Modes are just unique names that help the recipe inform the server which mechanism must be followed with the automation of services. *Hopefully this will stay a short list*
+Modes are just unique names that help the recipe inform the server which mechanism must be followed with the automation of services. *Hopefully, this will stay a short-list*
 
 | Mode | Release Notes | Container Tag |
 | - | - | - |
@@ -59,6 +59,11 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.1.1
+
+- [x] LOGGING :speech_balloon: changed the step header prefix to `[o]`
+- [x] BUGFIX :beetle: fixed a permissions issue on boot.
+
 #### 1.1.0
 
 **:zap: IMPACT RELEASE :zap:**
@@ -94,6 +99,11 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+#### 1.1.1
+
+- [x] LOGGING :speech_balloon: changed the step header prefix to `[o]`
+- [x] BUGFIX :beetle: fixed a permissions issue on boot.
 
 #### 1.1.0
 
