@@ -41,9 +41,9 @@ Modes are just unique names that help the recipe inform the server which mechani
 
 Links to various project-related resources.
 
-[![github](../../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-wartable)
-[![github](../../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-wartable/issues/new/choose)
-[![github](../../images/buttons/button_changelog.svg)](../development/release_notes/02_wartable.md)
+[![github](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-wartable)
+[![github](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-wartable/issues/new/choose)
+[![github](../images/buttons/button_changelog.svg)](../development/02_wartable.md#release-notes)
 
 ---
 
