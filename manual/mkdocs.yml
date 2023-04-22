@@ -38,7 +38,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/the-peon-project
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/repository/docker/umlatt/peon.orc/general
+      link: https://hub.docker.com/u/umlatt
 
 markdown_extensions:
   - pymdownx.highlight:
