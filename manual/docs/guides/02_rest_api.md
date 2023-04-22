@@ -16,7 +16,7 @@ We are using a RESTful API as it is quite easy and there are plenty of guides on
 
 We plan on supporting more and more authorization methods. Currently, the below list is what is supported.
 
-#### 1. API-KEY
+#### API-KEY
 
 The defaults are as below. Please change these in the `.env` file for the orchestrator. *The implementation to change the setting via API is on the roadmap.*
 
@@ -90,6 +90,16 @@ The structure of the payload for the `server` endpoint is as follows:
     ]
 }
 ```
+
+The payload contents can be broadly explained below.
+
+Settings
+
+| key | value example | purpose |
+| - | - | - |
+| type | `env` | Defines a random list of container environement variables |
+| name | `container environment` | *I can't remeber why I put that there (TODO)* |
+| content | *list of key-value pairs* | An undefined quantity of settings (defined by the each game recipe), to configure the server instance. |
 
 ###### Example
 
