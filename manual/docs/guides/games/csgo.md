@@ -22,30 +22,7 @@ All of these files can be found and edited in the server's local storage path.
 
 ## Stand-alone mode
 
-How to deploy a server without the PEON project.
-
-*This is built around container tech, so you will need something like Docker installed.*
-
-1. Go to the [gihub project](https://github.com/the-peon-project/peon-warplans/tree/main/csgo)
-2. Download the files `docker-compose.yml`, `.env.example` & `server_start` from the project repo.
-3. Put the files into a folder together.
-4. Make the folders `data`,`peon` and `user` and set all file permissions to that of your container user id (1000)
-```bash
-mkdir data peon user
-chown -R 1000:1000 .
-```
-5. Make sure that the `server_start` file has execute permissions
-```bash
-chmod u+x server_start
-```
-6. Copy `.env.example` to `.env` and edit the contents where necessary (e.g. updating the GSLT)
-7. Start the server and play.
-```bash
-# newer systems
-docker compose up -d
-# older systems
-docker-compose up -d 
-```
+[Guide on Github](https://github.com/the-peon-project/peon-warplans/tree/main/csgo#Guide)
 
 > Or... just use PEON. it should do all the heavy lifting for you.
 
