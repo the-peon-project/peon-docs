@@ -48,6 +48,12 @@ Links to various project-related resources.
 
 Here you can see what the future holds.
 
+### Assetto Corsa Competizione
+
+[Steam Store](https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/)
+
+[How to](https://steamdb.info/app/1430110/)
+
 ### Starbound
 
 [Steam Store](https://store.steampowered.com/app/211820/Starbound/)
