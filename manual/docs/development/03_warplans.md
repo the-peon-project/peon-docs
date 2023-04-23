@@ -52,7 +52,9 @@ Here you can see what the future holds.
 
 [Steam Store](https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/)
 
-[How to](https://steamdb.info/app/1430110/)
+[Server docs](https://steamdb.info/app/1430110/)
+
+[How to](https://www.acc-wiki.info/wiki/Server_Configuration) stand up a dedicated server (unofficial)
 
 ### Starbound
 
