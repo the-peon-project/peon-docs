@@ -61,6 +61,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.1.3
+
+- [x] CHANGED :tools: Changed environment variable `STEAMID` to `STEAM_ID` to match builder.
+
 #### 1.1.2
 
 - [x] ADDED :new: Set server state to `OFFLINE` on shutdown (SIGTERM sent to PID 1)
@@ -106,6 +110,10 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+#### 1.1.3
+
+- [x] CHANGED :tools: Changed environment variable `STEAMID` to `STEAM_ID` to match builder.
 
 #### 1.1.2
 
