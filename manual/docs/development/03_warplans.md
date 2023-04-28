@@ -75,7 +75,7 @@ Here you can see what the future holds.
 - [x] ADDED :new: Basic server customization enabled (environment variables)
 - [x] INITIALISED :airplane: Initial commit
 
-### Valhiem
+### Valheim
 
 #### 1.0.0
 

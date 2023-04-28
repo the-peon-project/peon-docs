@@ -7,5 +7,5 @@ This list will grow over time (as requests come in or other people contribute re
 - [ ] [Assetto Corsa Competizione](http://docs.warcamp.org/development/03_warplans/#assetto-corsa-competizione)
 - [x] [CSGO](./guides/games/csgo.md)
 - [ ] [Starbound](http://docs.warcamp.org/development/03_warplans/#starbound)
-- [x] [Valhiem](./guides/games/valhiem.md)
+- [x] [Valheim](./guides/games/valheim.md)
 - [x] [VRising](./guides/games/vrising.md)

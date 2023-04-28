@@ -496,7 +496,7 @@
                 "game_uid": {
                     "type": "string",
                     "format": "string",
-                    "example": "valhiem"
+                    "example": "valheim"
                 },
                 "servername": {
                     "type": "string",
@@ -506,7 +506,7 @@
                 "description": {
                     "type": "string",
                     "format": "string",
-                    "example": "My PEON Valhiem server"
+                    "example": "My PEON Valheim server"
                 },
                 "settings": {
                     "type": "array",
@@ -557,13 +557,13 @@
             }
         },
         "servers.settings.environment-variables.content": {
-            "description": "DIFFERENT FOR EACH GAME.\n E.g: Valhiem specific server settings (found in game plan).",
+            "description": "DIFFERENT FOR EACH GAME.\n E.g: Valheim specific server settings (found in game plan).",
             "type": "object",
             "properties": {
                 "SERVERNAME": {
                     "type": "string",
                     "format": "string",
-                    "example": "My-Awesome-Valhiem-Server"
+                    "example": "My-Awesome-Valheim-Server"
                 },
                 "WORLDNAME": {
                     "type": "string",

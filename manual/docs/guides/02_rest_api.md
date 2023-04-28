@@ -103,7 +103,7 @@ Settings
 
 ###### Example
 
-Creating a `Valhiem` server
+Creating a `Valheim` server
 
 URL
 
@@ -123,14 +123,14 @@ Only `JSON` payloads are currently supported.
 
 ```json
 {
-    "game_uid": "valhiem",
+    "game_uid": "valheim",
     "servername": "server01",
-    "description": "A valhiem PEON server",
+    "description": "A valheim PEON server",
     "settings": [{
             "type": "env",
             "name": "container environment",
             "content": {
-                "SERVERNAME": "My-Valhiem-Server",
+                "SERVERNAME": "My-Valheim-Server",
                 "WORLDNAME": "awesomeworld",
                 "PASSWORD": "password123"
             }

@@ -1,8 +1,8 @@
-# Valhiem
+# Valheim
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Valhiem](../../images/game-logos/valhiem.png)
+![Valheim](../../images/game-logos/valheim.png)
 
 ## Official Documentation
 
@@ -10,4 +10,4 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ## Code Repo
 
-- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/valhiem)
+- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/valheim)
