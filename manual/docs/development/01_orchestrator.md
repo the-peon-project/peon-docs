@@ -78,6 +78,7 @@ Here are some planned features
 
 - [ ] ADDED :new: warcamp - cleanup
 - [ ] ADDED :new: get_warcamp - check container state and update state accordingly.
+- [ ] CHANGE :tools: `CURRENT_TASK` API - Deploy server from API call. (Untested `server create` funtion)
 - [x] ADDED :new: API - Plan - Get required settings
 - [x] CHANGE :tools: Change to svn download for directory (plans)
 - [x] CHANGE :tools: Moved to `docker compose` based model for better re-usibility/clarity.
