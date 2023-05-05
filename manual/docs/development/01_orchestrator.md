@@ -83,6 +83,7 @@ Here are some planned features
 - [x] CHANGE :tools: Change to svn download for directory (plans)
 - [x] CHANGE :tools: Moved to `docker compose` based model for better re-usibility/clarity.
 - [x] CHANGE :tools: API - Removed servers/server marshall flow for more versitile response handling
+- [x] BUGFIX :beetle: API - Plans - Fixed the get and update from server plans
 
 ### 0.3.2
 
