@@ -76,8 +76,6 @@ Here are some planned features
 
 ## Release Notes
 
-### 1.0.0
-
 - [ ] ADDED :new: warcamp - cleanup
 - [ ] ADDED :new: get_warcamp - check container state and update state accordingly.
 - [x] ADDED :new: API - Plan - Get required settings
