@@ -82,6 +82,7 @@ Here are some planned features
 - [ ] ADDED :new: get_warcamp - check container state and update state accordingly.
 - [x] CHANGE :tools: Change to svn download for directory (plans)
 - [x] CHANGE :tools: Moved to `docker compose` based model for better re-usibility/clarity.
+- [x] CHANGE :tools: API - Removed servers/server marshall flow for more versitile response handling
 
 ### 0.3.2
 
