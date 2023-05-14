@@ -51,6 +51,8 @@ Links to various project-related resources.
 
 Here you can see what the future holds.
 
+- [ ] ADDED :new: `steamcmd` non-anonymous user login with steamapp authenticator flow
+
 ---
 
 ## Release Notes
