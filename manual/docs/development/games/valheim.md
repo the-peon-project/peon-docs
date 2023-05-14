@@ -11,3 +11,12 @@ The PEON war plan that Peon uses to deploy your game server.
 ## Code Repo
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/valheim)
+
+### Roadmap
+
+### Release Notes
+
+#### 1.0.0
+
+- [x] CHANGED :tools: Reworked with `steamcmd` release to confirm better deployment standard.
+- [x] INITIALISED :airplane: Initial commit 

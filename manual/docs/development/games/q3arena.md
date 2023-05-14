@@ -1,8 +1,8 @@
-# V Rising
+# Quake 3 Arena
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![V Rising](../../images/game-logos/vrising.png)
+![Quake 3 Arena](../../images/game-logos/q3arena.png)
 
 ## Official Documentation
 
@@ -14,9 +14,9 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ## Roadmap
 
+- [ ] CHANGED :tools: Updated source image for PEON.
+
 ## Release Notes
 
-### 1.0.0
-
-- [x] CHANGED :tools: Reworked with `steamcmd-winehq` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit
+ 

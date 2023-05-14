@@ -11,3 +11,13 @@ The PEON war plan that Peon uses to deploy your game server.
 ## Code Repo
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/satisfactory)
+
+## Roadmap
+
+- [ ] ADDED :new: Epic games integration
+
+## Release Notes
+
+### 1.0.0
+
+- [x] INITIALISED :airplane: Initial commit
