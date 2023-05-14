@@ -62,11 +62,15 @@ Here you can see what the future holds.
 
 [How to](https://starbounder.org/Guide:Setting_Up_Multiplayer) stand up a dedicated server guide.
 
+#### BLOCKED 
+:no_entry_sign: Requires `steamcmd` user login, and steamcmd does not yet support full app authentication flow
+
 ---
 
 ## Release Notes
 
 ### Counter Strike:  Global Offensive
+
 
 - [ ] ADDED :new: Advanced server customization enabled (get/put config files in place)
 
@@ -75,12 +79,16 @@ Here you can see what the future holds.
 - [x] ADDED :new: Basic server customization enabled (environment variables)
 - [x] INITIALISED :airplane: Initial commit
 
+---
+
 ### Valheim
 
 #### 1.0.0
 
 - [x] CHANGED :tools: Reworked with `steamcmd` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit
+
+---
 
 ### V Rising
 
@@ -89,7 +97,19 @@ Here you can see what the future holds.
 - [x] CHANGED :tools: Reworked with `steamcmd-winehq` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit
 
+---
+
 ### Satisfactory
+
+- [ ] ADDED :new: Epic games integration
+
+#### 1.0.0
 
 - [x] INITIALISED :airplane: Initial commit
 
+---
+
+### Quake 3 Arena
+
+- [ ] CHANGED :tools: Updated source image for PEON.
+- [x] INITIALISED :airplane: Initial commit
