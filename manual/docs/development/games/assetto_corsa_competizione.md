@@ -18,6 +18,10 @@ The PEON war plan that Peon uses to deploy your game server.
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/assettocorsacompetizione)
 
-## Roadmap
+## Features
 
-## Release Notes
+- [ ] *None requested*
+
+---
+
+- [ ] INITIALISED :airplane: Initial build.

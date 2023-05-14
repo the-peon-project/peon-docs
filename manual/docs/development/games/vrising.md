@@ -12,11 +12,12 @@ The PEON war plan that Peon uses to deploy your game server.
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/vrising)
 
-## Roadmap
+## Features
 
-## Release Notes
+- [ ] *None requested*
 
-### 1.0.0
+---
 
+- [x] RELEASED :zap: Plan is available for use.
 - [x] CHANGED :tools: Reworked with `steamcmd-winehq` release to confirm better deployment standard.
-- [x] INITIALISED :airplane: Initial commit
+- [x] INITIALISED :airplane: Initial build.

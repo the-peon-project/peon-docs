@@ -12,13 +12,12 @@ The PEON war plan that Peon uses to deploy your game server.
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/csgo)
 
-## Roadmap
+## Features
 
 - [ ] ADDED :new: Advanced server customization enabled (get/put config files in place)
 
-## Release Notes
+---
 
-### 1.0.0
-
+- [x] RELEASED :zap: Plan is available for use.
 - [x] ADDED :new: Basic server customization enabled (environment variables)
-- [x] INITIALISED :airplane: Initial commit
+- [x] INITIALISED :airplane: Initial build.

@@ -14,9 +14,10 @@ The PEON war plan that Peon uses to deploy your game server.
 
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/starbound)
 
-## Roadmap
+## Features
 
 - [ ] STUCK :no_entry_sign: Requires `steamcmd` user login, and steamcmd does not yet support full app authentication flow :no_entry_sign:
-- [x] INITIALISED :airplane: Initial commit
 
-## Release Notes
+---
+
+- [x] INITIALISED :airplane: Initial build.
