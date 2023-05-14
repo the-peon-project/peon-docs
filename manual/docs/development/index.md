@@ -52,6 +52,7 @@ Below are the symbols that are typically found throughout the various changelogs
 | LOGGING| :speech_balloon: `:speech_balloon:` | When logging is added/enhanced/improved |
 | TESTED | :pencil: `:pencil:` | When a test task is planned & executed |
 | SECURITY | :unlock: `:unlock:` | When some security modifications have been added |
+| BLOCKED | :no_entry_sign: `:no_entry_sign:` | When something is stuck due to external requirements |
 
 ---
 
