@@ -88,3 +88,8 @@ Here you can see what the future holds.
 
 - [x] CHANGED :tools: Reworked with `steamcmd-winehq` release to confirm better deployment standard.
 - [x] INITIALISED :airplane: Initial commit
+
+### Satisfactory
+
+- [x] INITIALISED :airplane: Initial commit
+

@@ -54,6 +54,7 @@ Here are some planned features
 
 - [ ] :zap: RELEASE :zap:
 - [ ] Update to new deployment architecture.
+- [ ] Security - Add `fail2ban` to REST API
 
 ### *0.3.x*
 
