@@ -1,10 +1,10 @@
 # Supported Games
 
-These are the games and their support states.
+The games list will grow over time, as requests come in or other people contribute recipes to the project.
 
-> Please feel free to request any game server for development with the war-plan [issue creator](https://github.com/the-peon-project/peon-warplans/issues/new).
+> Please feel free to request any game server for development with the [war-plan issue creator](https://github.com/the-peon-project/peon-warplans/issues/new).
 
-This list will grow over time (as requests come in or other people contribute recipes to the project).
+## Game Servers
 
 - [ ] [Assetto Corsa Competizione](./guides/games/assetto_corsa_competizione.md)
 - [x] [CSGO](./guides/games/csgo.md)
