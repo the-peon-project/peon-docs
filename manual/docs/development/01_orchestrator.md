@@ -77,6 +77,11 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.0.1
+
+- [x] BUGFIX :beetle: Removed `docker-compose create` from API, when no start is selected.
+- [x] BUGFIX :beetle: Updated to `docker compose` from `docker-compose` paradigm
+
 **:zap: IMPACT RELEASE :zap:**
 
 ### 1.0.0
