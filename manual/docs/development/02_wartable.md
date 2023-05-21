@@ -63,6 +63,14 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+**:zap: IMPACT RELEASE :zap:**
+
+#### 1.2.0
+
+- [x] CHANGED :tools: Reworked the container image to use less ambiguous mount options for files.
+- [x] ADDED :new: Additional outputs to state file
+- [x] ADDED :new: Fail on missing `/actions` folder (not being mounted)
+
 #### 1.1.4
 
 - [x] CHANGED :tools: Maintenance release. Rebuilt image to latest base software release.
@@ -116,6 +124,14 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+**:zap: IMPACT RELEASE :zap:**
+
+#### 1.2.0
+
+- [x] CHANGED :tools: Reworked the container image to use less ambiguous mount options for files.
+- [x] ADDED :new: Additional outputs to state file
+- [x] ADDED :new: Fail on missing `/actions` folder (not being mounted)
 
 #### 1.1.4
 
