@@ -77,9 +77,17 @@ Here are some planned features
 
 ## Release Notes
 
-- [ ] ADDED :new: warcamp - cleanup
-- [ ] ADDED :new: get_warcamp - check container state and update state accordingly.
-- [ ] CHANGE :tools: `CURRENT_TASK` API - Deploy server from API call. (Untested `server create` funtion)
+**:zap: IMPACT RELEASE :zap:**
+
+### 1.0.0
+
+- [x] CHANGE :tools: Plans - Reworked entire plans module for docker-compose architecture
+- [x] CHANGE :tools: Servers - Reworked entire servers module for docker-compose architecture
+- [x] CHANGE :tools: API - Updated API for docker-compose architecture.
+- [x] BUGFIX :beetle: All - fixed several issues after rework
+- [x] ADDED :new: warcamp - cleanup
+- [x] ADDED :new: get_warcamp - check container state and update state accordingly.
+- [x] CHANGE :tools: `CURRENT_TASK` API - Deploy server from API call. (Untested `server create` funtion)
 - [x] ADDED :new: API - Plan - Get required settings
 - [x] CHANGE :tools: Change to svn download for directory (plans)
 - [x] CHANGE :tools: Moved to `docker compose` based model for better re-usibility/clarity.
