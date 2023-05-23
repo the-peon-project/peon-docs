@@ -45,58 +45,54 @@ Links to various project-related resources.
 
 ## Roadmap
 
-### *0.2.x*
-
 - [ ] peon.bot.discord bot is re-written for ``slash`` commands (see ``interactions.py``)
-
-### *0.1.x*
-
-- [x] peon.orc servers can be managed by the bot
 
 ---
 
 ## Release Notes
 
+- [x] REMOVED :scissors: Removed `dev_mode` switch
+
 ### 0.2.8
 
-- Messaging - Reworked error messages
-- Bot - BugFix: Scheduling past event times.
+- [x] CHANGED :tools: Messaging - Reworked error messages
+- [x] BUGFIX :beetle: Scheduling past event times.
 
 ### 0.2.7
 
-- Bot - Added shutdown scheduler
+- [x] ADDED :new: Added shutdown scheduler
 
 ### 0.2.6
 
-- Bot - Better natural language support
+- [x] CHANGED :tools: Better natural language support
 
 ### 0.2.5
 
-- Bot - Added aliases for commands
+- [x] ADDED :new: Added aliases for commands
 
 ### 0.2.2
 
-- Text - Reformatted info in the message feed
-- Server_Config - Allowed for json formatted content
+- [x] CHANGED :tools: Reformatted info in the message feed
+- [x] ADDED :new: Server_Config - Allowed for json formatted content
 
 ### 0.2.1
 
-- Discord - Added message cleaner ``clear [int]``
+- [x] ADDED :new: Discord - Added message cleaner ``clear [int]``
 
 ### 0.2.0
 
-- Orc - control start/stop/restart
+- [x] ADDED :new: Orc - control start/stop/restart
 
 ### 0.1.1
 
-- Logging - Added devMode switch
+- [x] ADDED :new: Added devMode switch
 
 ### 0.1.0
 
-- First version of the bot
-- Basic get-all/get the functionality
-- Hardcoded bot key
+- [x] ADDED :new: First version of the bot
+- [x] ADDED :new: Basic get-all/get the functionality
+- [x] SECURITY :unlock: Hardcoded bot key
 
 ### 0.0.0
 
-- Initial commit
+- [x] INITIALISED :airplane: Initial commit
