@@ -77,11 +77,9 @@ Here are some planned features
 
 ## Release Notes
 
-- [ ] TESTED :pencil: Scheduler
-
 ### 1.0.2
 
-- [x] CHANGE :tools: Re-enabled scheduler for testing on new build.
+- [x] CHANGE :tools: Re-enabled stop scheduler.
 - [x] REMOVED :scissors: Disbaled flask debug mode (as it causes issues with scheduler)
 
 ### 1.0.1
