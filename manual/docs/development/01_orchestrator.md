@@ -77,6 +77,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.0.3
+
+- [x] BUGFIX :beetle: Updated API for use with Discord bot.
+
 ### 1.0.2
 
 - [x] CHANGE :tools: Re-enabled stop scheduler.
