@@ -51,6 +51,14 @@ Links to various project-related resources.
 
 ## Release Notes
 
+- [ ] ADDED :new: Get current plan list, update plans from repo
+- [ ] ADDED :new: Get specific plan details
+- [ ] ADDED :new: Deploy server from discord
+
+### 1.0.1
+
+- [x] BUGFIX :beetle: Auto append minute time unit to request, if no time unit is provided.
+
 ### 1.0.0
 
 - [x] CHANGED :tools: Improved data response legibility on get.
