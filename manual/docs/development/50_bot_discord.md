@@ -51,7 +51,13 @@ Links to various project-related resources.
 
 ## Release Notes
 
+### 1.0.0
+
+- [x] CHANGED :tools: Improved data response legibility on get.
+- [x] CHANGED :tools: Updated bot to handle changes to the Orc API (since Orc release v1.0.1)
 - [x] REMOVED :scissors: Removed `dev_mode` switch
+
+**:zap: IMPACT RELEASE :zap:**
 
 ### 0.2.8
 
