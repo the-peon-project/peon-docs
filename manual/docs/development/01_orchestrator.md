@@ -77,7 +77,9 @@ Here are some planned features
 
 ## Release Notes
 
-- [ ] BUGFIX :beetle: Fixed an issue causing bad docker compose files.
+### 1.0.4
+
+- [x] ADDED :beetle: Check if the environment variable `HOST_DIR` is empty.
 - [x] ADDED :tools: Added a *clean on failure* when a server creation is triggered.
 - [x] ADDED :tools: Added an API flag `noclean` to disable *clean on failure*.
 - [x] BUGFIX :beetle: Fixed issue where failures on `docker compose` commands did not get handled by API correctly.
