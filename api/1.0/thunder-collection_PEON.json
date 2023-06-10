@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "PEON",
-    "dateExported": "2023-06-09T21:20:21.927Z",
+    "dateExported": "2023-06-10T21:27:15.341Z",
     "version": "1.1",
     "folders": [
         {
@@ -58,11 +58,11 @@
             "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
             "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
             "name": "Get Server",
-            "url": "{{url}}:{{port}}/api/1.0/server/get/vrising.countjugular",
+            "url": "{{url}}:{{port}}/api/1.0/server/get/vrising.deleteme",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-09T19:04:50.576Z",
-            "modified": "2023-06-09T20:26:02.431Z",
+            "modified": "2023-06-10T21:09:24.409Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -127,6 +127,130 @@
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0121557a-35ee-4592-b3d7-30c8fc33a438",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Create Server",
+            "url": "{{url}}:{{port}}/api/1.0/server/create/vrising.deleteme",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-06-10T10:58:32.564Z",
+            "modified": "2023-06-10T21:08:27.669Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"SERVER_NAME\" : \"deleteme\",\n    \"WORLD_NAME\" : \"my-world\",\n    \"PASSWORD\" : \"test\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a82fba7-575f-4e82-b042-ec5c8a11b6d1",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Stop Server",
+            "url": "{{url}}:{{port}}/api/1.0/server/stop/vrising.deleteme",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-06-10T21:13:09.878Z",
+            "modified": "2023-06-10T21:13:32.494Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "84890d4a-ebdd-4b37-81ec-e7f2108fec9b",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Start Server",
+            "url": "{{url}}:{{port}}/api/1.0/server/start/vrising.deleteme",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-06-10T21:13:42.178Z",
+            "modified": "2023-06-10T21:13:53.715Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "033cedbf-d03e-42bf-b214-29530be563eb",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Restart Server",
+            "url": "{{url}}:{{port}}/api/1.0/server/restart/vrising.deleteme",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-10T21:13:59.663Z",
+            "modified": "2023-06-10T21:14:19.695Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7044483b-fbd0-4f98-96de-aaeb45ebadbb",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Delete Server",
+            "url": "{{url}}:{{port}}/api/1.0/server/destroy/vrising.deleteme",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-06-10T21:14:41.108Z",
+            "modified": "2023-06-10T21:15:15.886Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d3afdeef-a84e-4b9a-a681-ed8f0b0f5faf",
+            "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
+            "containerId": "04dea713-cd59-494a-be8b-f7e3ccf9d53f",
+            "name": "Delete Server & Remove Local Files",
+            "url": "{{url}}:{{port}}/api/1.0/server/destroy/vrising.deleteme",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-10T21:15:18.945Z",
+            "modified": "2023-06-10T21:16:55.054Z",
+            "headers": [
+                {
+                    "name": "X-Api-Key",
+                    "value": "{{api-key}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"eradicate\" : true }",
+                "form": []
+            },
             "tests": []
         }
     ],
