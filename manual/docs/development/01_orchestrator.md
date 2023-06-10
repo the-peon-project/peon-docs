@@ -77,6 +77,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.0.5
+
+- [x] BUGFIX :beetle: Fixed API destroy + **eradicate** of server.
+
 ### 1.0.4
 
 - [x] ADDED :beetle: Check if the environment variable `HOST_DIR` is empty.
