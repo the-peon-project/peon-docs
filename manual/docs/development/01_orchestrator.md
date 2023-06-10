@@ -77,6 +77,13 @@ Here are some planned features
 
 ## Release Notes
 
+- [ ] BUGFIX :beetle: Fixed an issue causing bad docker compose files.
+- [x] ADDED :tools: Added a *clean on failure* when a server creation is triggered.
+- [x] ADDED :tools: Added an API flag `noclean` to disable *clean on failure*.
+- [x] BUGFIX :beetle: Fixed issue where failures on `docker compose` commands did not get handled by API correctly.
+- [x] BUGFIX :beetle: Fixed an issue where generic failure was being reported back via API when plans were being generated.
+- [x] LOGGING :speech_balloon: Added additional step logging for *debug* logging to assist in fault finding.
+
 ### 1.0.3
 
 - [x] BUGFIX :beetle: Updated API for use with Discord bot.
