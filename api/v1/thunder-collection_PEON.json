@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "PEON",
-    "dateExported": "2023-06-10T21:27:15.341Z",
+    "dateExported": "2023-06-11T18:40:27.246Z",
     "version": "1.1",
     "folders": [
         {
@@ -43,7 +43,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-09T18:48:17.743Z",
-            "modified": "2023-06-09T18:56:56.802Z",
+            "modified": "2023-06-11T18:39:37.770Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -62,7 +62,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-09T19:04:50.576Z",
-            "modified": "2023-06-10T21:09:24.409Z",
+            "modified": "2023-06-11T18:39:42.263Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -81,7 +81,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-09T21:14:49.463Z",
-            "modified": "2023-06-09T21:15:30.288Z",
+            "modified": "2023-06-11T18:40:12.705Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -96,11 +96,11 @@
             "colId": "1ef0b591-dcd2-45a0-8608-30eb75ace7bf",
             "containerId": "c0a73272-af02-47f6-a522-c9bfb8f0838c",
             "name": "Get A Plan",
-            "url": "{{url}}:{{port}}/api/v1/plan/csgo",
+            "url": "{{url}}:{{port}}/api/v1/plan/vrising",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-09T21:19:29.438Z",
-            "modified": "2023-06-09T21:19:54.169Z",
+            "modified": "2023-06-11T18:40:21.950Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -119,7 +119,7 @@
             "method": "PUT",
             "sortNum": 20000,
             "created": "2023-06-09T21:15:52.307Z",
-            "modified": "2023-06-09T21:16:08.921Z",
+            "modified": "2023-06-11T18:40:18.064Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -138,7 +138,7 @@
             "method": "PUT",
             "sortNum": 20000,
             "created": "2023-06-10T10:58:32.564Z",
-            "modified": "2023-06-10T21:08:27.669Z",
+            "modified": "2023-06-11T18:39:46.373Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -162,7 +162,7 @@
             "method": "PUT",
             "sortNum": 30000,
             "created": "2023-06-10T21:13:09.878Z",
-            "modified": "2023-06-10T21:13:32.494Z",
+            "modified": "2023-06-11T18:39:50.004Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -181,7 +181,7 @@
             "method": "PUT",
             "sortNum": 40000,
             "created": "2023-06-10T21:13:42.178Z",
-            "modified": "2023-06-10T21:13:53.715Z",
+            "modified": "2023-06-11T18:39:54.342Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -200,7 +200,7 @@
             "method": "PUT",
             "sortNum": 50000,
             "created": "2023-06-10T21:13:59.663Z",
-            "modified": "2023-06-10T21:14:19.695Z",
+            "modified": "2023-06-11T18:39:58.575Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -219,7 +219,7 @@
             "method": "DELETE",
             "sortNum": 60000,
             "created": "2023-06-10T21:14:41.108Z",
-            "modified": "2023-06-10T21:15:15.886Z",
+            "modified": "2023-06-11T18:40:02.543Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
@@ -238,7 +238,7 @@
             "method": "DELETE",
             "sortNum": 70000,
             "created": "2023-06-10T21:15:18.945Z",
-            "modified": "2023-06-10T21:16:55.054Z",
+            "modified": "2023-06-11T18:40:06.623Z",
             "headers": [
                 {
                     "name": "X-Api-Key",
