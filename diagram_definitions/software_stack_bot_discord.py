@@ -22,7 +22,7 @@ with Diagram("Peon Discord Bot Software Stack", show=False):
             framework - Edge(color=comms_container, style="dotted") - application
             application - Edge(color=comms_container, style="dotted") - module
     endpoint = Discord("Discord")
-    endpoint >> framework
+    endpoint >> Edge(color=comms_http) << framework
     target = Custom("PEON Orchestrator", "./logos/peon.png")
     module >> Edge(color=comms_http) << target
     
