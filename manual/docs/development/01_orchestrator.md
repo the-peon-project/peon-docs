@@ -44,17 +44,18 @@ Links to various project-related resources.
 
 Here are some planned features
 
+- [ ] Security - Add `fail2ban` to REST API
+- [ ] Security - Users & Audit Logging
+
 ### *1.1.x*
 
 - [ ] RESTapi (v1) - Console
-- [ ] Security - Users & Audit Loggin
 - [ ] Backups
 
 ### 1.0.x
 
-- [ ] :zap: RELEASE :zap:
-- [ ] Update to new deployment architecture.
-- [ ] Security - Add `fail2ban` to REST API
+- [x] :zap: RELEASE :zap:
+- [x] Update to new deployment architecture.
 
 ### *0.3.x*
 
@@ -77,9 +78,16 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.0
+
 **:zap: IMPACT RELEASE :zap:**
 
+- [x] CHANGED :tools: Changed URL path from `/api/1.0` to `/api/v1`
+- [x] CHANGED :tools: Added sort to `get_plans`
+
 ### 1.1.0
+
+**:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: Moved logging into container logs
 - [x] ADDED :new: Added `DEV_MODE` flag to enable/disable logging/dev mode.
