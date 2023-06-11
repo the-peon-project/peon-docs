@@ -14,7 +14,7 @@
         }
     },
     "host": "peon.orc:5000",
-    "basePath": "/api/1.0",
+    "basePath": "/api/v1",
     "tags": [{
             "name": "Servers",
             "description": "Viewing all servers/creating a new server"

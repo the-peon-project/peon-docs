@@ -10,7 +10,7 @@ info:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 host: "dockerdev.za.cloudlet.cloud"
-basePath: "/api/1.0"
+basePath: "/api/v1"
 tags:
 - name: "servers"
   description: "Viewing all servers/creating a new server"
