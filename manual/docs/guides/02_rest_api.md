@@ -36,12 +36,12 @@ The base follows the standard below.
 
 ```bash
 # structure
-{{peon_orchestrator_url}}:{{api_port}}/api/1.0/
+{{peon_orchestrator_url}}:{{api_port}}/api/v1/
 
 # some valid examples include
-https://gameserver.cloud:5000/api/1.0/
-http://192.168.20.2:5000/api/1.0/
-http://localhost:5000/api/1.0/
+https://gameserver.cloud:5000/api/v1/
+http://192.168.20.2:5000/api/v1/
+http://localhost:5000/api/v1/
 ```
 
 #### Endpoints
@@ -50,7 +50,7 @@ http://localhost:5000/api/1.0/
 
 We are currently on version `1.0` of the API. We will try to keep from having to change endpoints, however, if that has to happen we'll opt to create a new version.
 
-`BASE_URL/api/1.0/`
+`BASE_URL/api/v1/`
 
 ---
 
@@ -108,7 +108,7 @@ Creating a `Valheim` server
 URL
 
 ```url
-http://orc.domain.com:5000/api/1.0/servers [POST]
+http://orc.domain.com:5000/api/v1/servers [POST]
 ```
 
 HEADERS
