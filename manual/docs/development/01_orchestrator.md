@@ -77,6 +77,13 @@ Here are some planned features
 
 ## Release Notes
 
+**:zap: IMPACT RELEASE :zap:**
+
+### 1.1.0
+
+- [x] CHANGED :tools: Moved logging into container logs
+- [x] ADDED :new: Added `DEV_MODE` flag to enable/disable logging/dev mode.
+
 ### 1.0.5
 
 - [x] BUGFIX :beetle: Fixed API destroy + **eradicate** of server.
@@ -84,8 +91,8 @@ Here are some planned features
 ### 1.0.4
 
 - [x] ADDED :beetle: Check if the environment variable `HOST_DIR` is empty.
-- [x] ADDED :tools: Added a *clean on failure* when a server creation is triggered.
-- [x] ADDED :tools: Added an API flag `noclean` to disable *clean on failure*.
+- [x] ADDED :new: Added a *clean on failure* when a server creation is triggered.
+- [x] ADDED :new: Added an API flag `noclean` to disable *clean on failure*.
 - [x] BUGFIX :beetle: Fixed issue where failures on `docker compose` commands did not get handled by API correctly.
 - [x] BUGFIX :beetle: Fixed an issue where generic failure was being reported back via API when plans were being generated.
 - [x] LOGGING :speech_balloon: Added additional step logging for *debug* logging to assist in fault finding.

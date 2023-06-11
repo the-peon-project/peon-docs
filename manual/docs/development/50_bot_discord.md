@@ -55,6 +55,13 @@ Links to various project-related resources.
 - [ ] ADDED :new: Get specific plan details
 - [ ] ADDED :new: Deploy server from discord
 
+**:zap: IMPACT RELEASE :zap:**
+
+### 1.1.0
+
+- [x] CHANGED :tools: Moved logging into container logs
+- [x] ADDED :new: Added `DEV_MODE` flag to enable/disable logging/dev mode.
+
 ### 1.0.1
 
 - [x] BUGFIX :beetle: Auto append minute time unit to request, if no time unit is provided.
