@@ -55,9 +55,16 @@ Links to various project-related resources.
 - [ ] ADDED :new: Get specific plan details
 - [ ] ADDED :new: Deploy server from discord
 
+### 1.2.0
+
 **:zap: IMPACT RELEASE :zap:**
 
+- [x] CHANGED :tools: Moved from `/api/1.0` to `/api/v1`
+- [x] ADDED :new: Get a list of available game plans
+
 ### 1.1.0
+
+**:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: Moved logging into container logs
 - [x] ADDED :new: Added `DEV_MODE` flag to enable/disable logging/dev mode.
