@@ -45,15 +45,20 @@ Links to various project-related resources.
 
 ## Roadmap
 
-- [ ] peon.bot.discord bot is re-written for ``slash`` commands (see ``interactions.py``)
+- [ ] Bot is re-written for ``slash`` commands (see ``interactions.py``)
+- [ ] ADDED :new: Deploy server from discord
 
 ---
 
 ## Release Notes
 
-- [ ] ADDED :new: Get current plan list, update plans from repo
-- [ ] ADDED :new: Get specific plan details
-- [ ] ADDED :new: Deploy server from discord
+**:zap: IMPACT RELEASE :zap:**
+
+- [ ] ADDED :new: Get a list of available plans.
+- [ ] ADDED :new: Get specific plan details.
+- [ ] ADDED :new: Trigger plan update on all orchestrators.
+- [ ] CHANGED :tools: Added language localization. Completely re-wrote messaging language module.
+- [ ] CHANGED :tools: Rewriting API calls with new response builder/ based on cards (embeds)
 
 ### 1.2.0
 
