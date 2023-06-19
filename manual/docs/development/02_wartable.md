@@ -63,9 +63,13 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
-**:zap: IMPACT RELEASE :zap:**
+#### 1.2.1
+
+- [x] CHANGED :tools: Updated to the latest version of `steamcmd`
 
 #### 1.2.0
+
+**:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: Reworked the container image to use less ambiguous mount options for files.
 - [x] ADDED :new: Additional outputs to state file
@@ -125,9 +129,13 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
-**:zap: IMPACT RELEASE :zap:**
+#### 1.2.1
+
+- [x] CHANGED :tools: Updated to the latest version of `steamcmd`
 
 #### 1.2.0
+
+**:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: Reworked the container image to use less ambiguous mount options for files.
 - [x] ADDED :new: Additional outputs to state file
