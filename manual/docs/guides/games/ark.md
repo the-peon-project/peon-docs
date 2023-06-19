@@ -29,5 +29,5 @@ All of these files can be found and edited in the server's local storage path.
 
 If you want to dig a bit deeper, here are the links
 
-- [Development Docs](../../development/games/Ark.md)
+- [Development Docs](../../development/games/ark.md)
 - [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/Ark)
