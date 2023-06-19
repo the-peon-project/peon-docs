@@ -1,6 +1,6 @@
 # Ark
 
-![Ark](../../images/game-logos/Ark.png)
+![Ark](../../images/game-logos/ark.png)
 
 ## Before you start
 
