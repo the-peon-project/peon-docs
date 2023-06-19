@@ -6,7 +6,7 @@ The games list will grow over time, as requests come in or other people contribu
 
 ## Game Servers
 
-- [x] [ARK](./guides/games/ark.md)
+- [x] [Ark](./guides/games/ark.md)
 - [ ] [Assetto Corsa Competizione](./guides/games/assetto_corsa_competizione.md)
 - [x] [CSGO](./guides/games/csgo.md)
 - [ ] [Quake 3 Arena](./guides/games/q3arena.md)
