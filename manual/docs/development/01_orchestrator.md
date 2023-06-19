@@ -80,7 +80,8 @@ Here are some planned features
 
 ### 1.2.1
 
-- [x] BUGFIX :beetle: Added `skip` flag to `create` api call, as a fail state would occur when `start_later` was requested.
+- [x] ADDED :new: Added `skip` flag to `Server PUT` to force bypass of actions (if required)
+- [x] BUGFIX :beetle: Added return on succeful create when not start is requested.
 
 ### 1.2.0
 
