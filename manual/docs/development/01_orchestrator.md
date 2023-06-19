@@ -78,6 +78,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.1
+
+- [x] BUGFIX :beetle: Added `skip` flag to `create` api call, as a fail state would occur when `start_later` was requested.
+
 ### 1.2.0
 
 **:zap: IMPACT RELEASE :zap:**
