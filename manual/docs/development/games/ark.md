@@ -7,6 +7,7 @@ The PEON war plan that Peon uses to deploy your game server.
 ## Official Documentation
 
 [Source Guide](https://ark.fandom.com/wiki/Dedicated_server_setup)
+[Command Line Arguments](https://ark.fandom.com/wiki/Server_configuration#Command_line_arguments)
 
 ## Code Repo
 
