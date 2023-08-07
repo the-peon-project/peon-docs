@@ -78,6 +78,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.2
+
+- [x] ADDED :new: Ability to make custom REST API key through env vars.
+
 ### 1.2.1
 
 - [x] ADDED :new: Added `skip` flag to `Server PUT` to force bypass of actions (if required)
