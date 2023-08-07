@@ -64,6 +64,7 @@ Links to various project-related resources.
 
 **:zap: IMPACT RELEASE :zap:**
 
+- [x] CHANGED :tools: Moved localisation files to `/app/reference/`
 - [x] CHANGED :tools: Moved from `/api/1.0` to `/api/v1`
 - [x] ADDED :new: Get a list of available game plans
 
