@@ -57,14 +57,14 @@ Links to various project-related resources.
 - [ ] ADDED :new: Get a list of available plans.
 - [ ] ADDED :new: Get specific plan details.
 - [ ] ADDED :new: Trigger plan update on all orchestrators.
-- [ ] CHANGED :tools: Added language localization. Completely re-wrote messaging language module.
 - [ ] CHANGED :tools: Rewriting API calls with new response builder/ based on cards (embeds)
 
 ### 1.2.0
 
 **:zap: IMPACT RELEASE :zap:**
 
-- [x] CHANGED :tools: Moved localisation files to `/app/reference/`
+- [x] CHANGED :tools: Added language localization. Completely re-wrote messaging language module.
+- [x] CHANGED :tools: Moved localization files to `/app/reference/`
 - [x] CHANGED :tools: Moved from `/api/1.0` to `/api/v1`
 - [x] ADDED :new: Get a list of available game plans
 
