@@ -63,6 +63,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.2.4
+
+- [x] CHANGED :tools: Added error details as parameter into `/init/shared`
+
 #### 1.2.1
 
 - [x] CHANGED :tools: Updated to the latest version of `steamcmd`
@@ -128,6 +132,10 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+#### 1.2.4
+
+- [x] CHANGED :tools: Added error details as parameter into `/init/shared`
 
 #### 1.2.1
 
