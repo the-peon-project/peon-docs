@@ -78,6 +78,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.4
+
+- [x] CHANGED :tools: Updated how the cli tool references files inside the container
+
 ### 1.2.3
 
 - [x] BUGFIX :beetle: Make better alert when folder already exists, not `action not supported`
