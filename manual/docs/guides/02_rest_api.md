@@ -18,7 +18,7 @@ We plan on supporting more and more authorization methods. Currently, the below 
 
 #### API-KEY
 
-The defaults are as below. Please change these in the `.env` file for the orchestrator. *The implementation to change the setting via API is on the roadmap.*
+The defaults are as below. Please change these in the `.env` file for the orchestrator.
 
 | header key | value |
 | - | - |
@@ -44,62 +44,26 @@ http://192.168.20.2:5000/api/v1/
 http://localhost:5000/api/v1/
 ```
 
-#### Endpoints
-
-##### Base Endpoint
-
 We are currently on version `1.0` of the API. We will try to keep from having to change endpoints, however, if that has to happen we'll opt to create a new version.
 
-`BASE_URL/api/v1/`
+#### Endpoints
 
----
-
-#### Supported Endpoints
-
-Below is a list of currently supported API calls. *Please go to the [**live docs**](http://docs.warcamp.org:8080) for more in-depth information.
+The below endpoints are the current GA endpoints for the PEON Orchestrator
 
 ---
 
 ##### Servers
 
-Used when the `SERVERNAME` is unknown.
+Will list all game servers that are registered to the Orchestrator.
 
 ```yaml
     servers:
         - [GET] List all servers registered to Orchestrator
-        - [POST] Create a new game server on Orchestrator
 ```
 
 ###### Payload
 
-The structure of the payload for the `server` endpoint is as follows:
-
-```json
-{
-    "game_uid": "<peon-game-uid>",
-    "servername": "<user-defined-servername>",
-    "description": "<user defined description for later reference>",
-    "settings": [{
-            "type": "env",
-            "name": "container environment",
-            "content": {
-                "<KEY01>": "<VALUE 01>",
-                "<KEY02>": "<VALUE 02>"
-            }
-        }
-    ]
-}
-```
-
-The payload contents can be broadly explained below.
-
-Settings
-
-| key | value example | purpose |
-| - | - | - |
-| type | `env` | Defines a random list of container environement variables |
-| name | `container environment` | *I can't remeber why I put that there (TODO)* |
-| content | *list of key-value pairs* | An undefined quantity of settings (defined by the each game recipe), to configure the server instance. |
+*No payload required*
 
 ###### Example
 
@@ -108,8 +72,62 @@ Creating a `Valheim` server
 URL
 
 ```url
-http://orc.domain.com:5000/api/v1/servers [POST]
+http://orc.domain.com:5000/api/v1/servers
 ```
+
+HEADERS
+
+```json
+{ "X-Api-Key" : "my-super-secret-api-key" }
+```
+
+PAYLOAD [BODY]
+
+*N/A*
+
+---
+
+##### Server
+
+Used for managing a specific server instance with a known `SERVERNAME`.
+
+```yaml
+    server/get/GAME_UID.SERVERNAME:
+        - [GET] Get details of a game server
+    server/stats/GAME_UID.SERVERNAME:
+        - [GET] Get details of a game server, with performance statistics
+    server/create/GAME_UID.SERVERNAME:
+        - [PUT] Create a new game server
+        payload: { "description": "A PEON game server for ark.", "start_later" : true, "setting01" : "value01", "setting02" : "value02", "setting0N" : "value0N"} *description & start_later are optional. **All other settings can be found be querying the game servers's relevant plan.
+    server/start/GAME_UID.SERVERNAME:
+        - [PUT] Start a specific game server from the Orchestrator
+    server/stop/GAME_UID.SERVERNAME:
+        - [PUT] Stop a specific game server from the Orchestrator
+    server/restart/GAME_UID.SERVERNAME:
+        - [PUT] Restart a specific game server from the Orchestrator
+    server/description/GAME_UID.SERVERNAME:
+        - [PUT] Update the description of a specific game server from the Orchestrator
+    server/destroy/GAME_UID.SERVERNAME:
+        - [DEL] Removes a game container leaving the server and config files intact (optional flag to delete all files as well)
+        payload: { "eradicate" : "True" } *Optional (destructive data removal)
+    server/eradicate/GAME_UID.SERVERNAME:
+        - [DEL] Deletes all game data & config files
+        payload: { "eradicate" : "True" } *Required
+```
+
+###### Example
+
+Creating a `Valheim` server
+*Query your Orc's API for intended game's plan for the relevant settings (e.g. `/api/v1/plan/valheim`). Settings with empty `""` are required settings. The others are optional.
+
+URL
+
+```url
+http://orc.domain.com:5000/api/v1/server/create/{{GAME_UID}}.{{SERVERNAME}}
+```
+
+The {{GAME_UID}} value needs to be available to your Orcestrator's plan list.
+The {{SERVERNAME}} value can be different to what is provided in the payload. This {{SERVERNAME}} value will form part of the game servers unique ID, and will be how the server is referenced going forward.
 
 HEADERS
 
@@ -123,45 +141,83 @@ Only `JSON` payloads are currently supported.
 
 ```json
 {
-    "game_uid": "valheim",
-    "servername": "server01",
-    "description": "A valheim PEON server",
-    "settings": [{
-            "type": "env",
-            "name": "container environment",
-            "content": {
-                "SERVERNAME": "My-Valheim-Server",
-                "WORLDNAME": "awesomeworld",
-                "PASSWORD": "password123"
-            }
-        }
-    ]
+    "SERVER_NAME": "",
+    "WORLD_NAME": "",
+    "PASSWORD": "",
+    "description": "A PEON game server for valheim."
 }
 ```
 
 ---
 
-##### Server
+##### Plans
 
-Used for managing a specific server instance with a known `SERVERNAME`.
+Manage available game plans.
 
 ```yaml
-    server/get/GAME_UID.SERVERNAME:
-        - [GET] Get details of a game server
-    server/stats/GAME_UID.SERVERNAME:
-        - [GET] Get details of a game server, with performance statistics
-    server/start/GAME_UID.SERVERNAME:
-        - [PUT] Start a specific game server from the Orchestrator
-    server/stop/GAME_UID.SERVERNAME:
-        - [PUT] Stop a specific game server from the Orchestrator
-    server/restart/GAME_UID.SERVERNAME:
-        - [PUT] Restart a specific game server from the Orchestrator
-    server/description/GAME_UID.SERVERNAME:
-        - [PUT] Update the description of a specific game server from the Orchestrator
-    server/destroy/GAME_UID.SERVERNAME:
-        - [DEL] Removes a game container leaving the server and config files intact (optional flag to delete all files as well)
-        body: { "eradicate" : "True" } *Optional (destructive data removal)
-    server/eradicate/GAME_UID.SERVERNAME:
-        - [DEL] Deletes all game data & config files
-        body: { "eradicate" : "True" } *Required
+    plans:
+        - [GET] List all local game plans.
+    plans:
+        - [PUT] Download latest game plan list from Peon Project.
 ```
+
+###### Payload
+
+*No payload required*
+
+###### Example
+
+Listing the local available game plans.
+
+URL
+
+```url
+http://orc.domain.com:5000/api/v1/plans
+```
+
+HEADERS
+
+```json
+{ "X-Api-Key" : "my-super-secret-api-key" }
+```
+
+PAYLOAD [BODY]
+
+*N/A*
+
+---
+
+##### Plan
+
+Manage a specific game plan.
+
+```yaml
+    plan/GAME_UID:
+        - [GET] Get the required/optional settings for a specific game plan.
+```
+
+###### Payload
+
+*No payload required*
+
+###### Example
+
+Listing the local available game plans.
+
+URL
+
+```url
+http://orc.domain.com:5000/api/v1/plan/{{GAME_UID}}
+```
+
+HEADERS
+
+```json
+{ "X-Api-Key" : "my-super-secret-api-key" }
+```
+
+PAYLOAD [BODY]
+
+*N/A*
+
+---
