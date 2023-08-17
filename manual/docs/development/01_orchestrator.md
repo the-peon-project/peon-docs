@@ -78,6 +78,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.3
+
+- [x] BUGFIX :beetle: Make better alert when folder already exists, not `action not supported`
+
 ### 1.2.2
 
 - [x] ADDED :new: Ability to make custom REST API key through env vars.
