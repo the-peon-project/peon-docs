@@ -10,6 +10,8 @@ Please look at the [**live docs**](http://docs.warcamp.org:8080) for detailed de
 
 We are using a RESTful API as it is quite easy and there are plenty of guides on how to use REST as a technology.
 
+A [Postman collection file](../files/postman_collection.json) can be used for convenience.
+
 ---
 
 ### Authorization
