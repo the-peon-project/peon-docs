@@ -78,6 +78,14 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.6
+
+- [X] LOGGING :speech_balloon: Improve logging response to handle bad JSON/missing file on plan load.
+
+### 1.2.5
+
+- [x] BUGFIX :beetle: Repaired an issue with plan not seeing a description
+
 ### 1.2.4
 
 - [x] CHANGED :tools: Updated how the cli tool references files inside the container
