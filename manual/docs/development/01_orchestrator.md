@@ -78,9 +78,13 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.7
+
+- [x] ADDED :new: Ability to update the game server using the API.
+
 ### 1.2.6
 
-- [X] LOGGING :speech_balloon: Improve logging response to handle bad JSON/missing file on plan load.
+- [X] LOGGING :speech_balloon: Improve logging response to handle bad JSON/missing files on plan load.
 
 ### 1.2.5
 
