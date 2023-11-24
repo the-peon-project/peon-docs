@@ -59,6 +59,10 @@ Links to various project-related resources.
 - [ ] ADDED :new: Trigger plan update on all orchestrators.
 - [ ] CHANGED :tools: Rewriting API calls with new response builder/ based on cards (embeds)
 
+### 1.2.2
+
+- [x] ADDED :new: Update game server command.
+
 ### 1.2.1
 
 - [x] BUGFIX :beetle: Fixed an issue with the regex matching for a minute interval (would match any possible string)
