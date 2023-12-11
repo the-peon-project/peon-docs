@@ -59,6 +59,10 @@ Links to various project-related resources.
 - [ ] ADDED :new: Trigger plan update on all orchestrators.
 - [ ] CHANGED :tools: Rewriting API calls with new response builder/ based on cards (embeds)
 
+### 1.2.4
+
+- [x] TYPO :beetle: Fixed a bad response example in `!usage` command
+
 ### 1.2.3
 
 - [x] ADDED :new: Usage response
