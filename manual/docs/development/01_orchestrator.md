@@ -10,7 +10,7 @@ It is what manages the process of game server deployment for users.
 
 - Extremely lightweight.
 - [REST API managed](../guides/02_rest_api.md)
-- Deploys/controls the game containers.
+- Deploy/control game containers.
 - Abstracted from the game server/container platform to allow stack evolution.
 
 ---
@@ -77,6 +77,10 @@ Here are some planned features
 ---
 
 ## Release Notes
+
+### 1.2.8
+
+- [x] BUGFIX :beetle: Enforced UID 1000 on all folders in server directory
 
 ### 1.2.7
 
@@ -180,7 +184,7 @@ Here are some planned features
 
 ### 0.3.0
 
-- [x] CHANGE :tools: Change dockerfile to support using `docker.sock` socket file to manage docker (from SSH)
+- [x] CHANGE :tools: Change docker file to support using `docker.sock` socket file to manage docker (from SSH)
 
 ### 0.2.17
 
