@@ -1,6 +1,6 @@
-# Satisfactory
+# Palworld
 
-![Satisfactory](../../images/game-logos/satisfactory.png)
+![Satisfactory](../../images/game-logos/palworld.jpg)
 
 ## Before you start
 
@@ -15,7 +15,7 @@ All of these files can be found and edited in the server's local storage path.
 
 ## Stand-alone mode
 
-[Guide on Github](https://github.com/the-peon-project/peon-warplans/tree/main/satisfactory#Guide)
+[Guide on Github](https://github.com/the-peon-project/peon-warplans/tree/main/palworld#Guide)
 
 > Or... just use PEON. it should do all the heavy lifting for you.
 
@@ -23,5 +23,5 @@ All of these files can be found and edited in the server's local storage path.
 
 If you want to dig a bit deeper, here are the links
 
-- [Development Docs](../../development/games/satisfactory.md)
-- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/satisfactory)
+- [Development Docs](../../development/games/palworld.md)
+- [Github Project](https://github.com/the-peon-project/peon-warplans/tree/main/palworld)
