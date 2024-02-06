@@ -7,6 +7,7 @@
 ### World Saves
 
 Your world saves will be stored in the path `./user` if you use the provided `docker-compose.yml`.
+You can find the Server Config in the Config subfolder and your saved game in the SaveGames subfolder.
 This will allow you to download/backup/move files around at your leisure.
 
 All of these files can be found and edited in the server's local storage path.
