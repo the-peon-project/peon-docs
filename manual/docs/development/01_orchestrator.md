@@ -80,7 +80,7 @@ Here are some planned features
 
 ### 1.2.8
 
-- [x] BUGFIX :beetle: Enforced UID 1000 on all folders in server directory
+- [x] BUGFIX :beetle: Enforced UID 1000 on all folders in server directory (on create and on docker-compose action)
 
 ### 1.2.7
 
