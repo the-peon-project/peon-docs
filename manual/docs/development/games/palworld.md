@@ -1,8 +1,8 @@
-# Satisfactory
+# Palworld
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Satisfactory](../../images/game-logos/palworld.jpg)
+![Palworld](../../images/game-logos/palworld.jpg)
 
 ## Official Documentation
 
