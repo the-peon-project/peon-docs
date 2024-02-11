@@ -98,6 +98,8 @@ Used for managing a specific server instance with a known `SERVERNAME`.
         - [GET] Get details of a game server
     server/stats/GAME_UID.SERVERNAME:
         - [GET] Get details of a game server, with performance statistics
+    server/save/GAME_UID.SERVERNAME:
+        - [GET] Download a copy of the config and user files for a server.
     server/create/GAME_UID.SERVERNAME:
         - [PUT] Create a new game server
         payload: { "description": "A PEON game server for ark.", "start_later" : true, "setting01" : "value01", "setting02" : "value02", "setting0N" : "value0N"} *description & start_later are optional. **All other settings can be found be querying the game servers's relevant plan.
@@ -120,7 +122,7 @@ Used for managing a specific server instance with a known `SERVERNAME`.
 ###### Example
 
 Creating a `Valheim` server
-*Query your Orc's API for intended game's plan for the relevant settings (e.g. `/api/v1/plan/valheim`). Settings with empty `""` are required settings. The others are optional.
+*Query your Orc's API for the intended game's plan for the relevant settings (e.g. `/api/v1/plan/valheim`). Settings with empty `""` are required settings. The others are optional.
 
 URL
 
@@ -129,7 +131,7 @@ http://orc.domain.com:5000/api/v1/server/create/{{GAME_UID}}.{{SERVERNAME}}
 ```
 
 The {{GAME_UID}} value needs to be available to your Orcestrator's plan list.
-The {{SERVERNAME}} value can be different to what is provided in the payload. This {{SERVERNAME}} value will form part of the game servers unique ID, and will be how the server is referenced going forward.
+The {{SERVERNAME}} value can be different from what is provided in the payload. This {{SERVERNAME}} value will form part of the game server's unique ID and will be how the server is referenced going forward.
 
 HEADERS
 
@@ -168,8 +170,7 @@ Manage available game plans.
 *No payload required*
 
 ###### Example
-
-Listing the local available game plans.
+Listing the locally available game plans.
 
 URL
 
@@ -203,8 +204,7 @@ Manage a specific game plan.
 *No payload required*
 
 ###### Example
-
-Listing the local available game plans.
+Listing the locally available game plans.
 
 URL
 
