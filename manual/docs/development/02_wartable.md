@@ -63,6 +63,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.2.7
+
+- [x] ADDED :new: Added environment variable `LOG_PATH` for redirecting outputs to the docker log
+
 #### 1.2.6
 
 - [x] CHANGED :tools: Rebuilt off of the latest available source image.
@@ -140,6 +144,10 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+#### 1.2.7
+
+- [x] ADDED :new: Added environment variable `LOG_PATH` for redirecting outputs to the docker log
 
 #### 1.2.6
 
