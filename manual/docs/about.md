@@ -15,7 +15,7 @@ Here you will find all of the official repositories for the PEON project's compo
 We love all kinds of games (and want to support them all).
 
 However, one of the many genres of game that we love to play is fantasy RTS.
-We loved the strategy fantasy world of games like Warcraft 2, and thought the concept of the 'peon' worker fit our objectives fairly well.
+We loved the strategy fantasy world of games like Warcraft 2 and thought the concept of the 'peon' worker fit our objectives fairly well.
 
 The way we see it, a peon is the lowly lackey of any decent Orcish War Party, sent to do the work of tens of men.
 They are often expected to raise War Camps with very little in the way of resources and even less time to do it in.
@@ -25,16 +25,16 @@ They must keep the War Camp stocked and running as battles commence at any time 
 
 That informs most of our project objectives:
 
-1. **Easy** - We want non-coders to be able to deploy their own servers and have their friends join them (no tinkering required).
+1. **Easy** - We want non-coders to be able to deploy their servers and have their friends join them (no tinkering required).
 `The War Chief needs only to tell the peon what to do, the peon must figure it out and do it`
-2. **Any Game** - If a game is self host-able, we want to support it.
+2. **Any Game** - If a game is self-hostable, we want to support it.
 `War Plans can be created very quickly for new War Camps so that Chiefs can battle anywhere they see fit`
-3. **Cheap** - Extremely efficient (designed to reduce hosting costs in the cloud, or to use as few resources as possible if running on your personal server).
+3. **Cheap** - Extremely efficient (designed to reduce hosting costs in the cloud, or to use as few resources as possible if running on your server).
 `A peon should not require much gold/wood to build his Warcamp`
 4. **Fast** - The servers must deploy/start/stop in as small a timeframe as possible. We want to game now, not later.
 `Battles do not wait`
 
-## Documentaion
+## Documentation
 
 We have some documentation to help you on your way.
 
@@ -48,7 +48,7 @@ How to [use](./guides/index.md#introduction) PEON gaming server automation servi
 
 ### Development
 
-If you want to develop your own recipes (or modify the source code for your objectives) go [here](./development/index.md)
+If you want to develop your recipes (or modify the source code for your objectives) go [here](./development/index.md)
 
 ## License Information
 
