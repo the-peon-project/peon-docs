@@ -36,28 +36,31 @@ This is a Discord bot to manage orchestrators.
 
 Links to various project-related resources.
 
-[![github](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-bot-discord)
-[![github](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-bot-discord/issues/new/choose)
-[![github](../images/buttons/button_changelog.svg)](../development/50_bot_discord.md#release-notes)
-[![github](../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.bot.discord/general)
+[![GitHub](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-bot-discord)
+[![GitHub](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-bot-discord/issues/new/choose)
+[![GitHub](../images/buttons/button_changelog.svg)](../development/50_bot_discord.md#release-notes)
+[![GitHub](../images/buttons/button_docker.svg)](https://hub.docker.com/repository/docker/umlatt/peon.bot.discord/general)
+
+---
+
+## Features
+
+- [x] :tools: All basic server control functionality (start, stop, restart...)
+- [x] :tools: API calls respond with builder/based on cards (embeds)
 
 ---
 
 ## Roadmap
 
-- [ ] Bot is re-written for ``slash`` commands (see ``interactions.py``)
+- [ ] CHANGED :tools: Bot is re-written for ``slash`` commands (see ``interactions.py``)
 - [ ] ADDED :new: Deploy server from discord
+- [ ] ADDED :new: Get a list of available plans.
+- [ ] ADDED :new: Get specific plan details.
+- [ ] ADDED :new: Trigger plan update on all orchestrators.
 
 ---
 
 ## Release Notes
-
-**:zap: IMPACT RELEASE :zap:**
-
-- [ ] ADDED :new: Get a list of available plans.
-- [ ] ADDED :new: Get specific plan details.
-- [ ] ADDED :new: Trigger plan update on all orchestrators.
-- [ ] CHANGED :tools: Rewriting API calls with new response builder/ based on cards (embeds)
 
 ### 1.2.4
 

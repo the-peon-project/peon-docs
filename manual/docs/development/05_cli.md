@@ -1,6 +1,6 @@
 # CLI
 
-A handy CLI to manage PEON services remotely (as well as to provided extended access/control)
+A handy CLI to manage PEON services remotely (as well as to provide extended access/control)
 
 ## Installation
 

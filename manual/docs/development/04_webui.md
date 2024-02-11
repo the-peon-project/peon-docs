@@ -50,17 +50,18 @@ Links to various project-related resources.
 
 ---
 
-## Roadmap
+## Features
 
-### *0.2.x*
+- [x] Nothing yet
+
+---
+
+## Roadmap
 
 - [ ] Recipes - Autodetect newly added recipes.
 - [ ] Persistent server data - Keep server data for updates & future releases.
-
-### *0.1.x*
-
 - [ ] WebUI - Access controlled webpage for management
-- [ ] Deploy and delete games from a recipe catalogue (hosted here)
+- [ ] Deploy and delete games from a recipe catalog (hosted here)
 - [ ] Start/stop servers with timeouts (e.g. specify a game session to run for 6 hours (with the option to extend))
 
 ---

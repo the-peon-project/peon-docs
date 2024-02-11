@@ -40,7 +40,7 @@ Links to various project-related resources.
 
 ---
 
-## Feartures
+## Features
 
 - [x] User file backups
 - [x] Update to new deployment architecture.
