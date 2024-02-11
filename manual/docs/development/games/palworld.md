@@ -16,5 +16,11 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ---
 
+### 2024/02/10
+
+- [x] ADDED :new: Ability to modify server settings (as of 10 Feb 2024)
+
+### 2024/02/7
+
 - [x] RELEASED :zap: Plan is available for use.
 - [x] INITIALISED :airplane: Initial build.
