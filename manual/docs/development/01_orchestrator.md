@@ -40,39 +40,28 @@ Links to various project-related resources.
 
 ---
 
+## Feartures
+
+- [x] User file backups
+- [x] Update to new deployment architecture.
+- [x] RESTapi (v1) - Plan/recipies
+- [x] Security - api-key integration
+- [x] Start/Stop scheduler
+- [x] RESTapi (v1) - custom configurations
+- [x] Server deployment (v2) - custom configurations
+- [x] Persistent server data - Keep server data for updates & future releases.
+- [x] RESTapi (v1)
+- [x] Server deployment (v1)
+
+---
+
 ## Roadmap
 
 Here are some planned features
 
 - [ ] Security - Add `fail2ban` to REST API
 - [ ] Security - Users & Audit Logging
-
-### *1.1.x*
-
 - [ ] RESTapi (v1) - Console
-- [ ] Backups
-
-### 1.0.x
-
-- [x] :zap: RELEASE :zap:
-- [x] Update to new deployment architecture.
-
-### *0.3.x*
-
-- [x] RESTapi (v1) - Plan/recipies
-- [x] Security - api-key integration
-- [x] Start/Stop scheduler
-  
-### *0.2.x*
-
-- [x] RESTapi (v1) - custom configurations
-- [x] Server deployment (v2) - custom configurations
-- [x] Persistent server data - Keep server data for updates & future releases.
-
-### *0.1.x*
-
-- [x] RESTapi (v1)
-- [x] Server deployment (v1)
 
 ---
 
