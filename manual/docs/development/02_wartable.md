@@ -41,9 +41,9 @@ Modes are just unique names that help the recipe inform the server which mechani
 
 Links to various project-related resources.
 
-[![github](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-wartable)
-[![github](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-wartable/issues/new/choose)
-[![github](../images/buttons/button_changelog.svg)](../development/02_wartable.md#release-notes)
+[![GitHub](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-wartable)
+[![GitHub](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-wartable/issues/new/choose)
+[![GitHub](../images/buttons/button_changelog.svg)](../development/02_wartable.md#release-notes)
 
 ---
 
@@ -63,6 +63,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.2.8
+
+- [x] CHANGED :tools: Fixed `.initialized` flag.
+
 #### 1.2.7
 
 - [x] ADDED :new: Added environment variable `LOG_PATH` for redirecting outputs to the docker log
@@ -77,7 +81,7 @@ A PEON implementation of vanilla `SteamCMD`.
 
 #### 1.2.4
 
-- [x] CHANGED :tools: Added error details as parameter into `/init/shared`
+- [x] CHANGED :tools: Added error details as a parameter into `/`init/shared`
 
 #### 1.2.1
 
@@ -145,6 +149,10 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
+#### 1.2.8
+
+- [x] CHANGED :tools: Fixed `.initialized` flag.
+
 #### 1.2.7
 
 - [x] ADDED :new: Added environment variable `LOG_PATH` for redirecting outputs to the docker log
@@ -156,11 +164,11 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 #### 1.2.5
 
 - [x] CHANGED :tools: Rebuilt off of the latest available source image.
-- [x] ADDED :new: Packages `lib32gcc1-s1` and `libstdc++6` which should further enhance 32bit application support.
+- [x] ADDED :new: Packages `lib32gcc1-s1` and `libstdc++6` which should further enhance 32-bit application support.
 
 #### 1.2.4
 
-- [x] CHANGED :tools: Added error details as parameter into `/init/shared`
+- [x] CHANGED :tools: Added error details as a parameter into `/`init/shared`
 
 #### 1.2.1
 
