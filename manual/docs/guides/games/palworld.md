@@ -1,6 +1,6 @@
 # Palworld
 
-![Satisfactory](../../images/game-logos/palworld.jpg)
+![Palworld](../../images/game-logos/palworld.jpg)
 
 ## Before you start
 
