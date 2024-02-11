@@ -2,7 +2,7 @@ from diagrams import Cluster, Diagram, Edge
 from diagrams.programming.framework import Flask
 from diagrams.programming.language import Python, Bash
 from diagrams.onprem.container import Docker
-from diagrams.onprem.vcs import Github
+from diagrams.onprem.vcs import GitHub
 from diagrams.generic.os import Debian
 from diagrams.programming.flowchart import Inspection
 from diagrams.oci.compute import OKE
@@ -31,7 +31,7 @@ with Diagram("Peon Orchestrator Software Stack", filename="../manual/docs/images
         image_2 = Docker("Image.2")
         image_1 = Docker("Image.1")
     runtime << [image_n,image_2,image_1]
-    svc = Github("Plan Repository")
+    svc = GitHub("Plan Repository")
     svc << application
     endpoint = Inspection("REST API")
     endpoint >>  framework
