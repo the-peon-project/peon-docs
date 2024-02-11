@@ -9,6 +9,7 @@ The games list will grow over time, as requests come in or other people contribu
 - [ ] [Ark](./guides/games/ark.md)
 - [ ] [Assetto Corsa Competizione](./guides/games/assetto_corsa_competizione.md)
 - [x] [CSGO](./guides/games/csgo.md)
+- [ ] [Enshrouded](/guides/games/enshrouded.md)
 - [x] [Palworld](./guides/games/palworld.md)
 - [ ] [Quake 3 Arena](./guides/games/q3arena.md)
 - [x] [Satisfactory](./guides/games/satisfactory.md)
