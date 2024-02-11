@@ -80,7 +80,8 @@ Here are some planned features
 
 ### 1.2.9
 
-- [x] ADDED :new: Ability to download user and config data for a game server.
+- [x] ADDED :new: Added backup save to `/home/peon/backup`
+- [x] ADDED :new: Ability to download user and config data for a game server (via `/home/peon/backup`).
 
 ### 1.2.8
 
