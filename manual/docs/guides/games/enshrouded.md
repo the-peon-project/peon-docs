@@ -1,6 +1,6 @@
 # Enshrouded
 
-![Enshrouded](../../images/game-logos/Enshrouded.jpg)
+![Enshrouded](../../images/game-logos/enshrouded.png)
 
 ## Before you start
 
