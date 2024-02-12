@@ -67,6 +67,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.10
+
+- [x] ADDED :new: Ability to import any game servers
+
 ### 1.2.9
 
 - [x] ADDED :new: Added backup save to `/home/peon/backup`
