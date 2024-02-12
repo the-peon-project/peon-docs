@@ -61,6 +61,7 @@ Will list all game servers that are registered to the Orchestrator.
 ```yaml
     servers:
         - [GET] List all servers registered to Orchestrator
+        - [PUT] Scan the servers folder and import any available servers
 ```
 
 ###### Payload
