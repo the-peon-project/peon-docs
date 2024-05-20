@@ -62,6 +62,10 @@ Links to various project-related resources.
 
 ## Release Notes
 
+### 1.2.5
+
+- [x] CHANGE :tools: Updated to latest OS/package combinations.
+
 ### 1.2.4
 
 - [x] TYPO :beetle: Fixed a bad response example in `!usage` command

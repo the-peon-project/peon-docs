@@ -67,6 +67,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.11
+
+- [x] CHANGE :tools: Updated to latest OS/package combinations.
+
 ### 1.2.10
 
 - [x] ADDED :new: Ability to import any game servers

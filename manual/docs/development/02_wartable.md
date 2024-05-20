@@ -63,6 +63,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+#### 1.2.9
+
+- [x] CHANGE :tools: Updated to latest OS/package combinations.
+
 #### 1.2.8
 
 - [x] CHANGED :tools: Fixed `.initialized` flag.
@@ -148,6 +152,10 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+#### 1.2.9
+
+- [x] CHANGE :tools: Updated to latest OS/package combinations.
 
 #### 1.2.8
 
