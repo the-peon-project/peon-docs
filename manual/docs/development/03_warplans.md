@@ -40,4 +40,4 @@ Links to various project-related resources.
 
 [![github](../images/buttons/button_github.svg)](https://github.com/the-peon-project/peon-warplans)
 [![github](../images/buttons/button_bug.svg)](https://github.com/the-peon-project/peon-warplans/issues/new/choose)
-[![github](../images/buttons/button_changelog.svg)](../development/03_warplans.md#release-notes)
+[![github](../images/buttons/button_changelog.svg)](https://github.com/the-peon-project/peon-warplans)
