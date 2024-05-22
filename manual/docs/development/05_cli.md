@@ -38,3 +38,15 @@ Just run `./peon [flags]`
     -r|--restart    (R)estarts infrastrcture containers.
     -k|--kill       (K)ill ALL running containers.
 ```
+
+## Roadmap
+
+Here you can see what the future holds.
+
+---
+
+## Release Notes
+
+### 1.0.0
+
+- [x] CHANGE :tools: Removed `peon_dir` file from build. 
