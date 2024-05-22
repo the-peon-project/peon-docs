@@ -8,7 +8,7 @@
 
 If you wish to run this server outside of your private network (required by Steam for any servers running outside of your home LAN), you will need to get a game server login token.
 
-[Registering Game Server Login Token](./index.md#login-tokenappidgslt)
+[Registering Game Server Login Token](./index.md#login-token)
 
 ## Manually Configuring Settings
 
