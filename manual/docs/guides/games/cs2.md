@@ -1,4 +1,4 @@
-# Counter Strike: Global Offensive
+# Counter Strike 2
 
 ![CS2](../../images/game-logos/cs2.png)
 
@@ -14,7 +14,7 @@ If you wish to run this server outside of your private network (required by Stea
 
 You can go to the official docs to see what you can change. Just replace the config files with what you want and restart the server.
 
-[Offical Guide](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive/Dedicated_Servers#Advanced_Configuration)
+[Offical Guide](https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers)
 
 All of these files can be found and edited in the server's local storage path.
 
