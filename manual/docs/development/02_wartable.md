@@ -18,6 +18,7 @@ Modes are just unique names that help the recipe inform the server which mechani
 | - | - | - |
 | `steamcmd` | [Contained Steam](http://docs.warcamp.org/development/02_wartable/#contained-steam) | [umlatt/steamcmd](https://hub.docker.com/r/umlatt/steamcmd) |
 | `steamwine` | [Steamed Wine](http://docs.warcamp.org/development/02_wartable/#steamed-wine) | [umlatt/steamcmd-winehq](https://hub.docker.com/r/umlatt/steamcmd-winehq) |
+| `steamproton`  | [Steamed Proton](http://docs.warcamp.org/development/02_wartable/#steamed-proton) | [umlatt/steamcmd-proton](https://hub.docker.com/r/umlatt/steamcmd-proton) |
 
 ---
 
@@ -224,4 +225,14 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 
 - [x] ADDED :new: WINE deployed
 - [x] TESTED :pencil: WINE with VRising server.
+- [x] INITIALISED :airplane: Initial commit
+
+### Contained Steam
+
+A PEON implementation of vanilla `SteamCMD`.
+
+#### 1.0.0
+
+- [x] ADDED :new: Proton+WINE deployed
+- [x] TESTED :pencil: Proton with Enshrouded server.
 - [x] INITIALISED :airplane: Initial commit
