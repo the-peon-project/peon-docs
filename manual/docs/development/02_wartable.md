@@ -227,9 +227,9 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 - [x] TESTED :pencil: WINE with VRising server.
 - [x] INITIALISED :airplane: Initial commit
 
-### Contained Steam
+### Contained Proton
 
-A PEON implementation of vanilla `SteamCMD`.
+A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
 
 #### 1.0.0
 
