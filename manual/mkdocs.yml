@@ -33,6 +33,8 @@ extra:
   social:
     - icon: simple/kofi
       link: https://ko-fi.com/umlatt
+    - icon: simple/buy-me-a-coffee
+      link: https://buymeacoffee.com/theplacetof
     - icon: fontawesome/brands/discord
       link: https://discord.gg/KJFVyayH8g
     - icon: fontawesome/brands/github
