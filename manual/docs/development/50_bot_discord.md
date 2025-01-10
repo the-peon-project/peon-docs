@@ -62,6 +62,10 @@ Links to various project-related resources.
 
 ## Release Notes
 
+### 1.2.7
+
+- [x] BUGFIX :beetle: Fixed an issue where the local orc's API key would not be updated in the config file. 
+
 ### 1.2.6
 
 - [x] CHANGE :tools: Built on the latest python/package codebase
