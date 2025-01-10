@@ -62,6 +62,10 @@ Links to various project-related resources.
 
 ## Release Notes
 
+### 1.2.6
+
+- [x] CHANGE :tools: Built on the latest python/package codebase
+
 ### 1.2.5
 
 - [x] CHANGE :tools: Updated to latest OS/package combinations.
