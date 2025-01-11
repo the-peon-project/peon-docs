@@ -58,8 +58,6 @@ Links to various project-related resources.
 
 ## Release Notes
 
-**1.2.8**
-
 - [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: Get specific plan details.
 - [ ] ADDED :new: Get version number from Orc (API required)
