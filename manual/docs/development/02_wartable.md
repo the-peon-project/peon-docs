@@ -64,6 +64,11 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+** 1.2.12 **
+
+- [x] ADDED :new: Build version to API response
+- [x] CHANGE :tools: Made public IP detection dynamic
+
 **1.2.10**
 
 - [x] CHANGE :tools: Updated to latest OS/package combinations.
@@ -158,6 +163,11 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
+** 1.2.12 **
+
+- [x] ADDED :new: Build version to API response
+- [x] CHANGE :tools: Made public IP detection dynamic
+
 **1.2.10**
 
 - [x] CHANGE :tools: Updated to latest OS/package combinations.
@@ -230,6 +240,11 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 ### Steamed Proton
 
 A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
+
+** 1.0.1 **
+
+- [x] ADDED :new: Build version to API response
+- [x] CHANGE :tools: Made public IP detection dynamic
 
 **1.0.0**
 
