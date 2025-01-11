@@ -2,7 +2,7 @@
 
 Welcome to the PEON project.
 
-![PEON Logo](./images/logo/warcamp_peon.png)
+![PEON Logo](./images/logo/warcamp_peon_small.png)
 
 Making dedicated game servers accessible to anyone, anywhere.
 
