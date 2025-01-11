@@ -62,41 +62,44 @@ Links to various project-related resources.
 
 ## Release Notes
 
-### 1.2.8
+**1.2.8**
 
+- [x] CHANGED :tools: Removed internal `settings.json` in favour of environment variables.
+- [x] CHANGED :tools: Reworked the MOTD
+- [x] CHANGED :tools: Completed admin/user flow
 - [x] ADDED :new: An `!about` bot directive with version details and links.
-- [ ] CHANGED :tools: Reworked the MOTD
-- [ ] ADDED :new: VERSION environment variable
+- [x] ADDED :new: VERSION environment variable
+- [x] BUGFIX :beetle: Fixed an issue where the control channel wasn't being informed when the bot connected.
 
-### 1.2.7
+**1.2.7**
 
-- [x] BUGFIX :beetle: Fixed an issue where the local orc's API key would not be updated in the config file. 
+- [x] BUGFIX :beetle: Fixed an issue where the local orc's API key would not be updated in the config file.
 
-### 1.2.6
+**1.2.6**
 
 - [x] CHANGE :tools: Built on the latest python/package codebase
 
-### 1.2.5
+**1.2.5**
 
 - [x] CHANGE :tools: Updated to latest OS/package combinations.
 
-### 1.2.4
+**1.2.4**
 
 - [x] TYPO :beetle: Fixed a bad response example in `!usage` command
 
-### 1.2.3
+**1.2.3**
 
 - [x] ADDED :new: Usage response
 
-### 1.2.2
+**1.2.2**
 
 - [x] ADDED :new: Update game server command.
 
-### 1.2.1
+**1.2.1**
 
 - [x] BUGFIX :beetle: Fixed an issue with the regex matching for a minute interval (would match any possible string)
 
-### 1.2.0
+**1.2.0**
 
 **:zap: IMPACT RELEASE :zap:**
 
@@ -105,18 +108,18 @@ Links to various project-related resources.
 - [x] CHANGED :tools: Moved from `/api/1.0` to `/api/v1`
 - [x] ADDED :new: Get a list of available game plans
 
-### 1.1.0
+**1.1.0**
 
 **:zap: IMPACT RELEASE :zap:**
 
 - [x] CHANGED :tools: Moved logging into container logs
 - [x] ADDED :new: Added `DEV_MODE` flag to enable/disable logging/dev mode.
 
-### 1.0.1
+**1.0.1**
 
 - [x] BUGFIX :beetle: Auto append minute time unit to request, if no time unit is provided.
 
-### 1.0.0
+**1.0.0**
 
 - [x] CHANGED :tools: Improved data response legibility on get.
 - [x] CHANGED :tools: Updated bot to handle changes to the Orc API (since Orc release v1.0.1)
@@ -124,46 +127,46 @@ Links to various project-related resources.
 
 **:zap: IMPACT RELEASE :zap:**
 
-### 0.2.8
+**0.2.8**
 
 - [x] CHANGED :tools: Messaging - Reworked error messages
 - [x] BUGFIX :beetle: Scheduling past event times.
 
-### 0.2.7
+**0.2.7**
 
 - [x] ADDED :new: Added shutdown scheduler
 
-### 0.2.6
+**0.2.6**
 
 - [x] CHANGED :tools: Better natural language support
 
-### 0.2.5
+**0.2.5**
 
 - [x] ADDED :new: Added aliases for commands
 
-### 0.2.2
+**0.2.2**
 
 - [x] CHANGED :tools: Reformatted info in the message feed
 - [x] ADDED :new: Server_Config - Allowed for json formatted content
 
-### 0.2.1
+**0.2.1**
 
 - [x] ADDED :new: Discord - Added message cleaner ``clear [int]``
 
-### 0.2.0
+**0.2.0**
 
 - [x] ADDED :new: Orc - control start/stop/restart
 
-### 0.1.1
+**0.1.1**
 
 - [x] ADDED :new: Added devMode switch
 
-### 0.1.0
+**0.1.0**
 
 - [x] ADDED :new: First version of the bot
 - [x] ADDED :new: Basic get-all/get the functionality
 - [x] SECURITY :unlock: Hardcoded bot key
 
-### 0.0.0
+**0.0.0**
 
 - [x] INITIALISED :airplane: Initial commit
