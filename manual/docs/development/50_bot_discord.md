@@ -62,6 +62,12 @@ Links to various project-related resources.
 
 ## Release Notes
 
+### 1.2.8
+
+- [x] ADDED :new: An `!about` bot directive with version details and links.
+- [ ] CHANGED :tools: Reworked the MOTD
+- [ ] ADDED :new: VERSION environment variable
+
 ### 1.2.7
 
 - [x] BUGFIX :beetle: Fixed an issue where the local orc's API key would not be updated in the config file. 
