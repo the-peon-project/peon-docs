@@ -53,10 +53,6 @@ Links to various project-related resources.
 ## Roadmap
 
 - [ ] CHANGED :tools: Bot is re-written for ``slash`` commands (see ``interactions.py``)
-- [ ] ADDED :new: Deploy server from discord
-- [ ] ADDED :new: Get a list of available plans.
-- [ ] ADDED :new: Get specific plan details.
-- [ ] ADDED :new: Trigger plan update on all orchestrators.
 
 ---
 
@@ -64,12 +60,22 @@ Links to various project-related resources.
 
 **1.2.8**
 
+- [ ] ADDED :new: Deploy server from discord
+- [ ] ADDED :new: Get specific plan details.
+- [ ] ADDED :new: Get version number from Orc (API required)
+- [ ] ADDED :new: Always send a `stop date time` message in response
+- [ ] ADDED :new: `!refresh` To trigger updates the plans on the orcs
+- [ ] CHANGED :tools :Fail on `!stop *` if invalid timevalue provided
+
+- [x] ADDED :new: Get a list of available plans.
+- [x] ADDED :new: An `!about` bot directive with version details and links.
+- [x] ADDED :new: VERSION environment variable
 - [x] CHANGED :tools: Removed internal `settings.json` in favour of environment variables.
 - [x] CHANGED :tools: Reworked the MOTD
 - [x] CHANGED :tools: Completed admin/user flow
-- [x] ADDED :new: An `!about` bot directive with version details and links.
-- [x] ADDED :new: VERSION environment variable
 - [x] BUGFIX :beetle: Fixed an issue where the control channel wasn't being informed when the bot connected.
+- [x] BUGFIX :beetle: Fixed an issue where the plans were not being collected from the orchestrator correctly.
+- [x] BUGFIX: :beetle: Fixed an issue with the `!getall` command
 
 **1.2.7**
 
