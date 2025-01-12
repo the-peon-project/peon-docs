@@ -67,7 +67,7 @@ Here are some planned features
 
 ## Release Notes
 
-**1.3.0**
+**1.3.0 - DEVELOPMENT**
 
 **:zap: IMPACT RELEASE :zap:**
 
