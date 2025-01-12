@@ -67,6 +67,10 @@ Here are some planned features
 
 ## Release Notes
 
+### 1.2.12
+
+- [x] BUGFIX :beetle: Enforced project specific docker-compose commands to avoid conflicting networks/configs
+
 ### 1.2.11
 
 - [x] CHANGE :tools: Updated to latest OS/package combinations.
