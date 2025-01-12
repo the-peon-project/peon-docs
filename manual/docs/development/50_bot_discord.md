@@ -58,6 +58,8 @@ Links to various project-related resources.
 
 ## Release Notes
 
+**1.3.0**
+
 **:zap: IMPACT RELEASE :zap:**
 
 - [ ] ADDED :new: Deploy server from discord
