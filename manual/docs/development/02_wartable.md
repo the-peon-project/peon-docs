@@ -64,6 +64,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+** 1.2.13 **
+
+- [x] CHANGE :tools: Build version removed, responsibility given to Orc.
+
 ** 1.2.12 **
 
 - [x] ADDED :new: Build version to API response
@@ -163,6 +167,10 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
+** 1.2.13 **
+
+- [x] CHANGE :tools: Build version removed, responsibility given to Orc.
+
 ** 1.2.12 **
 
 - [x] ADDED :new: Build version to API response
@@ -240,6 +248,10 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 ### Steamed Proton
 
 A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
+
+** 1.0.2 **
+
+- [x] CHANGE :tools: Build version removed, responsibility given to Orc.
 
 ** 1.0.1 **
 
