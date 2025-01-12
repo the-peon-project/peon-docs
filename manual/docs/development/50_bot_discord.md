@@ -60,7 +60,6 @@ Links to various project-related resources.
 
 **:zap: IMPACT RELEASE :zap:**
 
-- [ ] BUGFIX :beetle: Serves with same/different game are overwriting each other
 - [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: Get version number from Orc (API required)
 - [ ] ADDED :new: Always send a `stop date time` message in response
@@ -75,6 +74,7 @@ Links to various project-related resources.
 - [x] CHANGED :tools: Reworked the MOTD
 - [x] CHANGED :tools: Completed admin/user flow
 - [x] CHANGED :tools: Reworked entire server filtering flow
+- [x] BUGFIX :beetle: Servers with same/different game are overwriting each other
 - [x] BUGFIX :beetle: Fixed an issue where the control channel wasn't being informed when the bot connected.
 - [x] BUGFIX :beetle: Fixed an issue where the plans were not being collected from the orchestrator correctly.
 - [x] BUGFIX: :beetle: Fixed an issue with the `!getall` command
