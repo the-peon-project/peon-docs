@@ -58,6 +58,8 @@ Links to various project-related resources.
 
 ## Release Notes
 
+**:zap: IMPACT RELEASE :zap:**
+
 - [ ] BUGFIX :beetle: Serves with same/different game are overwriting each other
 - [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: Get version number from Orc (API required)
@@ -72,6 +74,7 @@ Links to various project-related resources.
 - [x] CHANGED :tools: Removed internal `settings.json` in favour of environment variables.
 - [x] CHANGED :tools: Reworked the MOTD
 - [x] CHANGED :tools: Completed admin/user flow
+- [x] CHANGED :tools: Reworked entire server filtering flow
 - [x] BUGFIX :beetle: Fixed an issue where the control channel wasn't being informed when the bot connected.
 - [x] BUGFIX :beetle: Fixed an issue where the plans were not being collected from the orchestrator correctly.
 - [x] BUGFIX: :beetle: Fixed an issue with the `!getall` command
