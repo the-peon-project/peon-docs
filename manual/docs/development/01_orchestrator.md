@@ -71,9 +71,11 @@ Here are some planned features
 
 **:zap: IMPACT RELEASE :zap:**
 
-- [ ] ADDED :new: API - scheduled action into response.
-- [ ] ADDED :new: API - Get current orchestrator version
+- [x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy
+- [x] ADDED :new: Scheduler auto cleans missing/completed tasks
+- [x] ADDED :new: API - Get current orchestrator version
 - [x] BUGFIX :beetle: Enforced project specific docker-compose commands to avoid conflicting networks/configs
+- [x] BUGFIX :beetle: Fixed an issue where a scheduled `stop` would not respond correctly.
 
 **1.2.11**
 
