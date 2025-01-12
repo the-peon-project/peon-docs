@@ -27,9 +27,11 @@ Issue a server *get* to check if and what the current stop time is configured fo
 
 If you wish to configure an `action` to occur after a specific **duration** of time has elapsed.
 
-- m`m`/m (e.g. `!stop 15m` or `!stop 15` executes a server *stop* 15 minutes from now)
-- h`h` (e.g `!start 5h` *starts* the server now and will *stop* the server 5 hours from now)
-- d`d` (e.g `!restart 2d` will *restart* a server 2 days from now)
+| syntax | example | example behaviour |
+| - | - | - |
+| `#`m or `#` |             `!stop 15m` or `!stop 15`  | executes a server *stop* 15 minutes from now |
+| `#`h |                `!start 5h` | *starts* the server **now** and will *stop* the server 5 hours from now |
+| `#`d |               `!restart 2d` | *restarts* a server 2 days from now |
 
 #### End date/time timers
 
@@ -37,10 +39,14 @@ If you wish to configure an `action` to occur at a **specific** date/time use th
 
 ##### Date-time
 
-- CCYY`-`MM`-`DD`.`hh`:`mm (e.g. `2023-10-05.21:30` executes **action** at the datetime 2023-10-05.21:30)
-- CCYY`/`MM`/`DD`.`hh`h`mm (e.g. `2023/10/05.21h30`executes **action** at the datetime 2023/10/05.21h30)
+| syntax | example | example behaviour |
+| - | - | - |
+| `##`-`##`-`##`.`##`:`##` | `2023-10-05.21:30` | executes **action** at the specified datetime 2023-10-05.21:30 |
+| `##`/`##`/`##`.`##`h`##` | `2023/10/05.21h30` | executes **action** at the specified datetime 2023/10/05.21h30 |
 
 ##### Time
 
-- hh`:`mm (e.g `!stop 21:30` executes a server *stop* at 09:30 pm)
-- hh`h`mm (e.g `!start 21h30`*starts* the server now executes a server *stop* at 09:30 pm)
+| syntax | example | example behaviour |
+| - | - | - |
+| `##`:`##` |             `!stop 21:30` | executes a server *stop* at the specified time of 09:30*pm* today|
+| `##`h`##` |             `!start 21h30` | *starts* the server **now** and executes a server *stop* at the specified time of 09:30*pm* today|
