@@ -63,10 +63,11 @@ Links to various project-related resources.
 **:zap: IMPACT RELEASE :zap:**
 
 - [ ] ADDED :new: Deploy server from discord
-- [ ] ADDED :new: Get version number from Orc (API required)
-- [ ] ADDED :new: Always send a `stop date time` message in response
-- [ ] ADDED :new: `!refresh` To trigger updates the plans on the orcs
+- [ ] ADDED :new: `!refresh` To trigger updating the plans on the orcs
 
+- [x] ADDED :new: Container type and version information into response.
+- [x] ADDED :new: Command `!get time` will now return just the shutdown time (if any)
+- [x] ADDED :new: Get version number from Orc (API required)
 - [x] ADDED :new: Get specific plan details.
 - [x] ADDED :new: Get a list of available plans.
 - [x] ADDED :new: An `!about` bot directive with version details and links.
