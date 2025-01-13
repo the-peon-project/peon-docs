@@ -65,6 +65,8 @@ Links to various project-related resources.
 - [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: `!refresh` To trigger updating the plans on the orcs
 
+- [ ] ADDED :new: Port usage details
+
 - [x] ADDED :new: Container type and version information into response.
 - [x] ADDED :new: Command `!get time` will now return just the shutdown time (if any)
 - [x] ADDED :new: Get version number from Orc (API required)

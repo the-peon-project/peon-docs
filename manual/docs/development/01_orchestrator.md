@@ -71,6 +71,8 @@ Here are some planned features
 
 **:zap: IMPACT RELEASE :zap:**
 
+- [ ] ADDED :new: Check for consumed ports in start response (import docker compose config as yaml and check docker ps output)
+
 - [x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy
 - [x] ADDED :new: Scheduler auto cleans missing/completed tasks
 - [x] ADDED :new: API - Get current orchestrator version
