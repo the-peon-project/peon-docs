@@ -41,8 +41,8 @@ If you wish to configure an `action` to occur at a **specific** date/time use th
 
 | syntax | example | example behaviour |
 | - | - | - |
-| `##`-`##`-`##`.`##`:`##` | `2023-10-05.21:30` | executes **action** at the specified datetime 2023-10-05.21:30 |
-| `##`/`##`/`##`.`##`h`##` | `2023/10/05.21h30` | executes **action** at the specified datetime 2023/10/05.21h30 |
+| `##`-`##`-`##`.`##`:`##` | `!stop 2023-10-05.21:30` | executes *stop* at the specified datetime 2023-10-05.21:30 |
+| `##`/`##`/`##`.`##`h`##` | `!stop 2023/10/05.21h30` | executes **stop** at the specified datetime 2023/10/05.21h30 |
 
 ##### Time
 
