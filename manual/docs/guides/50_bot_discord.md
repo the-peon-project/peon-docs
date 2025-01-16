@@ -6,20 +6,22 @@ Below are the commands that can be run against the bot.
 
 |symbol|command|description|
 |-|-|-|
-:point_up: | ``!poke``  |to check if there is an available peon to do some work.
+:point_up: | ``!poke``  | to check if there is an available peon to do some work.
 :tent: |  ``!get`` | to show the status of a warcamp (you can `!get time` if you want just the scheduled stop time).
-:european_castle:  | ``!getall`` |  to list all warcamps in the warparty.
-:scroll:  | ``!plan`` |  get the required/optional settings for a game server.
-:books:  | ``!plans`` |  list all the available game server options.
-:wrench: | ``!register`` | to register a warparty.
-:crossed_swords: |``!import`` | to scan all Orchestrators and import all valid warcamps.
+:european_castle:  | ``!getall`` |  *to list all warcamps in the warparty.
+:scroll:  | ``!plan`` |  *get the required/optional settings for a game server.
+:books:  | ``!plans`` |  *list all the available game server options.
+:wrench: | ``!register`` | *to register a warparty.
+:crossed_swords: |``!import`` | *to scan all Orchestrators and import all valid warcamps.
 :white_check_mark: |  ``!start`` | to start a warcamp.
 :checkered_flag: | ``!stop`` | to stop a warcamp.
 :recycle: | ``!restart`` | to restart a warcamp.
 :tools: | ``!update`` | to update the game server files of a warcamp (This **WILL** restart the server).
-:hammer: | ``!unregister`` | to remove a registered warparty.
+:hammer: | ``!unregister`` | *to remove a registered warparty.
 :grey_question: | ``!usage`` | to print this help menu.
 :speech_balloon: | ``!about`` | Print information about the project, as well as current software versions of the orchestration tools.
+
+> Commands with an asterisk are for the admin channel only.
 
 ### Timers
 
