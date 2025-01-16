@@ -71,6 +71,9 @@ Here are some planned features
 
 **:zap: IMPACT RELEASE :zap:**
 
+- [ ] ADDED :new: API - `Modify` to allow editing the existing server's settings.
+
+- [x] ADDED :new: API - Update flag `full/image/server`. A `full` update will update the container & the server, an `image` update will just update the container and a `server` update will just update the game server.
 - [x] ADDED :new: Check for consumed ports in start response (import docker compose config as yaml and check docker ps output)
 - [x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy
 - [x] ADDED :new: Scheduler auto cleans missing/completed tasks
