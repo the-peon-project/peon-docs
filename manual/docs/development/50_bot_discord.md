@@ -60,18 +60,20 @@ Links to various project-related resources.
 
 - [ ] ADDED :new: `!save` to share a zipped copy of the user's folder (for backup)
 - [ ] ADDED :new: `!restore` upload a user's save folder to be restored to the server.
+- [ ] ADDED :new: `!modify` the settings of a server
 
 **1.3.0 - DEVELOPMENT**
 
 **:zap: IMPACT RELEASE :zap:**
 
 - [ ] ADDED :new: `!unregister` to remove an orchestrator
-- [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: `!refresh` To trigger updating the plans on the orcs
+- [ ] ADDED :new: Deploy server from discord
 - [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
 
-- [ ] ADDED :new: Port usage details
+- [ ] ADDED :new: `!update *full/*image/*server` to allow for granular server updates (`full` is default)
 
+- [x] ADDED :new: Port usage details
 - [x] ADDED :new: `!import` available warcamps.
 - [x] ADDED :new: Container type and version information into response.
 - [x] ADDED :new: Command `!get time` will now return just the shutdown time (if any)
