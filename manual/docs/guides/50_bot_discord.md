@@ -1,5 +1,17 @@
 # Bot.Discord
 
+## Terms
+
+The project uses arbitratry names for certain concepts. Please see below for details
+
+| Term | Description |
+| - | - |
+| War Party | A host server where you game servers are deployed. |
+| War Camp | A containerized game server. |
+| War Plan | A recipe used to automatically deploy the containerized game server. |
+| Orc | The management container that orchestrates all of the deployment and management of the game servers on a host (required on each host)
+
+
 ## Commands
 
 Below are the commands that can be run against the bot.
@@ -9,17 +21,17 @@ Below are the commands that can be run against the bot.
 :point_up: | ``!poke``  | to check if there is an available peon to do some work.
 :tent: |  ``!get`` | to show the status of a warcamp (you can `!get time` if you want just the scheduled stop time).
 :european_castle:  | ``!getall`` |  *to list all warcamps in the warparty.
-:scroll:  | ``!plan`` |  *get the required/optional settings for a game server.
-:books:  | ``!plans`` |  *list all the available game server options.
+:scroll:  | ``!plan`` |  *get the required/optional settings to deploy a warcamp.
+:books:  | ``!plans`` |  *list all possible warcamps.
 :wrench: | ``!register`` | *to register a warparty.
-:crossed_swords: |``!import`` | *to scan all Orchestrators and import all valid warcamps.
+:crossed_swords: |``!import`` | *to scan all war parties and import all valid warcamps.
 :white_check_mark: |  ``!start`` | to start a warcamp.
 :checkered_flag: | ``!stop`` | to stop a warcamp.
 :recycle: | ``!restart`` | to restart a warcamp.
 :tools: | ``!update`` | to update the game server files of a warcamp (This **WILL** restart the server).
 :hammer: | ``!unregister`` | *to remove a registered warparty.
 :grey_question: | ``!usage`` | to print this help menu.
-:speech_balloon: | ``!about`` | Print information about the project, as well as current software versions of the orchestration tools.
+:speech_balloon: | ``!about`` | to print information about the project, as well as current software versions of the orchestration tools.
 
 > Commands with an asterisk are for the admin channel only.
 
