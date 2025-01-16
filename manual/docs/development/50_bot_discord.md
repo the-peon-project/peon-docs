@@ -67,12 +67,12 @@ Links to various project-related resources.
 **:zap: IMPACT RELEASE :zap:**
 
 - [ ] ADDED :new: `!unregister` to remove an orchestrator
-- [ ] ADDED :new: `!refresh` To trigger updating the plans on the orcs
 - [ ] ADDED :new: Deploy server from discord
 - [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
 
 - [ ] ADDED :new: `!update *full/*image/*server` to allow for granular server updates (`full` is default)
 
+- [x] ADDED :new: `!refresh` To trigger updating the plans on the orcs
 - [x] ADDED :new: Port usage details
 - [x] ADDED :new: `!import` available warcamps.
 - [x] ADDED :new: Container type and version information into response.
