@@ -80,7 +80,7 @@ Links to various project-related resources.
 - [x] ADDED :new: Get a list of available plans.
 - [x] ADDED :new: An `!about` bot directive with version details and links.
 - [x] ADDED :new: VERSION environment variable
-- [x] CHANGED :tools :Fail on `!stop *` if invalid timevalue provided
+- [x] CHANGED :tools: Fail on `!stop *` if invalid timevalue provided
 - [x] CHANGED :tools: Removed internal `settings.json` in favour of environment variables.
 - [x] CHANGED :tools: Reworked the MOTD
 - [x] CHANGED :tools: Completed admin/user flow
