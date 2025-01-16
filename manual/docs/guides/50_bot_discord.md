@@ -12,11 +12,11 @@ Below are the commands that can be run against the bot.
 :scroll:  | ``!plan`` |  get the required/optional settings for a game server.
 :books:  | ``!plans`` |  list all the available game server options.
 :wrench: | ``!register`` | to register a warparty.
-:crossed_swords: |``!import`` | Scan all Orchestrators and import all valid warcamps.
+:crossed_swords: |``!import`` | to scan all Orchestrators and import all valid warcamps.
 :white_check_mark: |  ``!start`` | to start a warcamp.
 :checkered_flag: | ``!stop`` | to stop a warcamp.
 :recycle: | ``!restart`` | to restart a warcamp.
-:tools: | ``!update`` | Update the game server files of a warcamp (This **WILL** restart the server).
+:tools: | ``!update`` | to update the game server files of a warcamp (This **WILL** restart the server).
 :hammer: | ``!unregister`` | to remove a registered warparty.
 :grey_question: | ``!usage`` | to print this help menu.
 :speech_balloon: | ``!about`` | Print information about the project, as well as current software versions of the orchestration tools.
