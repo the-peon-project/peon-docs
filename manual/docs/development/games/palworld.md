@@ -2,7 +2,7 @@
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Palworld](../../images/game-logos/palworld.jpg)
+![Palworld](../../images/game-logos/palworld.webp)
 
 ## Official Documentation
 
