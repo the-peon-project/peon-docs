@@ -76,6 +76,8 @@ Here are some planned features
 - [x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy
 - [x] ADDED :new: Scheduler auto cleans missing/completed tasks
 - [x] ADDED :new: API - Get current orchestrator version
+- [x] CHANGED :tools: The `getall` servers is now gameuid,servername sorted by default
+- [x] BUGFIX :beetle: Fixed an issue to the server import function, where it would try start a server with a non-existant `docker-compose.yml` file
 - [x] BUGFIX :beetle: Enforced project specific docker-compose commands to avoid conflicting networks/configs
 - [x] BUGFIX :beetle: Fixed an issue where a scheduled `stop` would not respond correctly.
 
