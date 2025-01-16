@@ -6,7 +6,7 @@ Here you can get an overview of how the PEON project is architected, where to go
 *Please note that documentation may lag behind the development status, but the general rules/intent should still be valid.*
 
 !!! Developer Community
-    Please feel free to chat with us in the [Discord develpment server](https://discord.com/invite/KJFVyayH8g)
+    Please feel free to chat with us in the [Discord development server](https://discord.com/invite/KJFVyayH8g)
 
 ---
 
