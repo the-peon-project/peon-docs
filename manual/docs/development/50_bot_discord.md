@@ -58,6 +58,9 @@ Links to various project-related resources.
 
 ## Release Notes
 
+- [ ] ADDED :new: `!save` to share a zipped copy of the user's folder (for backup)
+- [ ] ADDED :new: `!restore` upload a user's save folder to be restored to the server.
+
 **1.3.0 - DEVELOPMENT**
 
 **:zap: IMPACT RELEASE :zap:**
@@ -65,7 +68,7 @@ Links to various project-related resources.
 - [ ] ADDED :new: `!unregister` to remove an orchestrator
 - [ ] ADDED :new: Deploy server from discord
 - [ ] ADDED :new: `!refresh` To trigger updating the plans on the orcs
-- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are strating to hit character limits
+- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
 
 - [ ] ADDED :new: Port usage details
 
