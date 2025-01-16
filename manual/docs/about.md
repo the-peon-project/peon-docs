@@ -34,6 +34,17 @@ That informs most of our project objectives:
 4. **Fast** - The servers must deploy/start/stop in as small a timeframe as possible. We want to game now, not later.
 `Battles do not wait`
 
+## Terms
+
+The project uses arbitratry names for certain concepts. Please see below for details
+
+| Term | Description |
+| - | - |
+| War Party | A host server where you game servers are deployed. |
+| War Camp | A containerized game server. |
+| War Plan | A recipe used to automatically deploy the containerized game server. |
+| Orc | The management container that orchestrates all of the deployment and management of the game servers on a host (required on each host)
+
 ## Documentation
 
 We have some documentation to help you on your way.
