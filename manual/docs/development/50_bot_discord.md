@@ -72,7 +72,8 @@ Links to various project-related resources.
 
 - [ ] ADDED :new: `!update *full/*image/*server` to allow for granular server updates (`full` is default)
 
-- [x] ADDED :new: `!refresh` To trigger updating the plans on the orcs
+- [x] ADDED :new: `!register` to link the Discord bot to additional orchestrators
+- [x] ADDED :new: `!refresh` to trigger updating the plans on the orcs
 - [x] ADDED :new: Port usage details
 - [x] ADDED :new: `!import` available warcamps.
 - [x] ADDED :new: Container type and version information into response.
@@ -82,6 +83,7 @@ Links to various project-related resources.
 - [x] ADDED :new: Get a list of available plans.
 - [x] ADDED :new: An `!about` bot directive with version details and links.
 - [x] ADDED :new: VERSION environment variable
+- [x] CHANGED :tools: Moved several modules around and renamed several files to be more dev friendly.
 - [x] CHANGED :tools: Fail on `!stop *` if invalid timevalue provided
 - [x] CHANGED :tools: Removed internal `settings.json` in favour of environment variables.
 - [x] CHANGED :tools: Reworked the MOTD
@@ -90,7 +92,7 @@ Links to various project-related resources.
 - [x] BUGFIX :beetle: Servers with same/different game are overwriting each other
 - [x] BUGFIX :beetle: Fixed an issue where the control channel wasn't being informed when the bot connected.
 - [x] BUGFIX :beetle: Fixed an issue where the plans were not being collected from the orchestrator correctly.
-- [x] BUGFIX: :beetle: Fixed an issue with the `!getall` command
+- [x] BUGFIX :beetle: Fixed an issue with the `!getall` command
 
 **1.2.7**
 
