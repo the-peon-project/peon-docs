@@ -67,11 +67,11 @@ Links to various project-related resources.
 **:zap: IMPACT RELEASE :zap:**
 
 - [ ] ADDED :new: Deploy server from discord
-
-- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
 - [ ] ADDED :new: `!update *full/*image/*server` to allow for granular server updates (`full` is default)
+- [ ] CHANGED :tools: Moved to modal responses for all containers.
+- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
 
-- [ ] ADDED :new: `!unregister` to remove an orchestrator
+- [ ] ADDED :new: `!deregister` to remove an orchestrator
 
 - [x] ADDED :new: `!register` to link the Discord bot to additional orchestrators
 - [x] ADDED :new: `!refresh` to trigger updating the plans on the orcs
