@@ -8,7 +8,7 @@ The easy-to-use GSaaS (Game Server as a Service) platform.
 
 Here you will find all of the official repositories for the PEON project's components.
 
-![PEON Logo](./images/logo/PEON_small_square.png)
+![PEON Logo](./images/logo/PEON_R2L_small.png)
 
 ## Story behind the name
 
