@@ -63,6 +63,10 @@ Below are the symbols that are typically found throughout the various changelogs
 
 Below, is a list of the various tools and technologies leveraged in the development process for the PEON project.
 
+### ASCII Text Art Style
+
+Things like the `motd` file will use the ascii text art style `Delta Corps Priest 1`. A nice alternative (non-ansi) is `Elite`
+
 ### Documentation
 
 #### Material for MkDocs
