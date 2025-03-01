@@ -71,8 +71,7 @@ Links to various project-related resources.
 - [ ] ADDED :new: `!deregister` to remove an orchestrator
 
 - [ ] CHANGED :tools: :zap: Reworked entire bot interaction/behaviour :zap:
-- [ ] ADDED :new: `!update *full/*image/*server` to allow for granular server updates (`full` is default)
-
+- [ ] ADDED :new: `!update *full/*image/*server/*reinit` to allow for granular server updates (`full` is default)
 
 - [x] ADDED :new: `!register` to link the Discord bot to additional orchestrators
 - [x] ADDED :new: `!refresh` to trigger updating the plans on the orcs
