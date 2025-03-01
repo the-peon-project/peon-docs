@@ -73,7 +73,7 @@ Here are some planned features
 
 - [ ] ADDED :new: API - `Modify` to allow editing the existing server's settings.
 
-- [x] ADDED :new: API - Update flag `full/image/server`. A `full` update will update the container & the server, an `image` update will just update the container and a `server` update will just update the game server.
+- [x] ADDED :new: API - Update flag `reinit/full/image/server`. Setting the flag to `server` update will just update the game server, setting `image` update will update the container, `full` will update the `image` and `server` and `reinit` will delete the server data (not user data) and then run a `full`
 - [x] ADDED :new: Check for consumed ports in start response (import docker compose config as yaml and check docker ps output)
 - [x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy
 - [x] ADDED :new: Scheduler auto cleans missing/completed tasks
