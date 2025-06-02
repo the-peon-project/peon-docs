@@ -64,6 +64,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+** 1.2.14 **
+
+- [x] CHANGE :tools: Built against latest code release
+
 ** 1.2.13 **
 
 - [x] CHANGE :tools: Build version removed, responsibility given to Orc.
@@ -166,6 +170,10 @@ A PEON implementation of vanilla `SteamCMD`.
 ### Steamed Wine
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
+
+** 1.2.14 **
+
+- [x] CHANGE :tools: Built against latest code release
 
 ** 1.2.13 **
 
