@@ -14,6 +14,7 @@ The games list will grow over time, as requests come in or other people contribu
 - [x] [Palworld](./guides/games/palworld.md)
 - [ ] [Quake 3 Arena](./guides/games/q3arena.md)
 - [x] [Satisfactory](./guides/games/satisfactory.md)
+- [x] [Sons of the Forest](./guides/games/sof.md)
 - [ ] [Starbound](./guides/games/starbound.md)
 - [x] [Valheim](./guides/games/valheim.md)
 - [x] [VRising](./guides/games/vrising.md)
