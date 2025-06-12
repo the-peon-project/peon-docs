@@ -18,5 +18,6 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ---
 
-- [ ] RELEASED :zap: Plan is available for use.
+- [x] CHANGED :tools: Fixed a hard coded proton issue
+- [x] RELEASED :zap: Plan is available for use.
 - [x] INITIALISED :airplane: Initial build.
