@@ -257,6 +257,10 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 
 A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
 
+** 1.0.5 **
+
+- [x] CHANGE :tools: Updated latest version of the Proton 10.12
+
 ** 1.0.4 **
 
 - [x] BUGFIX :beetle: Fixed a hard coded pathing issue for the Proton tools
