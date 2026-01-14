@@ -1,4 +1,4 @@
-site_name: The PEON Project 
+site_name: The PEON Project - Game Server Management Made Easy
 theme:
   name: material
   features:
@@ -11,6 +11,10 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
   language: en
   palette:
     - scheme: default 
@@ -63,3 +67,42 @@ markdown_extensions:
 repo_url: https://github.com/the-peon-project
 copyright: |
   &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
+
+nav:
+  - Home: index.md
+  - 🚀 Quick Start:
+    - Getting Started: quick-start/index.md
+    - Installation: quick-start/installation.md
+    - First Server: quick-start/first-server.md
+  - 📖 User Guide:
+    - Overview: guides/index.md
+    - Discord Bot: guides/50_bot_discord.md
+    - REST API: guides/02_rest_api.md
+    - Game Guides:
+      - Overview: guides/games/index.md
+      - Valheim: guides/games/valheim.md
+      - Palworld: guides/games/palworld.md
+      - Counter-Strike 2: guides/games/cs2.md
+      - CS:GO: guides/games/csgo.md
+      - Enshrouded: guides/games/enshrouded.md
+      - Sons of the Forest: guides/games/sof.md
+      - V Rising: guides/games/vrising.md
+      - Satisfactory: guides/games/satisfactory.md
+      - ARK: guides/games/ark.md
+  - 🎮 Games: games.md
+  - 🛠️ Development:
+    - Overview: development/index.md
+    - Architecture: development/00_peon.md
+    - Orchestrator: development/01_orchestrator.md
+    - War Table: development/02_wartable.md
+    - War Plans: development/03_warplans.md
+    - Web UI: development/04_webui.md
+    - CLI Tools: development/05_cli.md
+    - Discord Bot: development/50_bot_discord.md
+  - 🔗 API Reference:
+    - REST API: api/index.md
+  - ❓ FAQ: faq.md
+  - ℹ️ About: about.md
+  - 🆘 Support:
+    - Discord: https://discord.gg/KJFVyayH8g
+    - GitHub Issues: https://github.com/the-peon-project/peon/issues

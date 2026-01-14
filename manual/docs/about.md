@@ -51,15 +51,19 @@ We have some documentation to help you on your way.
 
 ### Installation/Deployment
 
-How to [deploy](./guides/index.md#peon-deployment) PEON for gaming server automation.
+How to [deploy](./guides/index.md) PEON for gaming server automation.
 
 ### Using PEON
 
-How to [use](./guides/index.md#introduction) PEON gaming server automation services.
+How to [use](./guides/index.md) PEON gaming server automation services.
 
 ### Development
 
 If you want to develop your recipes (or modify the source code for your objectives) go [here](./development/index.md)
+
+## Frequently Asked Questions {#faq}
+
+For common questions and detailed answers, please see our comprehensive [FAQ section](faq.md).
 
 ## License Information
 
