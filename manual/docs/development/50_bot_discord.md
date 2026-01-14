@@ -62,17 +62,16 @@ Links to various project-related resources.
 - [ ] ADDED :new: `!restore` upload a user's save folder to be restored to the server.
 - [ ] ADDED :new: `!modify` the settings of a server
 
-**2.0.0 - DEVELOPMENT**
+- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
+
+**2.0.0**
 
 **:zap: IMPACT RELEASE :zap:**
 
-- [ ] ADDED :new: Deploy server from discord
-- [ ] CHANGED :tools: Updated response of `getall` to be like `import` as we are starting to hit character limits
-- [ ] ADDED :new: `!deregister` to remove an orchestrator
-
-- [ ] CHANGED :tools: :zap: Reworked entire bot interaction/behaviour :zap:
-- [ ] ADDED :new: `!update *full/*image/*server/*reinit` to allow for granular server updates (`full` is default)
-
+- [x] ADDED :new: Deploy server from discord
+- [x] ADDED :new: `!deregister` to remove an orchestrator
+- [x] CHANGED :tools: :zap: Reworked entire bot interaction/behaviour :zap:
+- [x] ADDED :new: `!update *full/*image/*server/*reinit` to allow for granular server updates (`full` is default)
 - [x] ADDED :new: `!register` to link the Discord bot to additional orchestrators
 - [x] ADDED :new: `!refresh` to trigger updating the plans on the orcs
 - [x] ADDED :new: Port usage details
