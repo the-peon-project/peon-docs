@@ -64,15 +64,19 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
-** 1.2.14 **
+**1.2.15**
 
 - [x] CHANGE :tools: Built against latest code release
 
-** 1.2.13 **
+**1.2.14**
+
+- [x] CHANGE :tools: Built against latest code release
+
+**1.2.13**
 
 - [x] CHANGE :tools: Build version removed, responsibility given to Orc.
 
-** 1.2.12 **
+**1.2.12**
 
 - [x] ADDED :new: Build version to API response
 - [x] CHANGE :tools: Made public IP detection dynamic
@@ -171,15 +175,19 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
-** 1.2.14 **
+**1.2.15**
 
 - [x] CHANGE :tools: Built against latest code release
 
-** 1.2.13 **
+**1.2.14**
+
+- [x] CHANGE :tools: Built against latest code release
+
+**1.2.13**
 
 - [x] CHANGE :tools: Build version removed, responsibility given to Orc.
 
-** 1.2.12 **
+**1.2.12**
 
 - [x] ADDED :new: Build version to API response
 - [x] CHANGE :tools: Made public IP detection dynamic
@@ -257,23 +265,28 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 
 A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
 
-** 1.0.5 **
+**1.2.15**
+
+- [x] CHANGE :tools: Change the version number to be in sync with the other steamcmd based builds
+- [x] CHANGE :tools: Built against latest code release (GE's proton 10.32)
+
+**1.0.5**
 
 - [x] CHANGE :tools: Updated latest version of the Proton 10.12
 
-** 1.0.4 **
+**1.0.4**
 
 - [x] BUGFIX :beetle: Fixed a hard coded pathing issue for the Proton tools
 
-** 1.0.3 **
+**1.0.3**
 
 - [x] CHANGE :tools: Updated latest version of the Proton 10.4
 
-** 1.0.2 **
+**1.0.2**
 
 - [x] CHANGE :tools: Build version removed, responsibility given to Orc.
 
-** 1.0.1 **
+**1.0.1**
 
 - [x] ADDED :new: Build version to API response
 - [x] CHANGE :tools: Made public IP detection dynamic

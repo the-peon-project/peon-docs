@@ -41,6 +41,7 @@ Games with basic support - may require manual configuration:
 - **[Assetto Corsa Competizione](./guides/games/assetto_corsa_competizione.md)** - Professional racing simulation
 
 ### Classic Games
+- **[Duke Nukem 3D (EDuke32)](./guides/games/dukenukem.md)** - Classic FPS multiplayer via EDuke32 — *Contributed by [dman1901](https://github.com/dman1901)*
 - **[Quake 3 Arena](./guides/games/q3arena.md)** - Fast-paced arena shooter
 
 ## 📝 Requested Features
