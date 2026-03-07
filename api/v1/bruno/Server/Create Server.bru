@@ -1,0 +1,29 @@
+meta {
+  name: Create Server
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{url}}:{{port}}/api/v1/server/create/{{game_uid}}.{{server_name}}
+  body: json
+  auth: inherit
+}
+
+headers {
+  X-Api-Key: {{api-key}}
+}
+
+body:json {
+  {
+    "SERVER_NAME": "{{game_uid}}.{{server_name}}",
+    "ADMIN_PASSWORD": "password1234",
+    "PASSWORD": "password123",
+    "description": "A Bruno API server"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
