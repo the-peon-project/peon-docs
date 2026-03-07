@@ -64,6 +64,10 @@ Here you can see what the future holds.
 
 A PEON implementation of vanilla `SteamCMD`.
 
+**1.2.16**
+
+- [x] BUGFIX :beetle: Added a work around for a broken steam download cache to force a re-validate on update mode.
+
 **1.2.15**
 
 - [x] CHANGE :tools: Built against latest code release
@@ -175,6 +179,10 @@ A PEON implementation of vanilla `SteamCMD`.
 
 A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to support Windows native servers.
 
+**1.2.16**
+
+- [x] BUGFIX :beetle: Added a work around for a broken steam download cache to force a re-validate on update mode.
+
 **1.2.15**
 
 - [x] CHANGE :tools: Built against latest code release
@@ -264,6 +272,10 @@ A PEON implementation of vanilla `SteamCMD` with a `WINEHQ` implementation to su
 ### Steamed Proton
 
 A PEON implementation of vanilla `SteamCMD` with the Proton layer added to more closely mirror steams emulation layers.
+
+**1.2.16**
+
+- [x] BUGFIX :beetle: Added a work around for a broken steam download cache to force a re-validate on update mode.
 
 **1.2.15**
 
