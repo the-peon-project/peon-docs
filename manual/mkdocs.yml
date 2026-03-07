@@ -1,34 +1,41 @@
 site_name: The PEON Project - Game Server Management Made Easy
+site_url: https://the-peon-project.github.io
 theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - toc.integrate
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.top
+    - toc.integrate
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - navigation.instant
-    - navigation.tracking
-    - navigation.expand
-    - navigation.indexes
   language: en
   palette:
-    - scheme: default 
-      toggle:
-        icon: material/toggle-switch
-        name: dark mode    
-      primary: green
-      accent: gray
     - scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline 
-        name: light mode
-      primary: green 
-      accent: black
+        icon: lucide/moon
+        name: Switch to light mode
+      primary: green
+      accent: green
+    - scheme: default
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+      primary: green
+      accent: gray
   icon:
     repo:
       fontawesome/brands/github
