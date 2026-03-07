@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1915,18 +1915,16 @@
 
 <h1 id="discord-bot-modern-game-server-management">Discord Bot - Modern Game Server Management</h1>
 <p>The PEON Discord Bot provides an intuitive, modern interface for managing game servers directly from Discord using slash commands.</p>
-<div class="admonition success">
-<p class="admonition-title">✨ <strong>Fully Modernized (v3.0.0)</strong></p>
-<p>The Discord bot has been completely rewritten with Discord.py v2, featuring slash commands, enhanced UI, auto-completion, and persistent views.</p>
-</div>
+<p>!!! success "✨ <strong>Fully Modernized (v3.0.0)</strong>"
+    The Discord bot has been completely rewritten with Discord.py v2, featuring slash commands, enhanced UI, auto-completion, and persistent views.</p>
 <hr />
 <h2 id="quick-start">🚀 Quick Start</h2>
 <h3 id="essential-commands">Essential Commands</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/peon                 # Main server interface
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>/create valheim bob   # Create new server
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>/server start         # Quick server actions  
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>/list servers         # View all servers
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>/help                 # Command reference
+<div class="highlight"><pre><span></span><code>/peon                 # Main server interface
+/create valheim bob   # Create new server
+/server start         # Quick server actions  
+/list servers         # View all servers
+/help                 # Command reference
 </code></pre></div>
 <h3 id="channel-based-management">Channel-Based Management</h3>
 <p>PEON works intelligently based on your Discord channel:</p>
@@ -1945,15 +1943,15 @@
 <li><strong>Server Mode</strong>: Server-specific management</li>
 <li><strong>Auto-detect</strong>: Smart channel detection</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/peon admin           # Force admin interface
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>/peon server          # Force server interface  
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>/peon                 # Auto-detect mode
+<div class="highlight"><pre><span></span><code>/peon admin           # Force admin interface
+/peon server          # Force server interface  
+/peon                 # Auto-detect mode
 </code></pre></div>
 <h4 id="create-game_type-server_name-description"><code>/create &lt;game_type&gt; &lt;server_name&gt; [description]</code></h4>
 <p><strong>Create new game servers with auto-completion</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/create minecraft survival-world
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>/create valheim viking-adventure description:Epic Viking server
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>/create palworld pals-paradise description:Creature collecting fun
+<div class="highlight"><pre><span></span><code>/create minecraft survival-world
+/create valheim viking-adventure description:Epic Viking server
+/create palworld pals-paradise description:Creature collecting fun
 </code></pre></div>
 <p><strong>Supported Games</strong>: Minecraft, Valheim, Palworld, ARK, CS2, Rust, Starbound, and 15+ more</p>
 <h4 id="server-action-server-timer-mode"><code>/server &lt;action&gt; [server] [timer] [mode]</code></h4>
@@ -1965,16 +1963,16 @@
 - <code>info</code> - View detailed server status
 - <code>update</code> - Update server files
 - <code>backup</code> - Create and download backup</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/server start server:valheim.bob
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>/server stop server:minecraft.world timer:30m
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>/server update server:palworld.paradise mode:full
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>/server backup server:ark.island
+<div class="highlight"><pre><span></span><code>/server start server:valheim.bob
+/server stop server:minecraft.world timer:30m
+/server update server:palworld.paradise mode:full
+/server backup server:ark.island
 </code></pre></div>
 <h4 id="list-type"><code>/list &lt;type&gt;</code></h4>
 <p><strong>View servers, orchestrators, and game plans</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/list servers         # All game servers
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>/list orchestrators   # Registered orchestrators  
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>/list plans          # Available game types
+<div class="highlight"><pre><span></span><code>/list servers         # All game servers
+/list orchestrators   # Registered orchestrators  
+/list plans          # Available game types
 </code></pre></div>
 <hr />
 <h2 id="interactive-interface-features">🎮 Interactive Interface Features</h2>
@@ -2013,19 +2011,19 @@
 <h3 id="flexible-timer-system">Flexible Timer System</h3>
 <p>Schedule server actions with multiple time formats:</p>
 <p><strong>Duration Timers:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>15m or 15             # 15 minutes from now
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>2h                    # 2 hours from now  
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>1d                    # 1 day from now
+<div class="highlight"><pre><span></span><code>15m or 15             # 15 minutes from now
+2h                    # 2 hours from now  
+1d                    # 1 day from now
 </code></pre></div></p>
 <p><strong>Specific Times:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>22:30                 # Today at 10:30 PM
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>2024-12-25.14:00      # Christmas at 2 PM
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>2024/12/25.14h00      # Alternative format
+<div class="highlight"><pre><span></span><code>22:30                 # Today at 10:30 PM
+2024-12-25.14:00      # Christmas at 2 PM
+2024/12/25.14h00      # Alternative format
 </code></pre></div></p>
 <p><strong>Examples:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/server stop timer:30m              # Stop in 30 minutes
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>/server stop timer:22:00            # Stop at 10 PM today
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>/server stop timer:2024-12-31.23:59 # New Year&#39;s Eve stop
+<div class="highlight"><pre><span></span><code>/server stop timer:30m              # Stop in 30 minutes
+/server stop timer:22:00            # Stop at 10 PM today
+/server stop timer:2024-12-31.23:59 # New Year&#39;s Eve stop
 </code></pre></div></p>
 <h3 id="update-system">Update System</h3>
 <p><strong>Update Modes:</strong>
@@ -2033,9 +2031,9 @@
 - <strong>Image</strong>: Container image update<br />
 - <strong>Full</strong>: Both game files and container
 - <strong>Reinit</strong>: Complete reinstall (preserves saves)</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/server update mode:server    # Quick game update
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>/server update mode:full      # Complete system update
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>/server update mode:reinit    # Fresh install
+<div class="highlight"><pre><span></span><code>/server update mode:server    # Quick game update
+/server update mode:full      # Complete system update
+/server update mode:reinit    # Fresh install
 </code></pre></div>
 <h3 id="enhanced-error-handling">Enhanced Error Handling</h3>
 <ul>
@@ -2056,71 +2054,63 @@
 - <strong>Use External Emojis</strong> - Enhanced visual feedback</p>
 <p><strong>Permission Integer</strong>: <code>137443262464</code></p>
 <h3 id="environment-variables">Environment Variables</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a># Discord Configuration
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>DISCORD_TOKEN=your_bot_token
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>DISCORD_GUILD_ID=your_server_id
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>DISCORD_ADMIN_CHANNEL_ID=admin_channel_id
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a># Orchestrator Connection  
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>LOCAL_API_KEY=your_api_key
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>ORCHESTRATOR_URL=http://peon.orc:5000
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a># Optional Features
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>LOG_LEVEL=INFO
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>ENABLE_LEGACY_COMMANDS=false
+<div class="highlight"><pre><span></span><code># Discord Configuration
+DISCORD_TOKEN=your_bot_token
+DISCORD_GUILD_ID=your_server_id
+DISCORD_ADMIN_CHANNEL_ID=admin_channel_id
+
+# Orchestrator Connection  
+LOCAL_API_KEY=your_api_key
+ORCHESTRATOR_URL=http://peon.orc:5000
+
+# Optional Features
+LOG_LEVEL=INFO
+ENABLE_LEGACY_COMMANDS=false
 </code></pre></div>
 <h3 id="channel-setup">Channel Setup</h3>
 <p><strong>Recommended Channel Structure:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>📁 PEON Game Servers
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  🔧 peon-admin          # Administrative controls
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  🎮 minecraft-survival  # Minecraft server management
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  ⚔️ valheim-adventure   # Valheim server management  
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  🐾 palworld-paradise   # Palworld server management
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  📢 server-announcements # Status updates
+<div class="highlight"><pre><span></span><code>📁 PEON Game Servers
+  🔧 peon-admin          # Administrative controls
+  🎮 minecraft-survival  # Minecraft server management
+  ⚔️ valheim-adventure   # Valheim server management  
+  🐾 palworld-paradise   # Palworld server management
+  📢 server-announcements # Status updates
 </code></pre></div></p>
 <hr />
 <h2 id="troubleshooting">🔧 Troubleshooting</h2>
 <h3 id="common-issues">Common Issues</h3>
-<details class="question">
-<summary>Bot not responding to slash commands</summary>
-<p><strong>Solutions:</strong>
-- Verify bot has "Use Slash Commands" permission
-- Check bot is online in Discord member list
-- Re-invite bot with updated permissions
-- Restart bot container: <code>docker restart peon-bot-1</code></p>
-</details>
-<details class="question">
-<summary>Commands return 'No orchestrators registered'</summary>
-<p><strong>Solutions:</strong>
-- Use <code>/peon admin</code> → "Register Orchestrator"<br />
-- Verify orchestrator URL and API key
-- Check orchestrator container is running
-- Test connection: <code>curl http://localhost:5000/api/v1/orchestrator</code></p>
-</details>
-<details class="question">
-<summary>Server creation fails with 404 error</summary>
-<p><strong>Solutions:</strong>
-- Use <code>/debug test_connectivity</code> to diagnose
-- Check available game plans: <code>/list plans</code>
-- Verify game name spelling (use auto-completion)
-- Check orchestrator logs for detailed errors</p>
-</details>
-<details class="question">
-<summary>'Interaction failed' errors</summary>
-<p><strong>Solutions:</strong>
-- Commands must complete within 15 minutes
-- For long operations, use Web UI instead
-- Check Discord bot logs: <code>docker logs peon-bot-1</code>
-- Verify stable network connection</p>
-</details>
+<p>??? question "Bot not responding to slash commands"
+    <strong>Solutions:</strong>
+    - Verify bot has "Use Slash Commands" permission
+    - Check bot is online in Discord member list
+    - Re-invite bot with updated permissions
+    - Restart bot container: <code>docker restart peon-bot-1</code></p>
+<p>??? question "Commands return 'No orchestrators registered'"
+    <strong>Solutions:</strong>
+    - Use <code>/peon admin</code> → "Register Orchestrator"<br />
+    - Verify orchestrator URL and API key
+    - Check orchestrator container is running
+    - Test connection: <code>curl http://localhost:5000/api/v1/orchestrator</code></p>
+<p>??? question "Server creation fails with 404 error"
+    <strong>Solutions:</strong>
+    - Use <code>/debug test_connectivity</code> to diagnose
+    - Check available game plans: <code>/list plans</code>
+    - Verify game name spelling (use auto-completion)
+    - Check orchestrator logs for detailed errors</p>
+<p>??? question "'Interaction failed' errors"
+    <strong>Solutions:</strong>
+    - Commands must complete within 15 minutes
+    - For long operations, use Web UI instead
+    - Check Discord bot logs: <code>docker logs peon-bot-1</code>
+    - Verify stable network connection</p>
 <h3 id="debug-commands">Debug Commands</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/debug test_connectivity  # Test orchestrator connection
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>/debug list_plans        # Show available game plans
+<div class="highlight"><pre><span></span><code>/debug test_connectivity  # Test orchestrator connection
+/debug list_plans        # Show available game plans
 </code></pre></div>
 <h3 id="log-analysis">Log Analysis</h3>
 <p><strong>Bot Logs:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>logs<span class="w"> </span>peon-bot-1<span class="w"> </span>-f<span class="w">     </span><span class="c1"># Follow bot logs</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>docker<span class="w"> </span>logs<span class="w"> </span>peon-orc-1<span class="w"> </span>-f<span class="w">     </span><span class="c1"># Follow orchestrator logs  </span>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>peon-bot-1<span class="w"> </span>-f<span class="w">     </span><span class="c1"># Follow bot logs</span>
+docker<span class="w"> </span>logs<span class="w"> </span>peon-orc-1<span class="w"> </span>-f<span class="w">     </span><span class="c1"># Follow orchestrator logs  </span>
 </code></pre></div></p>
 <p><strong>Common Log Patterns:</strong>
 - <code>Server create</code> - Server creation attempts
@@ -2199,9 +2189,9 @@
 </table>
 <h3 id="legacy-support">Legacy Support</h3>
 <p>Legacy commands show helpful migration messages:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>🔄 Command Updated!
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>This bot now uses Slash Commands for a better experience!
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>✨ Try /peon instead of !peon
+<div class="highlight"><pre><span></span><code>🔄 Command Updated!
+This bot now uses Slash Commands for a better experience!
+✨ Try /peon instead of !peon
 </code></pre></div></p>
 <hr />
 <h2 id="related-documentation">🔗 Related Documentation</h2>
@@ -2250,8 +2240,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -2338,7 +2327,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>

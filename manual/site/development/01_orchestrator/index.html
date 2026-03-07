@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1740,251 +1740,251 @@
 <a href="https://hub.docker.com/repository/docker/umlatt/peon.orc/general"><img alt="GitHub" src="../../images/buttons/button_docker.svg" /></a></p>
 <hr />
 <h2 id="features">Features</h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> User file backups</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Update to new deployment architecture.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> RESTapi (v1) - Plan/recipies</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Security - api-key integration</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Start/Stop scheduler</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> RESTapi (v1) - custom configurations</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Server deployment (v2) - custom configurations</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Persistent server data - Keep server data for updates &amp; future releases.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> RESTapi (v1)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Server deployment (v1)</li>
+<ul>
+<li>[x] User file backups</li>
+<li>[x] Update to new deployment architecture.</li>
+<li>[x] RESTapi (v1) - Plan/recipies</li>
+<li>[x] Security - api-key integration</li>
+<li>[x] Start/Stop scheduler</li>
+<li>[x] RESTapi (v1) - custom configurations</li>
+<li>[x] Server deployment (v2) - custom configurations</li>
+<li>[x] Persistent server data - Keep server data for updates &amp; future releases.</li>
+<li>[x] RESTapi (v1)</li>
+<li>[x] Server deployment (v1)</li>
 </ul>
 <hr />
 <h2 id="roadmap">Roadmap</h2>
 <p>Here are some planned features</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Security - Add <code>fail2ban</code> to REST API</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Security - Users &amp; Audit Logging</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> RESTapi (v1) - Console</li>
+<ul>
+<li>[ ] Security - Add <code>fail2ban</code> to REST API</li>
+<li>[ ] Security - Users &amp; Audit Logging</li>
+<li>[ ] RESTapi (v1) - Console</li>
 </ul>
 <hr />
 <h2 id="release-notes">Release Notes</h2>
 <p><strong>1.3.0 - DEVELOPMENT</strong></p>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - <code>Modify</code> to allow editing the existing server's settings.</p>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
+<ul>
+<li>
+<p>[ ] ADDED :new: API - <code>Modify</code> to allow editing the existing server's settings.</p>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Update flag <code>reinit/full/image/server</code>. Setting the flag to <code>server</code> update will just update the game server, setting <code>image</code> update will update the container, <code>full</code> will update the <code>image</code> and <code>server</code> and <code>reinit</code> will delete the server data (not user data) and then run a <code>full</code></p>
+<li>
+<p>[x] ADDED :new: API - Update flag <code>reinit/full/image/server</code>. Setting the flag to <code>server</code> update will just update the game server, setting <code>image</code> update will update the container, <code>full</code> will update the <code>image</code> and <code>server</code> and <code>reinit</code> will delete the server data (not user data) and then run a <code>full</code></p>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Check for consumed ports in start response (import docker compose config as yaml and check docker ps output)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Get container build/version info using docker exec, instead of as part of container deploy</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Scheduler auto cleans missing/completed tasks</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Get current orchestrator version</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> The <code>getall</code> servers is now gameuid,servername sorted by default</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed an issue to the server import function, where it would try start a server with a non-existant <code>docker-compose.yml</code> file</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Enforced project specific docker-compose commands to avoid conflicting networks/configs</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed an issue where a scheduled <code>stop</code> would not respond correctly.</li>
+<li>[x] ADDED :new: Check for consumed ports in start response (import docker compose config as yaml and check docker ps output)</li>
+<li>[x] ADDED :new: Get container build/version info using docker exec, instead of as part of container deploy</li>
+<li>[x] ADDED :new: Scheduler auto cleans missing/completed tasks</li>
+<li>[x] ADDED :new: API - Get current orchestrator version</li>
+<li>[x] CHANGED :tools: The <code>getall</code> servers is now gameuid,servername sorted by default</li>
+<li>[x] BUGFIX :beetle: Fixed an issue to the server import function, where it would try start a server with a non-existant <code>docker-compose.yml</code> file</li>
+<li>[x] BUGFIX :beetle: Enforced project specific docker-compose commands to avoid conflicting networks/configs</li>
+<li>[x] BUGFIX :beetle: Fixed an issue where a scheduled <code>stop</code> would not respond correctly.</li>
 </ul>
 <p><strong>1.2.11</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Updated to latest OS/package combinations.</li>
+<ul>
+<li>[x] CHANGE :tools: Updated to latest OS/package combinations.</li>
 </ul>
 <p><strong>1.2.10</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Ability to import any game servers</li>
+<ul>
+<li>[x] ADDED :new: Ability to import any game servers</li>
 </ul>
 <p><strong>1.2.9</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added backup save to <code>/home/peon/backup</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Ability to download user and config data for a game server (via <code>/home/peon/backup</code>).</li>
+<ul>
+<li>[x] ADDED :new: Added backup save to <code>/home/peon/backup</code></li>
+<li>[x] ADDED :new: Ability to download user and config data for a game server (via <code>/home/peon/backup</code>).</li>
 </ul>
 <p><strong>1.2.8</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Enforced UID 1000 on all folders in the server directory (on create and on docker-compose action)</li>
+<ul>
+<li>[x] BUGFIX :beetle: Enforced UID 1000 on all folders in the server directory (on create and on docker-compose action)</li>
 </ul>
 <p><strong>1.2.7</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Ability to update the game server using the API.</li>
+<ul>
+<li>[x] ADDED :new: Ability to update the game server using the API.</li>
 </ul>
 <p><strong>1.2.6</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> LOGGING <img alt="💬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4ac.svg" title=":speech_balloon:" /> Improve logging response to handle bad JSON/missing files on plan load.</li>
+<ul>
+<li>[X] LOGGING :speech_balloon: Improve logging response to handle bad JSON/missing files on plan load.</li>
 </ul>
 <p><strong>1.2.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Repaired an issue with a plan not seeing a description</li>
+<ul>
+<li>[x] BUGFIX :beetle: Repaired an issue with a plan not seeing a description</li>
 </ul>
 <p><strong>1.2.4</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Updated how the cli tool references files inside the container</li>
+<ul>
+<li>[x] CHANGED :tools: Updated how the cli tool references files inside the container</li>
 </ul>
 <p><strong>1.2.3</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Make better alert when the folder already exists, not <code>action not supported</code></li>
+<ul>
+<li>[x] BUGFIX :beetle: Make better alert when the folder already exists, not <code>action not supported</code></li>
 </ul>
 <p><strong>1.2.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Ability to make custom REST API key through env vars.</li>
+<ul>
+<li>[x] ADDED :new: Ability to make custom REST API key through env vars.</li>
 </ul>
 <p><strong>1.2.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added <code>skip</code> flag to <code>Server PUT</code> to force bypass of actions (if required)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Added return on successful create when not start is requested.</li>
+<ul>
+<li>[x] ADDED :new: Added <code>skip</code> flag to <code>Server PUT</code> to force bypass of actions (if required)</li>
+<li>[x] BUGFIX :beetle: Added return on successful create when not start is requested.</li>
 </ul>
 <p><strong>1.2.0</strong></p>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Changed URL path from <code>/api/1.0</code> to <code>/api/v1</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Added sort to <code>get_plans</code></li>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
+<ul>
+<li>[x] CHANGED :tools: Changed URL path from <code>/api/1.0</code> to <code>/api/v1</code></li>
+<li>[x] CHANGED :tools: Added sort to <code>get_plans</code></li>
 </ul>
 <p><strong>1.1.0</strong></p>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moved logging into container logs</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added <code>DEV_MODE</code> flag to enable/disable logging/dev mode.</li>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
+<ul>
+<li>[x] CHANGED :tools: Moved logging into container logs</li>
+<li>[x] ADDED :new: Added <code>DEV_MODE</code> flag to enable/disable logging/dev mode.</li>
 </ul>
 <p><strong>1.0.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed API destroy + <strong>eradicate</strong> of a server.</li>
+<ul>
+<li>[x] BUGFIX :beetle: Fixed API destroy + <strong>eradicate</strong> of a server.</li>
 </ul>
 <p><strong>1.0.4</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Check if the environment variable <code>HOST_DIR</code> is empty.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added a <em>clean on failure</em> when a server creation is triggered.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added an API flag <code>noclean</code> to disable <em>clean on failure</em>.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed issue where failures on <code>docker compose</code> commands did not get handled by API correctly.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed an issue where generic failure was being reported back via API when plans were being generated.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> LOGGING <img alt="💬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4ac.svg" title=":speech_balloon:" /> Added additional step logging for <em>debug</em> logging to assist in fault finding.</li>
+<ul>
+<li>[x] ADDED :beetle: Check if the environment variable <code>HOST_DIR</code> is empty.</li>
+<li>[x] ADDED :new: Added a <em>clean on failure</em> when a server creation is triggered.</li>
+<li>[x] ADDED :new: Added an API flag <code>noclean</code> to disable <em>clean on failure</em>.</li>
+<li>[x] BUGFIX :beetle: Fixed issue where failures on <code>docker compose</code> commands did not get handled by API correctly.</li>
+<li>[x] BUGFIX :beetle: Fixed an issue where generic failure was being reported back via API when plans were being generated.</li>
+<li>[x] LOGGING :speech_balloon: Added additional step logging for <em>debug</em> logging to assist in fault finding.</li>
 </ul>
 <p><strong>1.0.3</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Updated API for use with Discord bot.</li>
+<ul>
+<li>[x] BUGFIX :beetle: Updated API for use with Discord bot.</li>
 </ul>
 <p><strong>1.0.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Re-enabled stop scheduler.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> REMOVED <img alt="✂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2702.svg" title=":scissors:" /> Disabled flask debug mode (as it causes issues with the scheduler)</li>
+<ul>
+<li>[x] CHANGE :tools: Re-enabled stop scheduler.</li>
+<li>[x] REMOVED :scissors: Disabled flask debug mode (as it causes issues with the scheduler)</li>
 </ul>
 <p><strong>1.0.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Removed <code>docker-compose create</code> from API when no start is selected.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Updated to <code>docker compose</code> from <code>docker-compose</code> paradigm</li>
+<ul>
+<li>[x] BUGFIX :beetle: Removed <code>docker-compose create</code> from API when no start is selected.</li>
+<li>[x] BUGFIX :beetle: Updated to <code>docker compose</code> from <code>docker-compose</code> paradigm</li>
 </ul>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
 <p><strong>1.0.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Plans - Reworked entire plans module for docker-compose architecture</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Servers - Reworked entire servers module for docker-compose architecture</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> API - Updated API for docker-compose architecture.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> All - fixed several issues after rework</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> warcamp - cleanup</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> get_warcamp - check container state and update state accordingly.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> <code>CURRENT_TASK</code> API - Deploy server from API call. (Untested <code>server create</code> function)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Plan - Get required settings</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Change to SVN download for directory (plans)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moved to <code>docker compose</code> based model for better re-usability/clarity.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> API - Removed servers/server marshall flow for more versatile response handling</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> API - Plans - Fixed the get and update from server plans</li>
+<ul>
+<li>[x] CHANGE :tools: Plans - Reworked entire plans module for docker-compose architecture</li>
+<li>[x] CHANGE :tools: Servers - Reworked entire servers module for docker-compose architecture</li>
+<li>[x] CHANGE :tools: API - Updated API for docker-compose architecture.</li>
+<li>[x] BUGFIX :beetle: All - fixed several issues after rework</li>
+<li>[x] ADDED :new: warcamp - cleanup</li>
+<li>[x] ADDED :new: get_warcamp - check container state and update state accordingly.</li>
+<li>[x] CHANGE :tools: <code>CURRENT_TASK</code> API - Deploy server from API call. (Untested <code>server create</code> function)</li>
+<li>[x] ADDED :new: API - Plan - Get required settings</li>
+<li>[x] CHANGE :tools: Change to SVN download for directory (plans)</li>
+<li>[x] CHANGE :tools: Moved to <code>docker compose</code> based model for better re-usability/clarity.</li>
+<li>[x] CHANGE :tools: API - Removed servers/server marshall flow for more versatile response handling</li>
+<li>[x] BUGFIX :beetle: API - Plans - Fixed the get and update from server plans</li>
 </ul>
 <p><strong>0.3.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added <code>/app/bin</code> to the path and added <code>peon</code> cli module into orc.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Make API key configurable</li>
+<ul>
+<li>[x] ADDED :new: Added <code>/app/bin</code> to the path and added <code>peon</code> cli module into orc.</li>
+<li>[x] CHANGE :tools: Make API key configurable</li>
 </ul>
 <p><strong>0.3.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Rework Orchestrator app to leverage the <code>docker.sock</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moving to init script <code>init/peon.orc</code>, for pre-flight checks.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> REMOVED <img alt="✂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2702.svg" title=":scissors:" /> Removed SSH check on boot from <code>python3 main.py</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Configurable docker socket path.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added <code>VERSION</code> environment variable into the container.</li>
+<ul>
+<li>[x] CHANGE :tools: Rework Orchestrator app to leverage the <code>docker.sock</code></li>
+<li>[x] CHANGE :tools: Moving to init script <code>init/peon.orc</code>, for pre-flight checks.</li>
+<li>[x] REMOVED :scissors: Removed SSH check on boot from <code>python3 main.py</code></li>
+<li>[x] ADDED :new: Configurable docker socket path.</li>
+<li>[x] ADDED :new: Added <code>VERSION</code> environment variable into the container.</li>
 </ul>
 <p><strong>0.3.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Change the docker file to support using <code>docker.sock</code> socket file to manage docker (from SSH)</li>
+<ul>
+<li>[x] CHANGE :tools: Change the docker file to support using <code>docker.sock</code> socket file to manage docker (from SSH)</li>
 </ul>
 <p><strong>0.2.17</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Remove schedule on manual stop</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Validate epoch time input for scheduler epoch time</li>
+<ul>
+<li>[x] BUGFIX :beetle: Remove schedule on manual stop</li>
+<li>[x] CHANGE :tools: Validate epoch time input for scheduler epoch time</li>
 </ul>
 <p><strong>0.2.16</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Server create returned false error due to change error dict handler</li>
+<ul>
+<li>[x] BUGFIX :beetle: Server create returned false error due to change error dict handler</li>
 </ul>
 <p><strong>0.2.15</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Scheduler vs Start/Stop</li>
+<ul>
+<li>[x] BUGFIX :beetle: Scheduler vs Start/Stop</li>
 </ul>
 <p><strong>0.2.14</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Scheduler v1.0 - Bugfix (server stop is now properly scheduled)</li>
+<ul>
+<li>[x] BUGFIX :beetle: Scheduler v1.0 - Bugfix (server stop is now properly scheduled)</li>
 </ul>
 <p><strong>0.2.13</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Scheduler - v1.0 - Added simple start &amp; delayed stop in scheduler</li>
+<ul>
+<li>[x] ADDED :new: Scheduler - v1.0 - Added simple start &amp; delayed stop in scheduler</li>
 </ul>
 <p><strong>0.2.12</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> API Response - Server config</li>
+<ul>
+<li>[x] CHANGE :tools: API Response - Server config</li>
 </ul>
 <p><strong>0.2.11</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> PUBLIC_IP - added to container variables</li>
+<ul>
+<li>[x] ADDED :new: PUBLIC_IP - added to container variables</li>
 </ul>
 <p><strong>0.2.10</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Logging - Added devMode switch</li>
+<ul>
+<li>[x] Logging - Added devMode switch</li>
 </ul>
 <p><strong>0.2.9</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> UI - Added MOTD to container login</li>
+<ul>
+<li>[x] ADDED :new: UI - Added MOTD to container login</li>
 </ul>
 <p><strong>0.2.8</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" />  Base images were pulled to get the latest versions &amp; app was rebuilt on those</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Incorrect parameter reference in server create</li>
+<ul>
+<li>[x] CHANGE :tools:  Base images were pulled to get the latest versions &amp; app was rebuilt on those</li>
+<li>[x] BUGFIX :beetle: Incorrect parameter reference in server create</li>
 </ul>
 <p><strong>0.2.7</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> SECURITY <img alt="🔓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f513.svg" title=":unlock:" /> Inital CORS implementation</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> SECURITY <img alt="🔓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f513.svg" title=":unlock:" /> Initial api-key requirement implementation</li>
+<ul>
+<li>[x] SECURITY :unlock: Inital CORS implementation</li>
+<li>[x] SECURITY :unlock: Initial api-key requirement implementation</li>
 </ul>
 <p><strong>0.2.6</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Server - Destroy &amp; Eradicate</li>
+<ul>
+<li>[x] ADDED :new: API - Server - Destroy &amp; Eradicate</li>
 </ul>
 <p><strong>0.2.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Server - Reworked to include actions into the path</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Server - Added get with metrics</li>
+<ul>
+<li>[x] ADDED :new: API - Server - Reworked to include actions into the path</li>
+<li>[x] ADDED :new: API - Server - Added get with metrics</li>
 </ul>
 <p><strong>0.2.4</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Server Get - reworked to provide both container &amp; server state</li>
+<ul>
+<li>[x] ADDED :new: API - Server Get - reworked to provide both container &amp; server state</li>
 </ul>
 <p><strong>0.2.3</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Auto download latest plan version when the server is deployed</li>
+<ul>
+<li>[x] ADDED :new: API - Auto download latest plan version when the server is deployed</li>
 </ul>
 <p><strong>0.2.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> API - Plans get list &amp; update from Peon project list</li>
+<ul>
+<li>[x] ADDED :new: API - Plans get list &amp; update from Peon project list</li>
 </ul>
 <p><strong>0.2.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Enforced description &amp; settings on [post]servers</li>
+<ul>
+<li>[x] BUGFIX :beetle: Enforced description &amp; settings on [post]servers</li>
 </ul>
 <p><strong>0.2.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added custom config handler</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Allows configuration of environment variables in the container (via API)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Can supply json/txt files via API</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added persistent description</li>
+<ul>
+<li>[x] ADDED :new: Added custom config handler</li>
+<li>[x] CHANGE :tools: Allows configuration of environment variables in the container (via API)</li>
+<li>[x] ADDED :new: Can supply json/txt files via API</li>
+<li>[x] ADDED :new: Added persistent description</li>
 </ul>
 <p><strong>0.1.6</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added handler for <code>config</code> folder</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Moved game server logs into the game server directory</li>
+<ul>
+<li>[x] ADDED :new: Added handler for <code>config</code> folder</li>
+<li>[x] ADDED :new: Moved game server logs into the game server directory</li>
 </ul>
 <p><strong>0.1.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> INITIALISED <img alt="✈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2708.svg" title=":airplane:" /> The first iteration of server create (API)</li>
+<ul>
+<li>[x] INITIALISED :airplane: The first iteration of server create (API)</li>
 </ul>
 
 
@@ -2025,8 +2025,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -2113,7 +2112,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>

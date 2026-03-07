@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1243,37 +1243,35 @@
 <li><strong>Docker Compose</strong>: Version 2.0 or higher</li>
 <li><strong>System Requirements</strong>: 4GB RAM, 2 CPU cores minimum</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">System Check</p>
-<p>Run these commands to verify your system:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>--version
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>version
+<p>!!! tip "System Check"
+    Run these commands to verify your system:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
+docker<span class="w"> </span>compose<span class="w"> </span>version
 </code></pre></div></p>
-</div>
 <h2 id="quick-install-docker-compose">Quick Install (Docker Compose)</h2>
 <h3 id="1-download-peon">1. Download PEON</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>peon
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon.git
+<span class="nb">cd</span><span class="w"> </span>peon
 </code></pre></div>
 <h3 id="2-configure-environment">2. Configure Environment</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>nano<span class="w"> </span>.env<span class="w">  </span><span class="c1"># Edit configuration</span>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+nano<span class="w"> </span>.env<span class="w">  </span><span class="c1"># Edit configuration</span>
 </code></pre></div>
 <p><strong>Key Environment Variables:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Discord Bot Configuration
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>DISCORD_TOKEN=your_discord_bot_token_here
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>DISCORD_GUILD_ID=your_discord_server_id
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>DISCORD_ADMIN_CHANNEL_ID=your_admin_channel_id
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a># Orchestrator Configuration
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>LOCAL_API_KEY=your_secure_api_key_here
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>PEON_VERSION=latest
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a># Container Registry
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>REGISTRY_URL=docker.io/umlatt
+<div class="highlight"><pre><span></span><code># Discord Bot Configuration
+DISCORD_TOKEN=your_discord_bot_token_here
+DISCORD_GUILD_ID=your_discord_server_id
+DISCORD_ADMIN_CHANNEL_ID=your_admin_channel_id
+
+# Orchestrator Configuration
+LOCAL_API_KEY=your_secure_api_key_here
+PEON_VERSION=latest
+
+# Container Registry
+REGISTRY_URL=docker.io/umlatt
 </code></pre></div>
 <h3 id="3-start-peon-services">3. Start PEON Services</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>./deploy_peon.sh
+<div class="highlight"><pre><span></span><code>./deploy_peon.sh
 </code></pre></div>
 <p>This will start:</p>
 <ul>
@@ -1283,13 +1281,13 @@
 </ul>
 <h3 id="4-verify-installation">4. Verify Installation</h3>
 <p>Check that all services are running:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>ps
 </code></pre></div>
 <p>You should see:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>NAME           SERVICE      STATUS       PORTS
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>peon-orc-1     orc         running      0.0.0.0:5000-&gt;5000/tcp
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>peon-bot-1     bot         running      
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>peon-webui-1   webui       running      0.0.0.0:8080-&gt;8080/tcp
+<div class="highlight"><pre><span></span><code>NAME           SERVICE      STATUS       PORTS
+peon-orc-1     orc         running      0.0.0.0:5000-&gt;5000/tcp
+peon-bot-1     bot         running      
+peon-webui-1   webui       running      0.0.0.0:8080-&gt;8080/tcp
 </code></pre></div></p>
 <h2 id="discord-bot-setup">Discord Bot Setup</h2>
 <h3 id="1-create-discord-application">1. Create Discord Application</h3>
@@ -1312,45 +1310,43 @@
 <p><strong>Permission Integer</strong>: <code>137443262464</code></p>
 <h3 id="3-invite-bot-to-server">3. Invite Bot to Server</h3>
 <p>Use this URL (replace CLIENT_ID):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&amp;permissions=137443262464&amp;scope=bot%20applications.commands
+<div class="highlight"><pre><span></span><code>https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&amp;permissions=137443262464&amp;scope=bot%20applications.commands
 </code></pre></div></p>
 <h3 id="4-test-bot">4. Test Bot</h3>
 <p>In your Discord server, type:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/peon
+<div class="highlight"><pre><span></span><code>/peon
 </code></pre></div></p>
 <p>You should see the PEON interface!</p>
 <h2 id="manual-installation">Manual Installation</h2>
 <h3 id="option-a-individual-containers">Option A: Individual Containers</h3>
 <p>Run each component separately:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Orchestrator</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span>--name<span class="w"> </span>peon-orc<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_api_key<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/data:/home/peon<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span>umlatt/peon.orc:latest
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1"># Discord Bot</span>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span>--name<span class="w"> </span>peon-bot<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">DISCORD_TOKEN</span><span class="o">=</span>your_token<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_api_key<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">  </span>umlatt/peon.bot.discord:latest
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c1"># Web UI</span>
-<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">  </span>--name<span class="w"> </span>peon-webui<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">API_ENDPOINT</span><span class="o">=</span>http://localhost:5000<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">  </span>umlatt/peon.webui:latest
+<div class="highlight"><pre><span></span><code><span class="c1"># Orchestrator</span>
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>peon-orc<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_api_key<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/data:/home/peon<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>umlatt/peon.orc:latest
+
+<span class="c1"># Discord Bot</span>
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>peon-bot<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">DISCORD_TOKEN</span><span class="o">=</span>your_token<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_api_key<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>umlatt/peon.bot.discord:latest
+
+<span class="c1"># Web UI</span>
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>peon-webui<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">API_ENDPOINT</span><span class="o">=</span>http://localhost:5000<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>umlatt/peon.webui:latest
 </code></pre></div>
 <h3 id="option-b-native-installation">Option B: Native Installation</h3>
-<div class="admonition warning">
-<p class="admonition-title">Advanced Users Only</p>
-<p>Native installation requires managing Python dependencies and system services manually.</p>
-</div>
+<p>!!! warning "Advanced Users Only"
+    Native installation requires managing Python dependencies and system services manually.</p>
 <p>See the <a href="../../development/">development documentation</a> for native installation instructions.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="common-issues">Common Issues</h3>
@@ -1411,8 +1407,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -1499,7 +1494,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>

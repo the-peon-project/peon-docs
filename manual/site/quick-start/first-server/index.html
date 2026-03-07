@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1367,7 +1367,7 @@
 </ul>
 <h2 id="step-1-access-peon-interface">Step 1: Access PEON Interface</h2>
 <p>In your Discord server, use the slash command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/peon admin
+<div class="highlight"><pre><span></span><code>/peon admin
 </code></pre></div>
 <p>This opens the <strong>administrator interface</strong> with full controls.</p>
 <p><em>Administrator interface screenshot will be added in v3.1.0</em></p>
@@ -1405,10 +1405,10 @@
 </ol>
 <h3 id="method-b-using-slash-commands">Method B: Using Slash Commands</h3>
 <p>Use the quick create command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/create valheim myvalheim
+<div class="highlight"><pre><span></span><code>/create valheim myvalheim
 </code></pre></div>
 <p>Optional with description:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/create game_type:valheim server_name:myvalheim description:My awesome server
+<div class="highlight"><pre><span></span><code>/create game_type:valheim server_name:myvalheim description:My awesome server
 </code></pre></div></p>
 <h2 id="step-5-monitor-server-creation">Step 5: Monitor Server Creation</h2>
 <p>PEON will:</p>
@@ -1421,14 +1421,14 @@
 <p>This takes 2-10 minutes depending on game size.</p>
 <h2 id="step-6-manage-your-server">Step 6: Manage Your Server</h2>
 <h3 id="quick-server-actions">Quick Server Actions</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/server action:start server:valheim.myvalheim
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>/server action:stop server:valheim.myvalheim  
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>/server action:restart server:valheim.myvalheim
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>/server action:info server:valheim.myvalheim
+<div class="highlight"><pre><span></span><code>/server action:start server:valheim.myvalheim
+/server action:stop server:valheim.myvalheim  
+/server action:restart server:valheim.myvalheim
+/server action:info server:valheim.myvalheim
 </code></pre></div>
 <h3 id="using-server-interface">Using Server Interface</h3>
 <p>In a channel named <code>valheim-myvalheim</code>, use:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/peon
+<div class="highlight"><pre><span></span><code>/peon
 </code></pre></div>
 <p>This gives you server-specific controls:</p>
 <ul>
@@ -1442,7 +1442,7 @@
 <h2 id="step-7-connect-to-your-server">Step 7: Connect to Your Server</h2>
 <h3 id="find-server-details">Find Server Details</h3>
 <p>Use the info command to get connection details:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/server action:info server:valheim.myvalheim
+<div class="highlight"><pre><span></span><code>/server action:info server:valheim.myvalheim
 </code></pre></div>
 <p>This shows:
 - <strong>Server IP</strong>: Your host IP address
@@ -1458,28 +1458,28 @@
 <h2 id="common-server-operations">Common Server Operations</h2>
 <h3 id="scheduled-server-stops">Scheduled Server Stops</h3>
 <p>Stop server in 30 minutes:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/server action:stop server:valheim.myvalheim timer:30m
+<div class="highlight"><pre><span></span><code>/server action:stop server:valheim.myvalheim timer:30m
 </code></pre></div></p>
 <p>Stop at specific time:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/server action:stop server:valheim.myvalheim timer:22:00
+<div class="highlight"><pre><span></span><code>/server action:stop server:valheim.myvalheim timer:22:00
 </code></pre></div></p>
 <h3 id="server-updates">Server Updates</h3>
 <p>Update game files:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/server action:update server:valheim.myvalheim mode:server
+<div class="highlight"><pre><span></span><code>/server action:update server:valheim.myvalheim mode:server
 </code></pre></div></p>
 <p>Full container update:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>/server action:update server:valheim.myvalheim mode:full
+<div class="highlight"><pre><span></span><code>/server action:update server:valheim.myvalheim mode:full
 </code></pre></div></p>
 <h3 id="backups">Backups</h3>
 <p>Create and download backup:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/server action:backup server:valheim.myvalheim
+<div class="highlight"><pre><span></span><code>/server action:backup server:valheim.myvalheim
 </code></pre></div></p>
 <h2 id="next-steps">Next Steps</h2>
 <h3 id="create-more-servers">Create More Servers</h3>
 <p>You can run multiple servers of the same or different games:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/create minecraft survival-world
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>/create palworld pals-paradise  
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>/create ark dino-island
+<div class="highlight"><pre><span></span><code>/create minecraft survival-world
+/create palworld pals-paradise  
+/create ark dino-island
 </code></pre></div>
 <h3 id="organize-with-channels">Organize with Channels</h3>
 <p>Create dedicated Discord channels for each server:
@@ -1556,8 +1556,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -1644,7 +1643,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>

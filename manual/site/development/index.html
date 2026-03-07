@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1590,35 +1590,33 @@
 
 <h1 id="developer-documentation">🛠️ Developer Documentation</h1>
 <p>Complete development guide for contributing to and extending the PEON project.</p>
-<div class="admonition info">
-<p class="admonition-title">Developer Community</p>
-<p>Join our <a href="https://discord.com/invite/KJFVyayH8g">Discord development channel</a> for real-time collaboration and support!</p>
-</div>
+<p>!!! info "Developer Community"
+    Join our <a href="https://discord.com/invite/KJFVyayH8g">Discord development channel</a> for real-time collaboration and support!</p>
 <h2 id="quick-start-for-developers">🚀 Quick Start for Developers</h2>
 <h3 id="development-environment-setup">Development Environment Setup</h3>
 <ol>
 <li>
 <p><strong>Clone the repository</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon.git
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>peon
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon.git
+<span class="nb">cd</span><span class="w"> </span>peon
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Install dependencies</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Docker and Docker Compose required</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>docker-compose<span class="w"> </span>git
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Add user to docker group</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+   <div class="highlight"><pre><span></span><code><span class="c1"># Docker and Docker Compose required</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>docker-compose<span class="w"> </span>git
+
+<span class="c1"># Add user to docker group</span>
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Start development environment</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Deploy PEON stack</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>./deploy_peon.sh
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Verify installation</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>docker<span class="w"> </span>ps
+   <div class="highlight"><pre><span></span><code><span class="c1"># Deploy PEON stack</span>
+./deploy_peon.sh
+
+<span class="c1"># Verify installation</span>
+docker<span class="w"> </span>ps
 </code></pre></div></p>
 </li>
 <li>
@@ -1712,37 +1710,37 @@
 </ul>
 <h2 id="development-tools">🔧 Development Tools</h2>
 <h3 id="code-quality">Code Quality</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Python linting and formatting</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>pip<span class="w"> </span>install<span class="w"> </span>black<span class="w"> </span>flake8<span class="w"> </span>mypy
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>black<span class="w"> </span>.<span class="w"> </span>--check
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>flake8<span class="w"> </span>.
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>mypy<span class="w"> </span>.
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># JavaScript/TypeScript (Web UI)</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>npm<span class="w"> </span>install<span class="w"> </span>eslint<span class="w"> </span>prettier
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>npm<span class="w"> </span>run<span class="w"> </span>lint
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>npm<span class="w"> </span>run<span class="w"> </span>format
+<div class="highlight"><pre><span></span><code><span class="c1"># Python linting and formatting</span>
+pip<span class="w"> </span>install<span class="w"> </span>black<span class="w"> </span>flake8<span class="w"> </span>mypy
+black<span class="w"> </span>.<span class="w"> </span>--check
+flake8<span class="w"> </span>.
+mypy<span class="w"> </span>.
+
+<span class="c1"># JavaScript/TypeScript (Web UI)</span>
+npm<span class="w"> </span>install<span class="w"> </span>eslint<span class="w"> </span>prettier
+npm<span class="w"> </span>run<span class="w"> </span>lint
+npm<span class="w"> </span>run<span class="w"> </span>format
 </code></pre></div>
 <h3 id="testing-framework">Testing Framework</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Unit tests</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Integration tests  </span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/integration/
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># End-to-end tests</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/e2e/
+<div class="highlight"><pre><span></span><code><span class="c1"># Unit tests</span>
+python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/
+
+<span class="c1"># Integration tests  </span>
+python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/integration/
+
+<span class="c1"># End-to-end tests</span>
+python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/e2e/
 </code></pre></div>
 <h3 id="debugging-tools">Debugging Tools</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Enable debug mode</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PEON_DEBUG</span><span class="o">=</span><span class="nb">true</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># View logs</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>docker<span class="w"> </span>logs<span class="w"> </span>peon-orchestrator
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>docker<span class="w"> </span>logs<span class="w"> </span>peon-discord-bot
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># Interactive debugging</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>python<span class="w"> </span>-m<span class="w"> </span>pdb<span class="w"> </span>app/main.py
+<div class="highlight"><pre><span></span><code><span class="c1"># Enable debug mode</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PEON_DEBUG</span><span class="o">=</span><span class="nb">true</span>
+
+<span class="c1"># View logs</span>
+docker<span class="w"> </span>logs<span class="w"> </span>peon-orchestrator
+docker<span class="w"> </span>logs<span class="w"> </span>peon-discord-bot
+
+<span class="c1"># Interactive debugging</span>
+python<span class="w"> </span>-m<span class="w"> </span>pdb<span class="w"> </span>app/main.py
 </code></pre></div>
 <h2 id="code-standards">📚 Code Standards</h2>
 <h3 id="python-style-guide">Python Style Guide</h3>
@@ -1752,49 +1750,49 @@
 <li><strong>Docstrings</strong> following Google style</li>
 <li><strong>Error handling</strong> with custom exception classes</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">ServerNotFoundError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Raised when specified server cannot be found.&quot;&quot;&quot;</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="k">pass</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_server</span><span class="p">(</span><span class="n">server_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">GameServer</span><span class="p">]:</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve server by ID.</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="sd">    Args:</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="sd">        server_id: Unique server identifier</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="sd">    Returns:</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="sd">        GameServer instance or None if not found</span>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="sd">    Raises:</span>
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="sd">        ServerNotFoundError: If server doesn&#39;t exist</span>
-<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>    <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>        <span class="k">return</span> <span class="k">await</span> <span class="n">db</span><span class="o">.</span><span class="n">get_server</span><span class="p">(</span><span class="n">server_id</span><span class="p">)</span>
-<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Server not found: </span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>        <span class="k">raise</span> <span class="n">ServerNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Server </span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2"> not found&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ServerNotFoundError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Raised when specified server cannot be found.&quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_server</span><span class="p">(</span><span class="n">server_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">GameServer</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieve server by ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        server_id: Unique server identifier</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        GameServer instance or None if not found</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ServerNotFoundError: If server doesn&#39;t exist</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="n">db</span><span class="o">.</span><span class="n">get_server</span><span class="p">(</span><span class="n">server_id</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Server not found: </span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">ServerNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Server </span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2"> not found&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="git-workflow">Git Workflow</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Feature development</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/discord-slash-commands
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>git<span class="w"> </span>add<span class="w"> </span>.
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add server management slash commands&quot;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/discord-slash-commands
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># Create pull request via GitHub</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># Automated testing runs on PR creation</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Feature development</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/discord-slash-commands
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add server management slash commands&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/discord-slash-commands
+
+<span class="c1"># Create pull request via GitHub</span>
+<span class="c1"># Automated testing runs on PR creation</span>
 </code></pre></div>
 <h3 id="commit-message-format">Commit Message Format</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>type(scope): brief description
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>[optional body]
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>[optional footer]
+<div class="highlight"><pre><span></span><code>type(scope): brief description
+
+[optional body]
+
+[optional footer]
 </code></pre></div>
 <p><strong>Types:</strong> <code>feat</code>, <code>fix</code>, <code>docs</code>, <code>style</code>, <code>refactor</code>, <code>test</code>, <code>chore</code><br />
 <strong>Scopes:</strong> <code>api</code>, <code>discord</code>, <code>webui</code>, <code>docs</code>, <code>tests</code></p>
@@ -1810,92 +1808,92 @@
 </li>
 <li>
 <p><strong>Create war plan</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">cd</span><span class="w"> </span>peon-warplans
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>mkdir<span class="w"> </span>my-game
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>cp<span class="w"> </span>template/plan.json<span class="w"> </span>my-game/
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Edit configuration</span>
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>peon-warplans
+mkdir<span class="w"> </span>my-game
+cp<span class="w"> </span>template/plan.json<span class="w"> </span>my-game/
+<span class="c1"># Edit configuration</span>
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Test deployment</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Local testing</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>./deploy_peon.sh
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Create test server via API</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>localhost:5000/api/v1/servers<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;name&quot;:&quot;test&quot;,&quot;game&quot;:&quot;my-game&quot;}&#39;</span>
+   <div class="highlight"><pre><span></span><code><span class="c1"># Local testing</span>
+./deploy_peon.sh
+
+<span class="c1"># Create test server via API</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>localhost:5000/api/v1/servers<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;name&quot;:&quot;test&quot;,&quot;game&quot;:&quot;my-game&quot;}&#39;</span>
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Submit for review</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>add<span class="w"> </span>peon-warplans/my-game/
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add support for My Game&quot;</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/my-game-support
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>peon-warplans/my-game/
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add support for My Game&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/my-game-support
 </code></pre></div></p>
 </li>
 </ol>
 <h3 id="container-development">Container Development</h3>
 <p>Custom game containers for complex deployments:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c"># Example game server container</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">ubuntu:20.04</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c"># Install game server</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">RUN</span><span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span>game-server-package<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/apt/lists/*
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="c"># Configure server</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">COPY</span><span class="w"> </span>config/<span class="w"> </span>/opt/gameserver/config/
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">COPY</span><span class="w"> </span>entrypoint.sh<span class="w"> </span>/entrypoint.sh
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">7777/udp</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/entrypoint.sh&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="c"># Example game server container</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">ubuntu:20.04</span>
+
+<span class="c"># Install game server</span>
+<span class="k">RUN</span><span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>game-server-package<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/apt/lists/*
+
+<span class="c"># Configure server</span>
+<span class="k">COPY</span><span class="w"> </span>config/<span class="w"> </span>/opt/gameserver/config/
+<span class="k">COPY</span><span class="w"> </span>entrypoint.sh<span class="w"> </span>/entrypoint.sh
+
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">7777/udp</span>
+<span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/entrypoint.sh&quot;</span><span class="p">]</span>
 </code></pre></div>
 <h2 id="testing-strategy">🧪 Testing Strategy</h2>
 <h3 id="unit-testing">Unit Testing</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">app.services</span><span class="w"> </span><span class="kn">import</span> <span class="n">GameServerService</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">server_service</span><span class="p">():</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="k">return</span> <span class="n">GameServerService</span><span class="p">()</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">asyncio</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">test_create_server</span><span class="p">(</span><span class="n">server_service</span><span class="p">):</span>
-<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test server creation with valid parameters.&quot;&quot;&quot;</span>
-<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">server_service</span><span class="o">.</span><span class="n">create_server</span><span class="p">(</span>
-<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;test-server&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>        <span class="n">game</span><span class="o">=</span><span class="s2">&quot;valheim&quot;</span>
-<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="p">)</span>
-<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
-<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;test-server&quot;</span>
-<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">game</span> <span class="o">==</span> <span class="s2">&quot;valheim&quot;</span>
-<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="s2">&quot;creating&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">app.services</span><span class="w"> </span><span class="kn">import</span> <span class="n">GameServerService</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">server_service</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">GameServerService</span><span class="p">()</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">asyncio</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">test_create_server</span><span class="p">(</span><span class="n">server_service</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Test server creation with valid parameters.&quot;&quot;&quot;</span>
+    <span class="n">server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">server_service</span><span class="o">.</span><span class="n">create_server</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;test-server&quot;</span><span class="p">,</span>
+        <span class="n">game</span><span class="o">=</span><span class="s2">&quot;valheim&quot;</span>
+    <span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;test-server&quot;</span>
+    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">game</span> <span class="o">==</span> <span class="s2">&quot;valheim&quot;</span>
+    <span class="k">assert</span> <span class="n">server</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="s2">&quot;creating&quot;</span>
 </code></pre></div>
 <h3 id="integration-testing">Integration Testing</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">integration</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">test_api_server_lifecycle</span><span class="p">():</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test complete server creation, start, stop cycle.&quot;&quot;&quot;</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:5000&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>        <span class="c1"># Create server</span>
-<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/api/v1/servers&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
-<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;integration-test&quot;</span><span class="p">,</span>
-<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>            <span class="s2">&quot;game&quot;</span><span class="p">:</span> <span class="s2">&quot;valheim&quot;</span>
-<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>        <span class="p">})</span>
-<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">201</span>
-<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>        <span class="n">server_id</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span>
-<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
-<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>        <span class="c1"># Start server</span>
-<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;/api/v1/servers/</span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">/start&quot;</span><span class="p">)</span>
-<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span>
-<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>
-<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>        <span class="c1"># Stop server</span>
-<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;/api/v1/servers/</span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">/stop&quot;</span><span class="p">)</span>
-<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">integration</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">test_api_server_lifecycle</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Test complete server creation, start, stop cycle.&quot;&quot;&quot;</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:5000&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+        <span class="c1"># Create server</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/api/v1/servers&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;integration-test&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;game&quot;</span><span class="p">:</span> <span class="s2">&quot;valheim&quot;</span>
+        <span class="p">})</span>
+        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">201</span>
+        <span class="n">server_id</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span>
+
+        <span class="c1"># Start server</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;/api/v1/servers/</span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">/start&quot;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span>
+
+        <span class="c1"># Stop server</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;/api/v1/servers/</span><span class="si">{</span><span class="n">server_id</span><span class="si">}</span><span class="s2">/stop&quot;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span>
 </code></pre></div>
 <h2 id="reference-materials">📖 Reference Materials</h2>
 <h3 id="terms-definitions">Terms &amp; Definitions</h3>
@@ -1945,32 +1943,32 @@
 </thead>
 <tbody>
 <tr>
-<td><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></td>
+<td>:zap:</td>
 <td><strong>Impact Release</strong></td>
 <td>Breaking changes across multiple components</td>
 </tr>
 <tr>
-<td><img alt="✈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2708.svg" title=":airplane:" /></td>
+<td>:airplane:</td>
 <td><strong>Project Init</strong></td>
 <td>New project or major component added</td>
 </tr>
 <tr>
-<td><img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /></td>
+<td>:new:</td>
 <td><strong>Feature Added</strong></td>
 <td>New functionality implemented</td>
 </tr>
 <tr>
-<td><img alt="🐛" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f41b.svg" title=":bug:" /></td>
+<td>:bug:</td>
 <td><strong>Bug Fixed</strong></td>
 <td>Issue resolved</td>
 </tr>
 <tr>
-<td><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" title=":books:" /></td>
+<td>:books:</td>
 <td><strong>Documentation</strong></td>
 <td>Docs updated or improved</td>
 </tr>
 <tr>
-<td><img alt="🎨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3a8.svg" title=":art:" /></td>
+<td>:art:</td>
 <td><strong>Code Quality</strong></td>
 <td>Refactoring, performance, or style improvements</td>
 </tr>
@@ -2073,14 +2071,14 @@
 </ul>
 <hr />
 <p>Ready to contribute? <strong><a href="#development-environment-setup">Set up your development environment →</a></strong>
-| CHANGED | <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> <code>:tools:</code> | When a modification to the existing codebase/architecture has been carried out |
-| OPTIMISED | <img alt="⏰" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/23f0.svg" title=":alarm_clock:" /> <code>:alarm_clock:</code> | When a portion of the codebase has been improved visually or with regards to performance |
-| REMOVED | <img alt="✂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2702.svg" title=":scissors:" /> <code>:scissors:</code> | When something is removed/cut from the codebase |
-| BUGFIX | <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> <code>:beetle:</code> | When a bug has been identified and resolved |
-| LOGGING| <img alt="💬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4ac.svg" title=":speech_balloon:" /> <code>:speech_balloon:</code> | When logging is added/enhanced/improved |
-| TESTED | <img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4dd.svg" title=":pencil:" /> <code>:pencil:</code> | When a test task is planned &amp; executed |
-| SECURITY | <img alt="🔓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f513.svg" title=":unlock:" /> <code>:unlock:</code> | When some security modifications have been added |
-| BLOCKED | <img alt="🚫" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6ab.svg" title=":no_entry_sign:" /> <code>:no_entry_sign:</code> | When something is stuck due to external requirements |</p>
+| CHANGED | :tools: <code>:tools:</code> | When a modification to the existing codebase/architecture has been carried out |
+| OPTIMISED | :alarm_clock: <code>:alarm_clock:</code> | When a portion of the codebase has been improved visually or with regards to performance |
+| REMOVED | :scissors: <code>:scissors:</code> | When something is removed/cut from the codebase |
+| BUGFIX | :beetle: <code>:beetle:</code> | When a bug has been identified and resolved |
+| LOGGING| :speech_balloon: <code>:speech_balloon:</code> | When logging is added/enhanced/improved |
+| TESTED | :pencil: <code>:pencil:</code> | When a test task is planned &amp; executed |
+| SECURITY | :unlock: <code>:unlock:</code> | When some security modifications have been added |
+| BLOCKED | :no_entry_sign: <code>:no_entry_sign:</code> | When something is stuck due to external requirements |</p>
 <hr />
 <h2 id="tools-technologies">Tools &amp; Technologies</h2>
 <p>Below, is a list of the various tools and technologies leveraged in the development process for the PEON project.</p>
@@ -2136,8 +2134,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -2224,7 +2221,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.16f8adc2.min.js"></script>

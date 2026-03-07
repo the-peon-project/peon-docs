@@ -138,7 +138,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -1648,40 +1648,39 @@
 <hr />
 <h2 id="system-architecture">🏗️ System Architecture</h2>
 <p>PEON uses a modern microservices architecture designed for scalability and reliability:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph TB
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    subgraph &quot;🖥️ User Interfaces&quot;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        A[Discord Bot v3.0]
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        B[Web UI Dashboard] 
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        C[CLI Tools]
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        D[REST API v1]
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    end
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    subgraph &quot;⚙️ PEON Core Services&quot;
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        E[Orchestrator API]
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        F[Container Engine]
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        G[Backup System]
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        H[Monitoring]
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    end
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    subgraph &quot;🎮 Game Servers&quot;
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        I[Valheim Servers]
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        J[Palworld Servers]
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        K[Minecraft Servers]
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        L[CS2 Servers]
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        M[20+ Other Games]
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    end
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    A --&gt; E
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    B --&gt; E
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    C --&gt; E
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    D --&gt; E
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    E --&gt; F
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    F --&gt; I
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    F --&gt; J  
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    F --&gt; K
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>    F --&gt; L
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    F --&gt; M
-</code></pre></div>
+<pre class="mermaid"><code>graph TB
+    subgraph "🖥️ User Interfaces"
+        A[Discord Bot v3.0]
+        B[Web UI Dashboard] 
+        C[CLI Tools]
+        D[REST API v1]
+    end
+
+    subgraph "⚙️ PEON Core Services"
+        E[Orchestrator API]
+        F[Container Engine]
+        G[Backup System]
+        H[Monitoring]
+    end
+
+    subgraph "🎮 Game Servers"
+        I[Valheim Servers]
+        J[Palworld Servers]
+        K[Minecraft Servers]
+        L[CS2 Servers]
+        M[20+ Other Games]
+    end
+
+    A --&gt; E
+    B --&gt; E
+    C --&gt; E
+    D --&gt; E
+    E --&gt; F
+    F --&gt; I
+    F --&gt; J  
+    F --&gt; K
+    F --&gt; L
+    F --&gt; M</code></pre>
 <h3 id="data-flow">🔄 Data Flow</h3>
 <ol>
 <li><strong>User Request</strong> via Discord, Web UI, or API</li>
@@ -1930,8 +1929,8 @@
 <h2 id="get-started-today">🎯 Get Started Today</h2>
 <p>Ready to revolutionize your game server management?</p>
 <h3 id="quick-deploy-recommended">🚀 <strong>Quick Deploy (Recommended)</strong></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># One command deployment</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>curl<span class="w"> </span>-sSL<span class="w"> </span>https://raw.githubusercontent.com/the-peon-project/peon/main/deploy_peon.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<div class="highlight"><pre><span></span><code><span class="c1"># One command deployment</span>
+curl<span class="w"> </span>-sSL<span class="w"> </span>https://raw.githubusercontent.com/the-peon-project/peon/main/deploy_peon.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
 <h3 id="step-by-step-installation">📋 <strong>Step-by-Step Installation</strong></h3>
 <p><strong><a href="quick-start/installation/">Follow Complete Installation Guide →</a></strong></p>
@@ -1976,7 +1975,7 @@
 <hr />
 <p><strong>Ready to join the PEON revolution? <a href="quick-start/installation/">Get started now →</a></strong></p>
 <p><em>"Work work!" - Your game servers are waiting.</em></p>
-<div class="highlight"><pre><span></span><code>A --&gt; E
+<pre><code>A --&gt; E
 B --&gt; E
 C --&gt; E
 D --&gt; E
@@ -1985,7 +1984,7 @@ F --&gt; G
 F --&gt; H
 F --&gt; I
 F --&gt; J
-</code></pre></div>
+</code></pre>
 <p>```</p>
 <hr />
 <h2 id="latest-updates">📰 Latest Updates</h2>
@@ -2299,22 +2298,22 @@ F --&gt; J
 <p>Choose your path:</p>
 <p>=== "🎮 Casual Gamers"
     Perfect for friends wanting to play together.</p>
-<div class="highlight"><pre><span></span><code>1. **[Install with Docker](quick-start/installation.md)**
+<pre><code>1. **[Install with Docker](quick-start/installation.md)**
 2. **[Create first server](quick-start/first-server.md)**
 3. **[Invite friends via Discord](guides/50_bot_discord.md)**
-</code></pre></div>
+</code></pre>
 <p>=== "🏢 Communities"
     Ideal for gaming communities and clans.</p>
-<div class="highlight"><pre><span></span><code>1. **[Deploy on dedicated server](quick-start/installation.md)**
+<pre><code>1. **[Deploy on dedicated server](quick-start/installation.md)**
 2. **[Set up multiple games](games.md)**
 3. **[Configure advanced features](development/index.md)**
-</code></pre></div>
+</code></pre>
 <p>=== "🔧 Developers"
     Build and extend the platform.</p>
-<div class="highlight"><pre><span></span><code>1. **[Review architecture](development/index.md)**
+<pre><code>1. **[Review architecture](development/index.md)**
 2. **[API documentation](guides/02_rest_api.md)**
 3. **[Contribute on GitHub](https://github.com/the-peon-project)**
-</code></pre></div>
+</code></pre>
 <hr />
 <h2 id="community-support_1">🤝 Community &amp; Support</h2>
 <h3 id="join-our-community">Join Our Community</h3>
@@ -2379,8 +2378,7 @@ F --&gt; J
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -2467,7 +2465,7 @@ F --&gt; J
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"./assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"./assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="./assets/javascripts/bundle.16f8adc2.min.js"></script>

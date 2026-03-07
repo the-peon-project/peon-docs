@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="gray"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -2172,36 +2172,35 @@
 </ul>
 <hr />
 <h2 id="architecture-overview">📊 Architecture Overview</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph TB
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    subgraph &quot;Discord Bot&quot;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        A[Command Handler]
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        B[UI Components]
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        C[Event System]
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    end
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    subgraph &quot;Core Modules&quot;
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        D[Administrator]
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        E[User Interface]  
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        F[Orchestrator Client]
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        G[Shared Components]
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    end
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    subgraph &quot;External Services&quot;
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        H[Discord API]
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        I[PEON Orchestrator]
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        J[Container Runtime]
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    end
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    A --&gt; D
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    A --&gt; E
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    B --&gt; G
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    C --&gt; G
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    D --&gt; F
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    E --&gt; F
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    F --&gt; I
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    A --&gt; H
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    I --&gt; J
-</code></pre></div>
+<pre class="mermaid"><code>graph TB
+    subgraph "Discord Bot"
+        A[Command Handler]
+        B[UI Components]
+        C[Event System]
+    end
+
+    subgraph "Core Modules"
+        D[Administrator]
+        E[User Interface]  
+        F[Orchestrator Client]
+        G[Shared Components]
+    end
+
+    subgraph "External Services"
+        H[Discord API]
+        I[PEON Orchestrator]
+        J[Container Runtime]
+    end
+
+    A --&gt; D
+    A --&gt; E
+    B --&gt; G
+    C --&gt; G
+    D --&gt; F
+    E --&gt; F
+    F --&gt; I
+    A --&gt; H
+    I --&gt; J</code></pre>
 <h3 id="component-details">Component Details</h3>
 <p><strong>Command Handler (<code>main.py</code>)</strong>:
 - Slash command registration and routing
@@ -2231,36 +2230,36 @@
 <hr />
 <h2 id="development-setup">🔧 Development Setup</h2>
 <h3 id="local-development">Local Development</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Clone repository</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon-bot-discord.git
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>peon-bot-discord
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Setup Python environment</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux/Mac</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">     </span><span class="c1"># Windows</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Install dependencies</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># Configure environment</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>nano<span class="w"> </span>.env<span class="w">  </span><span class="c1"># Add your Discord token and settings</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1"># Run development server</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>python<span class="w"> </span>app/main.py
+<div class="highlight"><pre><span></span><code><span class="c1"># Clone repository</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/the-peon-project/peon-bot-discord.git
+<span class="nb">cd</span><span class="w"> </span>peon-bot-discord
+
+<span class="c1"># Setup Python environment</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux/Mac</span>
+venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">     </span><span class="c1"># Windows</span>
+
+<span class="c1"># Install dependencies</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c1"># Configure environment</span>
+cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+nano<span class="w"> </span>.env<span class="w">  </span><span class="c1"># Add your Discord token and settings</span>
+
+<span class="c1"># Run development server</span>
+python<span class="w"> </span>app/main.py
 </code></pre></div>
 <h3 id="docker-development">Docker Development</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Build development image</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>peon-bot-dev<span class="w"> </span>.
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Run with live reload</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>--name<span class="w"> </span>peon-bot-dev<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">DISCORD_TOKEN</span><span class="o">=</span>your_token<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_key<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/app:/app<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>peon-bot-dev
+<div class="highlight"><pre><span></span><code><span class="c1"># Build development image</span>
+docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>peon-bot-dev<span class="w"> </span>.
+
+<span class="c1"># Run with live reload</span>
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>peon-bot-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">DISCORD_TOKEN</span><span class="o">=</span>your_token<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">LOCAL_API_KEY</span><span class="o">=</span>your_key<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/app:/app<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>peon-bot-dev
 </code></pre></div>
 <h3 id="testing-discord-bot">Testing Discord Bot</h3>
 <ol>
@@ -2280,10 +2279,10 @@
 </li>
 <li>
 <p><strong>Test Command Flow</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/peon admin          # Test admin interface
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>/create minecraft test  # Test server creation
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>/server start        # Test server management
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>/debug test_connectivity  # Test diagnostics
+   <div class="highlight"><pre><span></span><code>/peon admin          # Test admin interface
+/create minecraft test  # Test server creation
+/server start        # Test server management
+/debug test_connectivity  # Test diagnostics
 </code></pre></div></p>
 </li>
 </ol>
@@ -2291,60 +2290,60 @@
 <h2 id="api-integration">📝 API Integration</h2>
 <h3 id="orchestrator-communication">Orchestrator Communication</h3>
 <p>The bot communicates with PEON Orchestrator via REST API:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Example API call structure</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">server_create</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">api_key</span><span class="p">,</span> <span class="n">game_uid</span><span class="p">,</span> <span class="n">warcamp_name</span><span class="p">,</span> <span class="n">user_settings</span><span class="o">=</span><span class="p">{}):</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">server_uid</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">game_uid</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">warcamp_name</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">endpoint_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">/api/v1/server/create/</span><span class="si">{</span><span class="n">server_uid</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="s1">&#39;X-Api-Key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;game_uid&quot;</span><span class="p">:</span> <span class="n">game_uid</span><span class="p">,</span> <span class="s2">&quot;warcamp&quot;</span><span class="p">:</span> <span class="n">warcamp_name</span><span class="p">,</span> <span class="o">**</span><span class="n">user_settings</span><span class="p">}</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">endpoint_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()}</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example API call structure</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">server_create</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">api_key</span><span class="p">,</span> <span class="n">game_uid</span><span class="p">,</span> <span class="n">warcamp_name</span><span class="p">,</span> <span class="n">user_settings</span><span class="o">=</span><span class="p">{}):</span>
+    <span class="n">server_uid</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">game_uid</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">warcamp_name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">endpoint_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">/api/v1/server/create/</span><span class="si">{</span><span class="n">server_uid</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="s1">&#39;X-Api-Key&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;game_uid&quot;</span><span class="p">:</span> <span class="n">game_uid</span><span class="p">,</span> <span class="s2">&quot;warcamp&quot;</span><span class="p">:</span> <span class="n">warcamp_name</span><span class="p">,</span> <span class="o">**</span><span class="n">user_settings</span><span class="p">}</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">endpoint_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+    <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()}</span>
 </code></pre></div>
 <h3 id="error-handling-patterns">Error Handling Patterns</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Comprehensive error handling</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">orchestrator_api_call</span><span class="p">()</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;success&#39;</span><span class="p">:</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="c1"># Handle success</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="n">embed</span> <span class="o">=</span> <span class="n">build_success_embed</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="c1"># Handle API-level errors</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">])</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="c1"># Handle network/HTTP errors</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection failed: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="c1"># Handle unexpected errors</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;An unexpected error occurred&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Comprehensive error handling</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">orchestrator_api_call</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;success&#39;</span><span class="p">:</span>
+        <span class="c1"># Handle success</span>
+        <span class="n">embed</span> <span class="o">=</span> <span class="n">build_success_embed</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Handle API-level errors</span>
+        <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">])</span>
+<span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="c1"># Handle network/HTTP errors</span>
+    <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection failed: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="c1"># Handle unexpected errors</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">embed</span> <span class="o">=</span> <span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;An unexpected error occurred&quot;</span><span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="user-interface-design">🎨 User Interface Design</h2>
 <h3 id="modern-discord-components">Modern Discord Components</h3>
 <p><strong>Slash Commands</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@bot</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;🏗️ Create a new game server&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nd">@app_commands</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">game_type</span><span class="o">=</span><span class="s2">&quot;Type of game server to create&quot;</span><span class="p">,</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">server_name</span><span class="o">=</span><span class="s2">&quot;Name for the new server&quot;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">)</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nd">@app_commands</span><span class="o">.</span><span class="n">autocomplete</span><span class="p">(</span><span class="n">game_type</span><span class="o">=</span><span class="n">game_type_autocomplete</span><span class="p">)</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create_server</span><span class="p">(</span><span class="n">interaction</span><span class="p">,</span> <span class="n">game_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">server_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="c1"># Implementation</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@bot</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;🏗️ Create a new game server&quot;</span><span class="p">)</span>
+<span class="nd">@app_commands</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span>
+    <span class="n">game_type</span><span class="o">=</span><span class="s2">&quot;Type of game server to create&quot;</span><span class="p">,</span>
+    <span class="n">server_name</span><span class="o">=</span><span class="s2">&quot;Name for the new server&quot;</span>
+<span class="p">)</span>
+<span class="nd">@app_commands</span><span class="o">.</span><span class="n">autocomplete</span><span class="p">(</span><span class="n">game_type</span><span class="o">=</span><span class="n">game_type_autocomplete</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create_server</span><span class="p">(</span><span class="n">interaction</span><span class="p">,</span> <span class="n">game_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">server_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="c1"># Implementation</span>
 </code></pre></div></p>
 <p><strong>Interactive Buttons</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@discord</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;🚀 Start&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">discord</span><span class="o">.</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">success</span><span class="p">)</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">server_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">,</span> <span class="n">button</span><span class="p">):</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="c1"># Handle server start with visual feedback</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@discord</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;🚀 Start&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">discord</span><span class="o">.</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">success</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">server_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">,</span> <span class="n">button</span><span class="p">):</span>
+    <span class="c1"># Handle server start with visual feedback</span>
 </code></pre></div></p>
 <p><strong>Auto-completion</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">server_autocomplete</span><span class="p">(</span><span class="n">interaction</span><span class="p">:</span> <span class="n">discord</span><span class="o">.</span><span class="n">Interaction</span><span class="p">,</span> <span class="n">current</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">servers</span> <span class="o">=</span> <span class="n">get_user_servers</span><span class="p">()</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="k">return</span> <span class="p">[</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        <span class="n">app_commands</span><span class="o">.</span><span class="n">Choice</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">server</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="n">server</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">])</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="k">for</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">servers</span> <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">server</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="p">][:</span><span class="mi">25</span><span class="p">]</span>  <span class="c1"># Discord limit</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">server_autocomplete</span><span class="p">(</span><span class="n">interaction</span><span class="p">:</span> <span class="n">discord</span><span class="o">.</span><span class="n">Interaction</span><span class="p">,</span> <span class="n">current</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">servers</span> <span class="o">=</span> <span class="n">get_user_servers</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="n">app_commands</span><span class="o">.</span><span class="n">Choice</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">server</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="n">server</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">servers</span> <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">server</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="p">][:</span><span class="mi">25</span><span class="p">]</span>  <span class="c1"># Discord limit</span>
 </code></pre></div></p>
 <h3 id="enhanced-visual-feedback">Enhanced Visual Feedback</h3>
 <ul>
@@ -2356,71 +2355,71 @@
 <hr />
 <h2 id="security-considerations">🔐 Security Considerations</h2>
 <h3 id="api-key-management">API Key Management</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Secure API key handling</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;LOCAL_API_KEY&#39;</span><span class="p">)</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">API_KEY</span><span class="p">:</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;API key not configured&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># Per-request header injection</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="s1">&#39;X-Api-Key&#39;</span><span class="p">:</span> <span class="n">API_KEY</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Secure API key handling</span>
+<span class="n">API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;LOCAL_API_KEY&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">API_KEY</span><span class="p">:</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;API key not configured&quot;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Per-request header injection</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="s1">&#39;X-Api-Key&#39;</span><span class="p">:</span> <span class="n">API_KEY</span><span class="p">}</span>
 </code></pre></div>
 <h3 id="input-validation">Input Validation</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Server name validation</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^[a-zA-Z0-9._-]+$&#39;</span><span class="p">,</span> <span class="n">server_name</span><span class="p">):</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="k">return</span> <span class="k">await</span> <span class="n">interaction</span><span class="o">.</span><span class="n">followup</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="n">embed</span><span class="o">=</span><span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;Invalid server name format&quot;</span><span class="p">)</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="p">)</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Command parameter sanitization</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">game_type</span> <span class="o">=</span> <span class="n">game_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">server_name</span> <span class="o">=</span> <span class="n">server_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Server name validation</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^[a-zA-Z0-9._-]+$&#39;</span><span class="p">,</span> <span class="n">server_name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">interaction</span><span class="o">.</span><span class="n">followup</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
+        <span class="n">embed</span><span class="o">=</span><span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;Invalid server name format&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+
+<span class="c1"># Command parameter sanitization</span>
+<span class="n">game_type</span> <span class="o">=</span> <span class="n">game_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">server_name</span> <span class="o">=</span> <span class="n">server_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="permission-checking">Permission Checking</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Discord permission verification</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">interaction</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">permissions_for</span><span class="p">(</span><span class="n">interaction</span><span class="o">.</span><span class="n">user</span><span class="p">)</span><span class="o">.</span><span class="n">administrator</span><span class="p">:</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="k">return</span> <span class="k">await</span> <span class="n">interaction</span><span class="o">.</span><span class="n">followup</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="n">embed</span><span class="o">=</span><span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;Administrator permissions required&quot;</span><span class="p">),</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Discord permission verification</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">interaction</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">permissions_for</span><span class="p">(</span><span class="n">interaction</span><span class="o">.</span><span class="n">user</span><span class="p">)</span><span class="o">.</span><span class="n">administrator</span><span class="p">:</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">interaction</span><span class="o">.</span><span class="n">followup</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
+        <span class="n">embed</span><span class="o">=</span><span class="n">build_error_embed</span><span class="p">(</span><span class="s2">&quot;Administrator permissions required&quot;</span><span class="p">),</span>
+        <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="performance-optimization">📊 Performance Optimization</h2>
 <h3 id="async-best-practices">Async Best Practices</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Efficient async operations</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">batch_server_status</span><span class="p">():</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">for</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">servers</span><span class="p">:</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="n">task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">get_server_status</span><span class="p">(</span><span class="n">server</span><span class="p">))</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">,</span> <span class="n">return_exceptions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="k">return</span> <span class="n">process_results</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Efficient async operations</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">batch_server_status</span><span class="p">():</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">servers</span><span class="p">:</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">get_server_status</span><span class="p">(</span><span class="n">server</span><span class="p">))</span>
+        <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">,</span> <span class="n">return_exceptions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">process_results</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="caching-strategy">Caching Strategy</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Response caching for frequently accessed data</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">lru_cache</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_cached_plans</span><span class="p">(</span><span class="n">timestamp</span><span class="p">):</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="c1"># Cache plans for 5 minutes</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="k">return</span> <span class="n">fetch_plans_from_api</span><span class="p">()</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
-<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_plans</span><span class="p">():</span>
-<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="n">timestamp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span> <span class="o">//</span> <span class="mi">300</span><span class="p">)</span> <span class="o">*</span> <span class="mi">300</span>  <span class="c1"># 5-minute intervals</span>
-<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="k">return</span> <span class="n">get_cached_plans</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Response caching for frequently accessed data</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">lru_cache</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_cached_plans</span><span class="p">(</span><span class="n">timestamp</span><span class="p">):</span>
+    <span class="c1"># Cache plans for 5 minutes</span>
+    <span class="k">return</span> <span class="n">fetch_plans_from_api</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_plans</span><span class="p">():</span>
+    <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="n">timestamp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span> <span class="o">//</span> <span class="mi">300</span><span class="p">)</span> <span class="o">*</span> <span class="mi">300</span>  <span class="c1"># 5-minute intervals</span>
+    <span class="k">return</span> <span class="n">get_cached_plans</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="rate-limit-handling">Rate Limit Handling</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Discord API rate limiting</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">discord.ext</span><span class="w"> </span><span class="kn">import</span> <span class="n">tasks</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nd">@tasks</span><span class="o">.</span><span class="n">loop</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_queue</span><span class="p">():</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="k">if</span> <span class="n">command_queue</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">rate_limited</span><span class="p">:</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>        <span class="n">command</span> <span class="o">=</span> <span class="n">command_queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>        <span class="k">await</span> <span class="n">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Discord API rate limiting</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">discord.ext</span><span class="w"> </span><span class="kn">import</span> <span class="n">tasks</span>
+
+<span class="nd">@tasks</span><span class="o">.</span><span class="n">loop</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_queue</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">command_queue</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">rate_limited</span><span class="p">:</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="n">command_queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="release-notes">📋 Release Notes</h2>
@@ -2501,97 +2500,97 @@
 <li><strong><a href="https://discord.gg/KJFVyayH8g">Discord Community</a></strong></li>
 </ul>
 <p><strong>1.2.6</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Built on the latest python/package codebase</li>
+<ul>
+<li>[x] CHANGE :tools: Built on the latest python/package codebase</li>
 </ul>
 <p><strong>1.2.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGE <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Updated to latest OS/package combinations.</li>
+<ul>
+<li>[x] CHANGE :tools: Updated to latest OS/package combinations.</li>
 </ul>
 <p><strong>1.2.4</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> TYPO <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed a bad response example in <code>!usage</code> command</li>
+<ul>
+<li>[x] TYPO :beetle: Fixed a bad response example in <code>!usage</code> command</li>
 </ul>
 <p><strong>1.2.3</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Usage response</li>
+<ul>
+<li>[x] ADDED :new: Usage response</li>
 </ul>
 <p><strong>1.2.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Update game server command.</li>
+<ul>
+<li>[x] ADDED :new: Update game server command.</li>
 </ul>
 <p><strong>1.2.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Fixed an issue with the regex matching for a minute interval (would match any possible string)</li>
+<ul>
+<li>[x] BUGFIX :beetle: Fixed an issue with the regex matching for a minute interval (would match any possible string)</li>
 </ul>
 <p><strong>1.2.0</strong></p>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Added language localization. Completely re-wrote messaging language module.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moved localization files to <code>/app/reference/</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moved from <code>/api/1.0</code> to <code>/api/v1</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Get a list of available game plans</li>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
+<ul>
+<li>[x] CHANGED :tools: Added language localization. Completely re-wrote messaging language module.</li>
+<li>[x] CHANGED :tools: Moved localization files to <code>/app/reference/</code></li>
+<li>[x] CHANGED :tools: Moved from <code>/api/1.0</code> to <code>/api/v1</code></li>
+<li>[x] ADDED :new: Get a list of available game plans</li>
 </ul>
 <p><strong>1.1.0</strong></p>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Moved logging into container logs</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added <code>DEV_MODE</code> flag to enable/disable logging/dev mode.</li>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
+<ul>
+<li>[x] CHANGED :tools: Moved logging into container logs</li>
+<li>[x] ADDED :new: Added <code>DEV_MODE</code> flag to enable/disable logging/dev mode.</li>
 </ul>
 <p><strong>1.0.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Auto append minute time unit to request, if no time unit is provided.</li>
+<ul>
+<li>[x] BUGFIX :beetle: Auto append minute time unit to request, if no time unit is provided.</li>
 </ul>
 <p><strong>1.0.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Improved data response legibility on get.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Updated bot to handle changes to the Orc API (since Orc release v1.0.1)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> REMOVED <img alt="✂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2702.svg" title=":scissors:" /> Removed <code>dev_mode</code> switch</li>
+<ul>
+<li>[x] CHANGED :tools: Improved data response legibility on get.</li>
+<li>[x] CHANGED :tools: Updated bot to handle changes to the Orc API (since Orc release v1.0.1)</li>
+<li>[x] REMOVED :scissors: Removed <code>dev_mode</code> switch</li>
 </ul>
-<p><strong><img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /> IMPACT RELEASE <img alt="⚡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" title=":zap:" /></strong></p>
+<p><strong>:zap: IMPACT RELEASE :zap:</strong></p>
 <p><strong>0.2.8</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Messaging - Reworked error messages</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> BUGFIX <img alt="🪲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1fab2.svg" title=":beetle:" /> Scheduling past event times.</li>
+<ul>
+<li>[x] CHANGED :tools: Messaging - Reworked error messages</li>
+<li>[x] BUGFIX :beetle: Scheduling past event times.</li>
 </ul>
 <p><strong>0.2.7</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added shutdown scheduler</li>
+<ul>
+<li>[x] ADDED :new: Added shutdown scheduler</li>
 </ul>
 <p><strong>0.2.6</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Better natural language support</li>
+<ul>
+<li>[x] CHANGED :tools: Better natural language support</li>
 </ul>
 <p><strong>0.2.5</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added aliases for commands</li>
+<ul>
+<li>[x] ADDED :new: Added aliases for commands</li>
 </ul>
 <p><strong>0.2.2</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CHANGED <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> Reformatted info in the message feed</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Server_Config - Allowed for json formatted content</li>
+<ul>
+<li>[x] CHANGED :tools: Reformatted info in the message feed</li>
+<li>[x] ADDED :new: Server_Config - Allowed for json formatted content</li>
 </ul>
 <p><strong>0.2.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Discord - Added message cleaner <code>clear [int]</code></li>
+<ul>
+<li>[x] ADDED :new: Discord - Added message cleaner <code>clear [int]</code></li>
 </ul>
 <p><strong>0.2.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Orc - control start/stop/restart</li>
+<ul>
+<li>[x] ADDED :new: Orc - control start/stop/restart</li>
 </ul>
 <p><strong>0.1.1</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Added devMode switch</li>
+<ul>
+<li>[x] ADDED :new: Added devMode switch</li>
 </ul>
 <p><strong>0.1.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> First version of the bot</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ADDED <img alt="🆕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f195.svg" title=":new:" /> Basic get-all/get the functionality</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> SECURITY <img alt="🔓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f513.svg" title=":unlock:" /> Hardcoded bot key</li>
+<ul>
+<li>[x] ADDED :new: First version of the bot</li>
+<li>[x] ADDED :new: Basic get-all/get the functionality</li>
+<li>[x] SECURITY :unlock: Hardcoded bot key</li>
 </ul>
 <p><strong>0.0.0</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> INITIALISED <img alt="✈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2708.svg" title=":airplane:" /> Initial commit</li>
+<ul>
+<li>[x] INITIALISED :airplane: Initial commit</li>
 </ul>
 
 
@@ -2632,8 +2631,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2024 <a href="https://github.com/the-peon-project"  target="_blank" rel="noopener">The PEON Project</a>
-
+      &copy; 2024 <a href="https://github.com/the-peon-project" target="_blank" rel="noopener">The PEON Project</a>
     </div>
   
   
@@ -2720,7 +2718,7 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.prune","navigation.indexes","navigation.expand","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.top","toc.integrate","toc.follow","search.suggest","search.highlight","content.tabs.link","content.code.annotation","content.code.copy"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.annotation","content.code.copy","content.tabs.link","navigation.expand","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.prune","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>
