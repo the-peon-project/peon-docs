@@ -90,6 +90,9 @@ nav:
       - Satisfactory: guides/games/satisfactory.md
       - Duke Nukem 3D: guides/games/dukenukem.md
       - ARK: guides/games/ark.md
+      - Assetto Corsa Competizione: guides/games/assetto_corsa_competizione.md
+      - Quake 3 Arena: guides/games/q3arena.md
+      - Starbound: guides/games/starbound.md
   - 🎮 Games: games.md
   - 🛠️ Development:
     - Overview: development/index.md
@@ -100,6 +103,21 @@ nav:
     - Web UI: development/04_webui.md
     - CLI Tools: development/05_cli.md
     - Discord Bot: development/50_bot_discord.md
+    - Game Servers:
+      - Overview: development/games/index.md
+      - ARK: development/games/ark.md
+      - Assetto Corsa Competizione: development/games/assetto_corsa_competizione.md
+      - Counter-Strike 2: development/games/cs2.md
+      - CS:GO: development/games/csgo.md
+      - Duke Nukem 3D: development/games/dukenukem.md
+      - Enshrouded: development/games/enshrouded.md
+      - Palworld: development/games/palworld.md
+      - Quake 3 Arena: development/games/q3arena.md
+      - Satisfactory: development/games/satisfactory.md
+      - Soldier of Fortune: development/games/sof.md
+      - Starbound: development/games/starbound.md
+      - Valheim: development/games/valheim.md
+      - V Rising: development/games/vrising.md
   - 🔗 API Reference:
     - REST API: api/index.md
   - ❓ FAQ: faq.md

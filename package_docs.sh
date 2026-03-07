@@ -1,6 +1,6 @@
 #!/bin/bash
 output_dir="/home/richard/development/the-peon-project.github.io"
 cd ./manual/.
-docker run --rm -it -v ${PWD}:/docs -v $output_dir:/docs/site squidfunk/mkdocs-material build
+docker run --rm -it -v ${PWD}:/docs -v $output_dir:/docs/site squidfunk/mkdocs-material:9 build
 cp ./site/CNAME $output_dir/.
 cp ./site/LICENSE $output_dir/.
