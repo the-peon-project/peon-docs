@@ -1,11 +1,11 @@
 meta {
-  name: Restart Server
+  name: Download Server Files
   type: http
-  seq: 11
+  seq: 8
 }
 
-put {
-  url: {{url}}:{{port}}/api/v1/server/restart/{{game_uid}}.{{server_name}}
+get {
+  url: {{url}}:{{port}}/api/v1/server/save/{{game_uid}}.{{server_name}}
   body: none
   auth: inherit
 }

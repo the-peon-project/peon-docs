@@ -1,7 +1,7 @@
 meta {
   name: Create Server
   type: http
-  seq: 2
+  seq: 4
 }
 
 put {
@@ -19,6 +19,7 @@ body:json {
     "SERVER_NAME": "{{game_uid}}.{{server_name}}",
     "ADMIN_PASSWORD": "password1234",
     "PASSWORD": "password123",
+    "start_later": false,
     "description": "A Bruno API server"
   }
 }

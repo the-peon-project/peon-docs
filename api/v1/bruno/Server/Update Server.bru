@@ -1,7 +1,7 @@
 meta {
   name: Update Server
   type: http
-  seq: 3
+  seq: 5
 }
 
 put {
@@ -16,6 +16,6 @@ headers {
 
 body:json {
   {
-      "mode" : "full"
+      "mode" : "{{update_mode}}"
   }
 }

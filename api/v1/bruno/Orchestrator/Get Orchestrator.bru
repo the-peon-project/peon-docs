@@ -1,11 +1,11 @@
 meta {
-  name: Restart Server
+  name: Get Orchestrator
   type: http
-  seq: 11
+  seq: 1
 }
 
-put {
-  url: {{url}}:{{port}}/api/v1/server/restart/{{game_uid}}.{{server_name}}
+get {
+  url: {{url}}:{{port}}/api/v1/orchestrator
   body: none
   auth: inherit
 }
