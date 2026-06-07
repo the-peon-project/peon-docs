@@ -27,24 +27,24 @@ cd peon
 ### 2. Configure Environment
 
 ```bash
-cp .env.example .env
+cp .env.sample .env
 nano .env  # Edit configuration
 ```
 
 **Key Environment Variables:**
 
 ```env
+# Orchestrator Configuration
+PEON_API_KEY=your_secure_api_key_here
+PEON_DIRECTORY=/root/peon
+
+# Optional shared cache proxy for game downloads and updates
+PEON_CACHE_ENABLED=true
+PEON_CACHE_URL=http://host.docker.internal:3128
+PEON_CACHE_BYPASS=localhost,127.0.0.1,host.docker.internal,peon.orc,peon.webui,peon.db
+
 # Discord Bot Configuration
 DISCORD_TOKEN=your_discord_bot_token_here
-DISCORD_GUILD_ID=your_discord_server_id
-DISCORD_ADMIN_CHANNEL_ID=your_admin_channel_id
-
-# Orchestrator Configuration
-LOCAL_API_KEY=your_secure_api_key_here
-PEON_VERSION=latest
-
-# Container Registry
-REGISTRY_URL=docker.io/umlatt
 ```
 
 ### 3. Start PEON Services
@@ -56,8 +56,11 @@ REGISTRY_URL=docker.io/umlatt
 This will start:
 
 - **Orchestrator**: Core API service (port 5000)
+- **Cache Proxy**: Shared HTTP cache for SteamCMD and other proxy-aware downloads (port 3128, when enabled)
 - **Discord Bot**: Slash command interface
 - **Web UI**: Browser interface (port 8080)
+
+When the cache proxy is enabled, newly generated game server manifests receive standard proxy environment variables and a `host.docker.internal` host-gateway alias. Downloads that honor `HTTP_PROXY` or `HTTPS_PROXY` will reuse cached content locally instead of fetching every update from the internet again.
 
 ### 4. Verify Installation
 
