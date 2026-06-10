@@ -56,6 +56,26 @@ Links to various project-related resources.
 
 ---
 
+## Docker Test Seed Mode
+
+For containerized API test runs, WebUI can seed expected admin users at startup.
+
+Environment variables:
+
+- `PEON_ENABLE_TEST_SEED=true`
+- `PEON_TEST_ADMIN_USERNAME` (default: `admin`)
+- `PEON_TEST_ADMIN_PASSWORD` (default: `admin123456`)
+- `PEON_TEST_DASH_USERNAME` (default: `testadmin`)
+- `PEON_TEST_DASH_PASSWORD` (default: `Test1234!`)
+
+This mode is intended for local Docker testing only, for example deployments under `/home/richard/peon`.
+
+When enabled, startup ensures both admin users exist and updates their password/role to the configured values.
+
+When WebUI and ORC are deployed in the same Docker stack, configure the orchestrator in WebUI as `http://peon.orc:5000` so backend API requests resolve through Docker service networking.
+
+---
+
 ## Roadmap
 
 - [ ] Recipes - Autodetect newly added recipes.
@@ -67,6 +87,13 @@ Links to various project-related resources.
 ---
 
 ## Release Notes
+
+**0.1.7**
+
+- Orchestrator URL handling now supports retrying resolved URL candidates for Docker connectivity edge cases.
+- WebUI proxy and background sync flows now use the same URL candidate behavior to reduce false timeouts.
+- Docker image nginx listener now binds both IPv4 and IPv6 on port 80.
+- Deployment guidance now recommends using `http://peon.orc:5000` for local ORC entries in Docker deployments.
 
 **0.1.6**
 
